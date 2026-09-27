@@ -1,0 +1,27 @@
+[
+  {
+    "case": "open_failure",
+    "calls": [
+      "release",
+      "destroy"
+    ],
+    "error": "카메라 열기 실패: 권한, 점유, 장치 번호를 확인하세요"
+  },
+  {
+    "case": "read_failure",
+    "calls": [
+      "release",
+      "destroy"
+    ],
+    "error": null
+  },
+  {
+    "case": "q_exit",
+    "calls": [
+      "imshow",
+      "release",
+      "destroy"
+    ],
+    "error": null
+  }
+]

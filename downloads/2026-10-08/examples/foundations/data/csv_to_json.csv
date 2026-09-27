@@ -1,0 +1,3 @@
+sensor_id,location,temperature_c,measured_at,active
+S01,입구,22.8,2026-10-08 10:05,true
+S02,창고,,2026-10-08 10:05,true

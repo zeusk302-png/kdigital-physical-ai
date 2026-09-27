@@ -1,0 +1,7 @@
+body { font-family: sans-serif; margin: 0; background: #f5f1e8; color: #163332; }
+main { max-width: 720px; margin: 40px auto; padding: 24px; }
+h1 { font-size: 2rem; color: #126d65; }
+p { line-height: 1.7; }
+button { padding: 12px 20px; background: #126d65; color: white; border: 0; }
+button:focus-visible { outline: 3px solid #b96a17; outline-offset: 4px; }
+@media (max-width: 600px) { main { margin: 8px; } }

@@ -1,0 +1,5 @@
+git add README.md
+git diff --staged
+git restore --staged README.md
+git diff --staged
+git diff -- README.md

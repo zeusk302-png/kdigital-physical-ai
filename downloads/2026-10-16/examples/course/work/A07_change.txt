@@ -1,0 +1,5 @@
+git diff
+git add README.md
+git diff --staged
+git commit -m "Clarify run folder"
+git log --oneline -2

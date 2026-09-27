@@ -1,0 +1,4 @@
+git init --bare -b main ../shared.git
+git remote add origin ../shared.git
+git remote -v
+git push -u origin main

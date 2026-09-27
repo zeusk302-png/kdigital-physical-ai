@@ -1,0 +1,4 @@
+git status --short
+git check-ignore -v scratch.txt
+git add .gitignore
+git commit -m "Ignore scratch notes"

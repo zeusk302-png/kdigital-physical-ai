@@ -1,0 +1,3 @@
+git show HEAD~1:README.md
+git diff HEAD~1 HEAD -- README.md
+git log --oneline -2

@@ -1,0 +1,51 @@
+[
+  {
+    "image": "parts.png",
+    "threshold": 100,
+    "min_area": 100,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "image": "parts.png",
+    "threshold": 60,
+    "min_area": 100,
+    "expected": 3,
+    "actual": 3
+  },
+  {
+    "image": "parts.png",
+    "threshold": 100,
+    "min_area": 2000,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "image": "empty.png",
+    "threshold": 100,
+    "min_area": 100,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "image": "dim.png",
+    "threshold": 100,
+    "min_area": 100,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "image": "touching.png",
+    "threshold": 100,
+    "min_area": 100,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "image": "holdout.png",
+    "threshold": 100,
+    "min_area": 100,
+    "expected": 3,
+    "actual": 3
+  }
+]

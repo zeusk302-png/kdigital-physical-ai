@@ -1,0 +1,79 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+      "protocolVersion": "2025-11-25",
+      "capabilities": {
+        "tools": {}
+      },
+      "serverInfo": {
+        "name": "class-sensor",
+        "version": "1.0.0"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+      "tools": [
+        {
+          "name": "get_reading",
+          "description": "가상 센서 기록 읽기",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "sensor_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "sensor_id"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"sensor_id\": \"S01\", \"temperature_c\": 22.5, \"unit\": \"C\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"sensor_id\": \"S02\", \"temperature_c\": null, \"unit\": \"C\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Unknown sensor"
+        }
+      ],
+      "isError": true
+    }
+  }
+]

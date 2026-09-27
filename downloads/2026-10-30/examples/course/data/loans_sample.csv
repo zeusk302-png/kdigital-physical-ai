@@ -1,0 +1,4 @@
+loan_id,item_id,status,updated_at,review_note
+L001,I01,returned,2026-10-30 10:00,
+L002,I02,checked_out,2026-10-30 10:05,
+L003,I03,unknown,2026-10-30 10:10,확인대기

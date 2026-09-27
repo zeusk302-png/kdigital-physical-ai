@@ -1,0 +1,12 @@
+{
+  "S01": {
+    "sensor_id": "S01",
+    "temperature_c": 22.5,
+    "unit": "C"
+  },
+  "S02": {
+    "sensor_id": "S02",
+    "temperature_c": null,
+    "unit": "C"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "exit_code": 1,
+    "stdout": "zero PASS 정상\nbelow PASS 정상\nboundary FAIL 정상\nabove PASS 주의\nmissing FAIL 정상\ntext FAIL TypeError\nboolean FAIL 정상\nnegative FAIL 정상\nhigh FAIL 주의\n통과 3/9\n"
+  },
+  "proposal_a": {
+    "exit_code": 1,
+    "stdout": "zero PASS 정상\nbelow FAIL 주의\nboundary PASS 주의\nabove PASS 주의\nmissing FAIL 정상\ntext FAIL TypeError\nboolean FAIL 정상\nnegative FAIL 정상\nhigh FAIL 주의\n통과 3/9\n"
+  },
+  "reviewed": {
+    "exit_code": 0,
+    "stdout": "zero PASS 정상\nbelow PASS 정상\nboundary PASS 주의\nabove PASS 주의\nmissing PASS 미측정\ntext PASS 입력 오류\nboolean PASS 입력 오류\nnegative PASS 입력 오류\nhigh PASS 입력 오류\n통과 9/9\n"
+  }
+}

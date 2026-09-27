@@ -1,0 +1,4 @@
+git diff -- README.md
+git restore -- README.md
+git status --short
+git log --oneline -3

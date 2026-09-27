@@ -1,0 +1,32 @@
+[
+  {
+    "seq": 1,
+    "sensor_id": "S02",
+    "temperature_c": 0.0,
+    "unit": "C"
+  },
+  {
+    "seq": 2,
+    "sensor_id": "S02",
+    "temperature_c": 27.9,
+    "unit": "C"
+  },
+  {
+    "seq": 3,
+    "sensor_id": "S02",
+    "temperature_c": 28.0,
+    "unit": "C"
+  },
+  {
+    "seq": 4,
+    "sensor_id": "S02",
+    "temperature_c": null,
+    "unit": "C"
+  },
+  {
+    "seq": 5,
+    "sensor_id": "S02",
+    "temperature_c": "28.1",
+    "unit": "C"
+  }
+]

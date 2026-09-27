@@ -1,0 +1,47 @@
+[
+  {
+    "id": "zero",
+    "value": 0,
+    "expected": "정상"
+  },
+  {
+    "id": "below",
+    "value": 27.9,
+    "expected": "정상"
+  },
+  {
+    "id": "boundary",
+    "value": 28,
+    "expected": "주의"
+  },
+  {
+    "id": "above",
+    "value": 28.1,
+    "expected": "주의"
+  },
+  {
+    "id": "missing",
+    "value": null,
+    "expected": "미측정"
+  },
+  {
+    "id": "text",
+    "value": "뜨거움",
+    "expected": "입력 오류"
+  },
+  {
+    "id": "boolean",
+    "value": true,
+    "expected": "입력 오류"
+  },
+  {
+    "id": "negative",
+    "value": -1,
+    "expected": "입력 오류"
+  },
+  {
+    "id": "high",
+    "value": 51,
+    "expected": "입력 오류"
+  }
+]

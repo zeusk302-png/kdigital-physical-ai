@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>가상 센서 현황판</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<h1>가상 센서 현황판</h1>
+<p>교육용 합성 데이터 · 실제 장비 연결 없음</p>
+<label>장소 <select id="location"><option>전체</option><option>입구</option><option>창고</option><option>실습실</option><option>복도</option></select></label>
+<button id="next">모의 기록 한 건 추가</button><button id="pause">70초 수신 멈춤 가정</button><button id="refresh">API 다시 읽기</button>
+<p id="message" role="status"></p><p id="summary"></p>
+<h2>센서별 마지막 기록</h2><table><thead><tr><th>센서</th><th>위치</th><th>온도 ℃</th><th>기록 시각(한국)</th><th>상태</th></tr></thead><tbody id="latest"></tbody></table>
+<h2>선택한 장소의 이력</h2><p>막대 높이는 온도이며 간격은 시간 간격을 뜻하지 않습니다. 자세한 값은 아래 표와 같습니다.</p>
+<div id="chart" aria-label="이력 막대와 값"></div>
+<table><thead><tr><th>센서</th><th>온도 ℃</th><th>기록 시각(한국)</th></tr></thead><tbody id="history"></tbody></table>
+</main><script src="fixture.js"></script><script src="model.js"></script><script src="app.js"></script></body>
+</html>

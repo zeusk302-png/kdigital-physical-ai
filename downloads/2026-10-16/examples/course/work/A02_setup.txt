@@ -1,0 +1,6 @@
+New-Item -ItemType Directory -Path work/git-lab
+Set-Location work/git-lab
+git init -b main
+git config --local user.name "실습자"
+git config --local user.email "learner@example.invalid"
+git rev-parse --show-toplevel

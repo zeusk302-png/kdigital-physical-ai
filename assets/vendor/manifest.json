@@ -1,0 +1,131 @@
+{
+  "retrieved_on": "2026-09-27",
+  "packages": {
+    "pretendard": {
+      "version": "1.3.9",
+      "license": "SIL Open Font License 1.1",
+      "font_axes": [
+        {
+          "tag": "wght",
+          "min": 45,
+          "max": 920,
+          "basis": "official version-pinned stylesheet; binary axes not separately inspected"
+        }
+      ]
+    },
+    "lucide": {
+      "version": "0.468.0",
+      "license": "ISC; Feather-derived portions MIT",
+      "icons": [
+        "book-open",
+        "search",
+        "menu",
+        "x",
+        "copy",
+        "download",
+        "chevron-down",
+        "arrow-right"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "pretendard/PretendardVariable.woff2",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/v1.3.9/packages/pretendard/dist/web/variable/woff2/PretendardVariable.woff2",
+      "bytes": 2057688,
+      "sha256": "9599f12fd42fc0bce1cd50b47a0c022e108d7aa64dd0d1bb0ed44f3282d900b4",
+      "modified": false
+    },
+    {
+      "path": "pretendard/LICENSE",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/v1.3.9/LICENSE",
+      "bytes": 4418,
+      "sha256": "d31ddd9f2bed32fd7e302a205cf2380ba0de6529152d239ef99cfb6f261bfc04",
+      "modified": false
+    },
+    {
+      "path": "lucide/LICENSE",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/LICENSE",
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
+      "modified": false
+    },
+    {
+      "path": "lucide/LICENSE-Feather-MIT",
+      "source": "https://raw.githubusercontent.com/feathericons/feather/v4.29.2/LICENSE",
+      "bytes": 1082,
+      "sha256": "308028e93fcf84972523cdf6e616f73168546b4953895f516d01287f16fe7bee",
+      "modified": false
+    },
+    {
+      "path": "lucide/book-open.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/book-open.svg",
+      "bytes": 378,
+      "sha256": "a5eb669f66989fdbc003b1689ebc93769b3b9d680f840573f2a3ac268756f894",
+      "modified": false
+    },
+    {
+      "path": "lucide/search.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/search.svg",
+      "bytes": 273,
+      "sha256": "9322d964b61cf729b3a81210568d5a97eaf4a1f3239f25a056fda3013bf35611",
+      "modified": false
+    },
+    {
+      "path": "lucide/menu.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/menu.svg",
+      "bytes": 332,
+      "sha256": "90a31b3ab1cf6c796b6024560324daf425233ae3c11f30818b182ce557bafa99",
+      "modified": false
+    },
+    {
+      "path": "lucide/x.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/x.svg",
+      "bytes": 260,
+      "sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "modified": false
+    },
+    {
+      "path": "lucide/copy.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/copy.svg",
+      "bytes": 339,
+      "sha256": "ea80e566c7a12628a447cb53179b19aea4f60b9143e2becd0d0f20bf260e5718",
+      "modified": false
+    },
+    {
+      "path": "lucide/download.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/download.svg",
+      "bytes": 348,
+      "sha256": "21ee20839a201a74e612aafe7eaaf56f6ddc095c74aa5fcbb252c51f74a7535c",
+      "modified": false
+    },
+    {
+      "path": "lucide/chevron-down.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/chevron-down.svg",
+      "bytes": 236,
+      "sha256": "66ea878e72ed3488bb3b464c39dfdccee8d1f78e560dccea40e5e12da0e87e87",
+      "modified": false
+    },
+    {
+      "path": "lucide/arrow-right.svg",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/arrow-right.svg",
+      "bytes": 261,
+      "sha256": "288397fdb73bb4f783cf9eabb726ff47357df1d4e3f1201dd748090579f108b9",
+      "modified": false
+    },
+    {
+      "path": "pretendard/pretendard.css",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/v1.3.9/dist/web/variable/pretendardvariable.css",
+      "bytes": 389,
+      "sha256": "da03503ba8e47103a46a1240dc794a742e4ae627273177e41e5b1b976fecf163",
+      "modified": true,
+      "change": "Local font URL and explanatory comment; no font binary change."
+    }
+  ],
+  "validation": {
+    "font_binary": "WOFF2 signature, declared length and table count checked",
+    "glyph_coverage": "not separately inspected",
+    "svg": "8 XML files, viewBox 0 0 24 24, no scripts/event handlers",
+    "browser_rendering": "not performed by this vendor task"
+  }
+}

@@ -1,0 +1,6 @@
+git switch -c docs-example
+git add README.md
+git commit -m "Add reading example"
+git switch main
+git diff main docs-example -- README.md
+git merge --no-ff docs-example -m "Merge reading example"

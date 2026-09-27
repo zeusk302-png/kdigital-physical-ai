@@ -1,0 +1,7 @@
+{
+  'sensor_id': 'S01',
+  'location': '입구',
+  'temperature_c': 22.5,
+  'measured_at': '2026-10-08 10:00',
+  'active': true
+}

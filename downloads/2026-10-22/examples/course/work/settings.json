@@ -1,0 +1,5 @@
+{
+  "image": "parts.png",
+  "threshold": 100,
+  "min_area": 100
+}

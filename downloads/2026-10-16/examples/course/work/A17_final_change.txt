@@ -1,0 +1,6 @@
+git status --short
+git diff -- README.md
+git add README.md
+git diff --staged
+git commit -m "Explain missing-value policy"
+git log --oneline -1

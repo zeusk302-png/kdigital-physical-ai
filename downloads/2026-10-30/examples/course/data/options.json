@@ -1,0 +1,27 @@
+{
+  "weights": {
+    "need": 0.4,
+    "feasibility": 0.35,
+    "testability": 0.25
+  },
+  "options": [
+    {
+      "id": "A",
+      "need": 5,
+      "feasibility": 4,
+      "testability": 5
+    },
+    {
+      "id": "B",
+      "need": 5,
+      "feasibility": 2,
+      "testability": 3
+    },
+    {
+      "id": "C",
+      "need": 3,
+      "feasibility": 4,
+      "testability": 5
+    }
+  ]
+}

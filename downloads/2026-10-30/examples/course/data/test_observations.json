@@ -1,0 +1,22 @@
+[
+  {
+    "id": "T01",
+    "expected": 3,
+    "actual": 3
+  },
+  {
+    "id": "T02",
+    "expected": "review",
+    "actual": "normal"
+  },
+  {
+    "id": "T03",
+    "expected": "reject",
+    "actual": null
+  },
+  {
+    "id": "T04",
+    "expected": true,
+    "actual": true
+  }
+]

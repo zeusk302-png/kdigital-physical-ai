@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Run from course.
+=======
+Check output JSON after running.
+>>>>>>> docs-output
