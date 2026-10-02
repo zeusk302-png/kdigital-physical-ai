@@ -94,9 +94,9 @@ for line in sys.stdin:
         result = {"tools": [{"name": "get_reading", "description": "가상 센서 기록 읽기", "inputSchema": {"type": "object", "properties": {"sensor_id": {"type": "string"}}, "required": ["sensor_id"], "additionalProperties": False}}]}
     elif method == "tools/call":
         params = message.get("params", {})
-        arguments = params.get("arguments", {})
-        sensor = arguments.get("sensor_id")
-        if params.get("name") != "get_reading" or set(arguments) != {"sensor_id"} or not isinstance(sensor, str):
+        arguments = params.get("arguments", {}) if isinstance(params, dict) else None
+        sensor = arguments.get("sensor_id") if isinstance(arguments, dict) else None
+        if not isinstance(params, dict) or not isinstance(arguments, dict) or params.get("name") != "get_reading" or set(arguments) != {"sensor_id"} or not isinstance(sensor, str):
             error = {"code": -32602, "message": "Invalid tool arguments"}
         elif sensor not in readings:
             result = {"content": [{"type": "text", "text": "Unknown sensor"}], "isError": True}
@@ -146,10 +146,10 @@ for line in sys.stdin:
 | 33 | get_reading 도구 이름·설명·필수 문자열 sensor_id·추가 항목 금지라는 입력 규칙을 제공합니다. |
 | 34 | 실제 도구 호출인지 확인합니다. |
 | 35 | 호출의 params 객체를 가져옵니다. |
-| 36 | params 안의 arguments 객체를 가져옵니다. |
-| 37 | sensor_id 값을 읽습니다. |
-| 38 | 도구 이름·정확한 입력 키·문자열 자료형을 확인합니다. |
-| 39 | 입력 규칙이 틀리면 -32602 오류를 준비합니다. |
+| 36 | params가 사전(dict)일 때만 arguments를 읽습니다. null이나 배열이면 None을 둡니다. |
+| 37 | arguments가 사전일 때만 sensor_id를 읽습니다. 잘못된 자료형이면 None을 둡니다. |
+| 38 | params와 arguments가 사전인지 먼저 확인한 뒤 도구 이름·입력 키·문자열을 검사합니다. or는 왼쪽 조건이 참이면 뒤의 .get()을 실행하지 않습니다. |
+| 39 | 입력 규칙이 틀리면 -32602 오류를 준비합니다. 이 응답 뒤에도 다음 입력 줄 처리를 계속합니다. |
 | 40 | 센서 이름은 문자열이지만 제공 자료에 없는지 확인합니다. |
 | 41 | 도구 실행 실패를 isError=true로 표시합니다. JSON-RPC 자체 오류와 구별합니다. |
 | 42 | 센서 이름이 있는 정상 경우입니다. |
@@ -373,3 +373,12 @@ app.bundle.js는 React·React DOM·App.jsx를 묶은 기계 생성 실행 파일
 ## 확인 기록의 한계
 
 코드·프로토콜·로컬 API의 실제 결과와 실제 학생 수행 시간은 다른 검증입니다. 360분은 제작 배정이며 초심자 리허설 전입니다. 실물 센서와 외부 AI 계정·유료 API는 사용하지 않았습니다.
+
+
+#### MCP 필수 읽기와 참고 범위
+
+**필수:** 역할 카드에서 호스트·클라이언트·서버·데이터를 구별합니다. `requests.jsonl` 첫 세 줄의 초기화·알림·도구 목록과 네 번째 줄의 `method/id/params`를 읽습니다. `recorded_responses.json`에서 S01의 숫자, S02의 미측정, S99의 `isError`를 대조합니다. 제공 클라이언트 실행 또는 강사 실행 관찰 후 수행 방법을 표시합니다.
+
+필수 코드 확인은 `mcp_client.py` 6~7행(입력 메시지와 서버 실행), `mcp_server.py` 16~17행(id·method), 20~22행(초기화), 34~43행(도구 요청과 결과)입니다. 구현 문법 전체를 풀이하지 않고 메시지의 역할과 입출력 대응을 확인합니다. 줄 번호는 이번 제공본 기준입니다.
+
+**강사 참고·선택:** 서버 전체의 예외 처리, 표준 입출력, subprocess 구현과 모든 줄 해설. 전체 코드를 새로 작성하는 것은 필수가 아닙니다. 실제 AI 호스트 호출·인증·HTTP 연결은 이번 관찰 범위에 포함되지 않습니다.

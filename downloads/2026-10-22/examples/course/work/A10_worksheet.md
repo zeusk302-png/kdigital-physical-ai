@@ -12,3 +12,8 @@
 ## 아직 확인하지 않은 것
 
 (실제 장비·환경에서 미확인인 내용을 구분)
+
+
+### 각 실험의 파일을 바로 보관
+
+실험 1 직후 `work/experiment-1` 폴더를 만들고 사용한 `settings.json`과 이번 `mask.png`, `detected.png`, `report.json`을 복사합니다. report.json의 threshold·min_area를 사용 설정과 대조한 뒤 조건을 바꿉니다. 실험 2·3도 `experiment-2`, `experiment-3`에 각각 보관합니다. 다음 실행은 같은 출력 파일을 덮어쓰므로 마지막 출력만 세 실험 결과로 제출하지 않습니다.

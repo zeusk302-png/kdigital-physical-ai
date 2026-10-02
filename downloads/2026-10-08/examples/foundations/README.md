@@ -42,3 +42,19 @@ python -X utf8 code/A20_read_json.py
 360분은 개념 설명·비교 시연·학생 적용·풀이의 제작 배정입니다. 실측 리허설 전이며 활동 수만으로 실제 소요시간이나 학습 효과를 검증한 것은 아닙니다. 점심 60분은 별도입니다.
 
 원본 Python 네 개는 제작용 Python에서 실제 실행해 전체 출력과 비교했습니다. 코드 폴더와 다른 현재 위치에서도 입력 파일을 찾는 것을 확인했습니다. 개인 PC·실제 강의실·실제 센서·웹의 Python 실행은 검증한 범위가 아닙니다. 추가로 24활동의 입력·작업·풀이 파일 경로와 15·60·360분 배정 합계, CSV·JSON의 기록 수·자료형·미측정 표현, 고의 오류와 수정 결과를 자동 검사했습니다. 원본 코드 네 개와 작업 복사본 네 개, 지시된 값 수정 두 가지의 실제 출력도 기대값과 일치했습니다. 이 검사는 수업 시간이나 학습 효과를 증명하지 않습니다. 설치 환경이 다르면 강사에게 실행한 파일 경로와 실제 오류를 전달합니다.
+
+
+## Windows · 선택 Python 실행 위치 확인
+
+제작 가정: Windows 탐색기와 PowerShell입니다. Python 실행은 준비된 PC에서만 합니다.
+
+ZIP을 모두 추출한 뒤 `foundations` 안의 data·code·work가 보이는 폴더를 엽니다. 탐색기 주소 표시줄에 `powershell`을 입력하고 Enter를 누릅니다. 새 창에서 한 줄씩 실행합니다.
+
+```powershell
+Get-Location
+Get-ChildItem -Directory
+Test-Path .\code\A07_types.py
+python -X utf8 code/A07_types.py
+```
+
+경로 끝은 foundations, 폴더 목록은 data·code·work, 파일 확인은 True여야 합니다. 정상 출력은 code/line-guide.md의 A07 전체 출력과 대조합니다. False 또는 파일 없음이면 탐색기에서 실제 foundations 위치를 찾아 같은 순서로 창을 다시 엽니다. python을 찾지 못하면 강사에게 환경을 확인받고 제공 출력 비교를 진행합니다. 개인 실행은 미완료로 기록합니다. 다른 활동도 같은 폴더에서 명령을 입력합니다.

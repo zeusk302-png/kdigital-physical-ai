@@ -592,7 +592,7 @@ React는 데이터와 상태를 이용해 화면을 구성하는 JavaScript 라�
 
 입력: [data.js](examples/course/work/react/data.js), [App.jsx](examples/course/code/react/App.jsx), [A11_input.md](examples/course/data/A11_input.md)
 
-작업: [A11_notes.md](examples/course/work/A11_notes.md), [data.js](examples/course/work/react/data.js)
+작업: [A11_notes.md](examples/course/work/A11_notes.md), [data.js](examples/course/work/react/data.js), [작업 index.html](examples/course/work/react/index.html)
 
 ### 실제 입력
 
@@ -634,6 +634,15 @@ props는 부모가 부품에 전달하는 입력입니다. 오늘은 장소를 �
 - 예상과 달랐던 점·복구·남은 질문: _____
 
 ---
+
+### 작업 화면으로 전환하기 · A10 → A11
+
+1. A10에서 본 `code/react/index.html` 화면을 닫거나 원본 탭이라고 표시합니다.
+2. 탐색기에서 `course/work/react/index.html`을 브라우저로 엽니다. 주소 표시줄에 **work/react/index.html**이 포함됐는지 확인하고 실제 주소를 답칸에 적습니다.
+3. 같은 `work/react` 폴더의 `data.js`를 편집기에서 열어 장소와 온도만 수정하고 저장합니다.
+4. 2단계의 작업 화면을 새로고침합니다. 장소 `창고`, 온도 `24.5`가 보이는지 비교합니다.
+
+원본 탭을 새로고침하면 작업값이 반영되지 않습니다. 두 파일 모두 이름은 index.html이므로 주소의 **code / work**까지 확인합니다. 소스 App.jsx 재빌드는 선택 확장입니다.
 
 ## A12 · 상태와 화면의 다시 그리기
 
@@ -702,7 +711,7 @@ React의 화면 구성과 MCP의 도구 통신을 같은 역할로 생각하지 
 
 ### 준비
 
-입력 카드와 지정 파일을 나란히 엽니다. 원본을 보존하고 work의 답칸과 작업 복사본을 사용합니다. 코드 전체와 모든 줄 해설을 읽고 예상 결과를 먼저 씁니다.
+입력 카드와 지정 파일을 나란히 엽니다. 원본을 보존하고 work의 답칸과 작업 복사본을 사용합니다. 역할 카드와 requests.jsonl의 초기화·첫 도구 요청, recorded_responses.json의 성공·미측정·isError를 필수로 읽습니다. 전체 구현·모든 줄 해설은 강사 참고·선택입니다.
 
 입력: [role_cards.md](examples/course/data/role_cards.md), [mcp_scope.md](examples/course/data/mcp_scope.md), [mcp_client.py](examples/course/code/mcp_client.py), [mcp_server.py](examples/course/code/mcp_server.py), [A13_input.md](examples/course/data/A13_input.md)
 
@@ -749,6 +758,14 @@ MCP는 AI 앱이 외부 도구나 자료를 정해진 메시지 형식으로 사
 
 ---
 
+#### MCP 필수 읽기와 참고 범위
+
+**필수:** 역할 카드에서 호스트·클라이언트·서버·데이터를 구별합니다. `requests.jsonl` 첫 세 줄의 초기화·알림·도구 목록과 네 번째 줄의 `method/id/params`를 읽습니다. `recorded_responses.json`에서 S01의 숫자, S02의 미측정, S99의 `isError`를 대조합니다. 제공 클라이언트 실행 또는 강사 실행 관찰 후 수행 방법을 표시합니다.
+
+필수 코드 확인은 `mcp_client.py` 6~7행(입력 메시지와 서버 실행), `mcp_server.py` 16~17행(id·method), 20~22행(초기화), 34~43행(도구 요청과 결과)입니다. 구현 문법 전체를 풀이하지 않고 메시지의 역할과 입출력 대응을 확인합니다. 줄 번호는 이번 제공본 기준입니다.
+
+**강사 참고·선택:** 서버 전체의 예외 처리, 표준 입출력, subprocess 구현과 모든 줄 해설. 전체 코드를 새로 작성하는 것은 필수가 아닙니다. 실제 AI 호스트 호출·인증·HTTP 연결은 이번 관찰 범위에 포함되지 않습니다.
+
 ## A14 · JSON-RPC 요청과 초기화
 
 **배정20분:** 설명6분·시연4분·학생적용8분·풀이2분.
@@ -759,7 +776,7 @@ MCP는 AI 앱이 외부 도구나 자료를 정해진 메시지 형식으로 사
 
 ### 준비
 
-입력 카드와 지정 파일을 나란히 엽니다. 원본을 보존하고 work의 답칸과 작업 복사본을 사용합니다. 코드 전체와 모든 줄 해설을 읽고 예상 결과를 먼저 씁니다.
+입력 카드와 지정 파일을 나란히 엽니다. 원본을 보존하고 work의 답칸과 작업 복사본을 사용합니다. 역할 카드와 requests.jsonl의 초기화·첫 도구 요청, recorded_responses.json의 성공·미측정·isError를 필수로 읽습니다. 전체 구현·모든 줄 해설은 강사 참고·선택입니다.
 
 입력: [requests.jsonl](examples/course/data/requests.jsonl), [mcp_scope.md](examples/course/data/mcp_scope.md), [A14_input.md](examples/course/data/A14_input.md)
 
@@ -806,6 +823,14 @@ JSON-RPC 메시지는 method로 요청 종류를, id로 요청과 응답의 대�
 
 ---
 
+#### MCP 필수 읽기와 참고 범위
+
+**필수:** 역할 카드에서 호스트·클라이언트·서버·데이터를 구별합니다. `requests.jsonl` 첫 세 줄의 초기화·알림·도구 목록과 네 번째 줄의 `method/id/params`를 읽습니다. `recorded_responses.json`에서 S01의 숫자, S02의 미측정, S99의 `isError`를 대조합니다. 제공 클라이언트 실행 또는 강사 실행 관찰 후 수행 방법을 표시합니다.
+
+필수 코드 확인은 `mcp_client.py` 6~7행(입력 메시지와 서버 실행), `mcp_server.py` 16~17행(id·method), 20~22행(초기화), 34~43행(도구 요청과 결과)입니다. 구현 문법 전체를 풀이하지 않고 메시지의 역할과 입출력 대응을 확인합니다. 줄 번호는 이번 제공본 기준입니다.
+
+**강사 참고·선택:** 서버 전체의 예외 처리, 표준 입출력, subprocess 구현과 모든 줄 해설. 전체 코드를 새로 작성하는 것은 필수가 아닙니다. 실제 AI 호스트 호출·인증·HTTP 연결은 이번 관찰 범위에 포함되지 않습니다.
+
 ## A15 · 실제 STDIO 도구 호출
 
 **배정20분:** 설명6분·시연4분·학생적용8분·풀이2분.
@@ -816,7 +841,7 @@ JSON-RPC 메시지는 method로 요청 종류를, id로 요청과 응답의 대�
 
 ### 준비
 
-입력 카드와 지정 파일을 나란히 엽니다. 원본을 보존하고 work의 답칸과 작업 복사본을 사용합니다. 코드 전체와 모든 줄 해설을 읽고 예상 결과를 먼저 씁니다.
+입력 카드와 지정 파일을 나란히 엽니다. 원본을 보존하고 work의 답칸과 작업 복사본을 사용합니다. 역할 카드와 requests.jsonl의 초기화·첫 도구 요청, recorded_responses.json의 성공·미측정·isError를 필수로 읽습니다. 전체 구현·모든 줄 해설은 강사 참고·선택입니다.
 
 입력: [mcp_client.py](examples/course/code/mcp_client.py), [mcp_server.py](examples/course/code/mcp_server.py), [requests.jsonl](examples/course/data/requests.jsonl), [readings.json](examples/course/data/readings.json), [A15_input.md](examples/course/data/A15_input.md)
 
@@ -862,6 +887,14 @@ STDIO는 한 프로그램이 다른 프로그램의 표준 입력과 표준 출�
 - 예상과 달랐던 점·복구·남은 질문: _____
 
 ---
+
+#### MCP 필수 읽기와 참고 범위
+
+**필수:** 역할 카드에서 호스트·클라이언트·서버·데이터를 구별합니다. `requests.jsonl` 첫 세 줄의 초기화·알림·도구 목록과 네 번째 줄의 `method/id/params`를 읽습니다. `recorded_responses.json`에서 S01의 숫자, S02의 미측정, S99의 `isError`를 대조합니다. 제공 클라이언트 실행 또는 강사 실행 관찰 후 수행 방법을 표시합니다.
+
+필수 코드 확인은 `mcp_client.py` 6~7행(입력 메시지와 서버 실행), `mcp_server.py` 16~17행(id·method), 20~22행(초기화), 34~43행(도구 요청과 결과)입니다. 구현 문법 전체를 풀이하지 않고 메시지의 역할과 입출력 대응을 확인합니다. 줄 번호는 이번 제공본 기준입니다.
+
+**강사 참고·선택:** 서버 전체의 예외 처리, 표준 입출력, subprocess 구현과 모든 줄 해설. 전체 코드를 새로 작성하는 것은 필수가 아닙니다. 실제 AI 호스트 호출·인증·HTTP 연결은 이번 관찰 범위에 포함되지 않습니다.
 
 ## A16 · 네 요소의 연결과 경계
 

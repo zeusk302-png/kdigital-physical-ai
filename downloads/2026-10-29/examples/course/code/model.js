@@ -17,7 +17,7 @@ function summarize(rows, location, now) {
     const previous = latest.get(row.sensor_id);
     if (!previous || Date.parse(row.measured_at) >= Date.parse(previous.measured_at)) latest.set(row.sensor_id, row);
   }
-  const numbers = visible.filter(valid).map(row => row.temperature_c).filter(value => value !== null);
+  const numbers = visible.filter(row => valid(row) && Date.parse(row.measured_at) <= now).map(row => row.temperature_c).filter(value => value !== null);
   return { history: visible, latest: [...latest.values()], average: numbers.length ? numbers.reduce((sum, value) => sum + value, 0) / numbers.length : null, states: [...latest.values()].map(row => status(row, now)) };
 }
 const DashboardModel = { valid, status, summarize };

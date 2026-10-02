@@ -22,6 +22,6 @@ if not cv2.imwrite(str(root / "work" / "mask.png"), mask):
     raise OSError("mask 저장 실패")
 if not cv2.imwrite(str(root / "work" / "detected.png"), preview):
     raise OSError("detected 저장 실패")
-report = {"image": config["image"], "threshold": used, "count": len(kept)}
+report = {"image": config["image"], "threshold": used, "min_area": config["min_area"], "count": len(kept)}
 (root / "work" / "report.json").write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
 print(json.dumps(report, ensure_ascii=False))

@@ -33,9 +33,9 @@ for line in sys.stdin:
         result = {"tools": [{"name": "get_reading", "description": "가상 센서 기록 읽기", "inputSchema": {"type": "object", "properties": {"sensor_id": {"type": "string"}}, "required": ["sensor_id"], "additionalProperties": False}}]}
     elif method == "tools/call":
         params = message.get("params", {})
-        arguments = params.get("arguments", {})
-        sensor = arguments.get("sensor_id")
-        if params.get("name") != "get_reading" or set(arguments) != {"sensor_id"} or not isinstance(sensor, str):
+        arguments = params.get("arguments", {}) if isinstance(params, dict) else None
+        sensor = arguments.get("sensor_id") if isinstance(arguments, dict) else None
+        if not isinstance(params, dict) or not isinstance(arguments, dict) or params.get("name") != "get_reading" or set(arguments) != {"sensor_id"} or not isinstance(sensor, str):
             error = {"code": -32602, "message": "Invalid tool arguments"}
         elif sensor not in readings:
             result = {"content": [{"type": "text", "text": "Unknown sensor"}], "isError": True}

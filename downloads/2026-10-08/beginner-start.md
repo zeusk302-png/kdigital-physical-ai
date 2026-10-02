@@ -73,3 +73,19 @@
 
 CSV·JSON을 작성할 단계가 되면 [작업 화면](#/data-lab)을 엽니다. 형식을 확인한 뒤 저장하고 원문과 비교합니다. 내려받기가 지원되지 않으면 입력 복사 후 편집기에 붙여넣어 UTF-8로 저장합니다. 웹이 문법을 읽었다는 사실은 데이터의 의미까지 맞다는 판정이 아닙니다.
 
+
+
+## Windows · 선택 Python 실행 위치 확인
+
+제작 가정: Windows 탐색기와 PowerShell입니다. Python 실행은 준비된 PC에서만 합니다.
+
+ZIP을 모두 추출한 뒤 `foundations` 안의 data·code·work가 보이는 폴더를 엽니다. 탐색기 주소 표시줄에 `powershell`을 입력하고 Enter를 누릅니다. 새 창에서 한 줄씩 실행합니다.
+
+```powershell
+Get-Location
+Get-ChildItem -Directory
+Test-Path .\code\A07_types.py
+python -X utf8 code/A07_types.py
+```
+
+경로 끝은 foundations, 폴더 목록은 data·code·work, 파일 확인은 True여야 합니다. 정상 출력은 code/line-guide.md의 A07 전체 출력과 대조합니다. False 또는 파일 없음이면 탐색기에서 실제 foundations 위치를 찾아 같은 순서로 창을 다시 엽니다. python을 찾지 못하면 강사에게 환경을 확인받고 제공 출력 비교를 진행합니다. 개인 실행은 미완료로 기록합니다. 다른 활동도 같은 폴더에서 명령을 입력합니다.

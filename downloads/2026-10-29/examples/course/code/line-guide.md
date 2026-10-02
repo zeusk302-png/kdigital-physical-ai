@@ -281,7 +281,7 @@ function summarize(rows, location, now) {
     const previous = latest.get(row.sensor_id);
     if (!previous || Date.parse(row.measured_at) >= Date.parse(previous.measured_at)) latest.set(row.sensor_id, row);
   }
-  const numbers = visible.filter(valid).map(row => row.temperature_c).filter(value => value !== null);
+  const numbers = visible.filter(row => valid(row) && Date.parse(row.measured_at) <= now).map(row => row.temperature_c).filter(value => value !== null);
   return { history: visible, latest: [...latest.values()], average: numbers.length ? numbers.reduce((sum, value) => sum + value, 0) / numbers.length : null, states: [...latest.values()].map(row => status(row, now)) };
 }
 const DashboardModel = { valid, status, summarize };
@@ -310,7 +310,7 @@ globalThis.DashboardModel = DashboardModel;
 | 17 | 같은 센서에서 이미 저장한 기록을 찾습니다. |
 | 18 | 기록이 없거나 현재 기록 시각이 더 늦으면 교체합니다. 같은 시각이면 뒤에 읽은 기록을 씁니다. |
 | 19 | 기록을 읽는 반복을 닫습니다. |
-| 20 | 기본 형식이 맞는 이력에서 온도만 꺼내 null을 제외합니다. 0은 유지합니다. |
+| 20 | 기본 형식이 맞고 확인 시각 이후가 아닌 이력에서 온도를 꺼내 null을 제외합니다. 과거·정지 기록의 유효한 숫자와 0은 유지합니다. |
 | 21 | 전체 이력·센서별 마지막 값·유효 숫자 이력 평균·각 최신 상태를 반환합니다. 평균은 최신값만의 평균이 아닙니다. |
 | 22 | summarize 함수를 닫습니다. |
 | 23 | 세 함수를 DashboardModel이라는 한 묶음에 넣습니다. |

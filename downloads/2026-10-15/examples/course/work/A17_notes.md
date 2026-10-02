@@ -9,3 +9,19 @@
 
 확인 질문: 수치가 없을 때 평균 0을 쓰면 어떤 오해가 생기나요?
 답: _____
+
+
+### 검사할 CSV만 바꾸기
+
+수정 파일은 `work/A16_log_checker.py`입니다. **.py 파일 이름은 그대로 둡니다.** 코드 안 `source = base / "data" / "bad_readings.csv"` 한 줄에서 따옴표 속 CSV 이름만 바꿉니다. 예: `source = base / "data" / "readings.csv"`.
+
+저장 후 course 폴더에서 `python -X utf8 work/A16_log_checker.py`를 실행합니다. 실행마다 `work/check_summary.json`과 `work/check_issues.json`이 덮어써지므로 **결과를 먼저 기록한 뒤** 다음 CSV로 바꿉니다.
+
+| 따옴표 속 입력 이름 | 예상 집계·평균 | 실제 집계·평균 | 직접 실행/제공 출력 관찰 | 차이와 근거 |
+| --- | --- | --- | --- | --- |
+| readings.csv | _____ | _____ | _____ | _____ |
+| bad_readings.csv | _____ | _____ | _____ | _____ |
+| empty_readings.csv | _____ | _____ | _____ | _____ |
+| missing_readings.csv | _____ | _____ | _____ | _____ |
+
+평균을 낼 숫자가 없다는 결과와 실제 측정 0을 구분해 설명합니다.

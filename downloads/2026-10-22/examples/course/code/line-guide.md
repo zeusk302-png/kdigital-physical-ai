@@ -102,7 +102,7 @@ if not cv2.imwrite(str(root / "work" / "mask.png"), mask):
     raise OSError("mask 저장 실패")
 if not cv2.imwrite(str(root / "work" / "detected.png"), preview):
     raise OSError("detected 저장 실패")
-report = {"image": config["image"], "threshold": used, "count": len(kept)}
+report = {"image": config["image"], "threshold": used, "min_area": config["min_area"], "count": len(kept)}
 (root / "work" / "report.json").write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
 print(json.dumps(report, ensure_ascii=False))
 ```
@@ -159,7 +159,7 @@ print(json.dumps(report, ensure_ascii=False))
 
 | 24 | 저장에 실패하면 오류로 멈춥니다. |
 
-| 25 | 파일 이름·임계값·남긴 영역 수를 결과 딕셔너리로 만듭니다. |
+| 25 | 파일 이름·밝기 임계값(threshold)·최소 면적(min_area)·남긴 영역 수를 결과 딕셔너리로 만듭니다. |
 
 | 26 | 결과를 JSON 문자열로 바꿔 report.json에 기록합니다. |
 
@@ -168,7 +168,7 @@ print(json.dumps(report, ensure_ascii=False))
 예상 또는 실제 확인 결과:
 
 ```text
-{"image": "parts.png", "threshold": 100.0, "count": 2}
+{"image": "parts.png", "threshold": 100.0, "min_area": 100, "count": 2}
 ```
 
 한 값 바꾸기: work/settings.json의 threshold만 100에서 60으로 바꾸면 count가 3이 됩니다. min_area는 100을 유지합니다.
