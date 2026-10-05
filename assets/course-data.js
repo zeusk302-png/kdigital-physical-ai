@@ -24,8 +24,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-08/readable-slides.pptx",
-          "title": "데이터 기초, CSV/JSON 강의 PPT · 큰 글씨",
-          "description": "101장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "데이터 기초, CSV/JSON 강의 PPT",
+          "description": "101장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-08/beginner-start.md",
@@ -852,8 +852,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-14/readable-slides.pptx",
-          "title": "Python 기초 강의 PPT · 큰 글씨",
-          "description": "99장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "Python 기초 강의 PPT",
+          "description": "99장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-14/beginner-start.md",
@@ -1491,8 +1491,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-15/readable-slides.pptx",
-          "title": "Python 심화 강의 PPT · 큰 글씨",
-          "description": "97장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "Python 심화 강의 PPT",
+          "description": "97장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-15/beginner-start.md",
@@ -2154,8 +2154,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-16/readable-slides.pptx",
-          "title": "Git/GitHub 강의 PPT · 큰 글씨",
-          "description": "109장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "Git/GitHub 강의 PPT",
+          "description": "109장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-16/beginner-start.md",
@@ -2838,8 +2838,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-20/readable-slides.pptx",
-          "title": "AI 코드에이전트 강의 PPT · 큰 글씨",
-          "description": "101장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "AI 코드에이전트 강의 PPT",
+          "description": "101장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-20/beginner-start.md",
@@ -3507,8 +3507,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-21/readable-slides.pptx",
-          "title": "HTML/CSS/React/MCP 강의 PPT · 큰 글씨",
-          "description": "107장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "HTML/CSS/React/MCP 강의 PPT",
+          "description": "107장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-21/beginner-start.md",
@@ -4227,8 +4227,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-22/readable-slides.pptx",
-          "title": "OpenCV + 웹캠 실습 강의 PPT · 큰 글씨",
-          "description": "107장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "OpenCV + 웹캠 실습 강의 PPT",
+          "description": "107장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-22/beginner-start.md",
@@ -4888,8 +4888,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-23/readable-slides.pptx",
-          "title": "전자회로·ESP32 강의 PPT · 큰 글씨",
-          "description": "106장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "전자회로·ESP32 강의 PPT",
+          "description": "106장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-23/beginner-start.md",
@@ -5551,8 +5551,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-29/readable-slides.pptx",
-          "title": "웹 대시보드 강의 PPT · 큰 글씨",
-          "description": "102장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "웹 대시보드 강의 PPT",
+          "description": "102장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-29/beginner-start.md",
@@ -6238,8 +6238,8 @@ window.COURSE_DATA = {
         },
         {
           "href": "downloads/2026-10-30/readable-slides.pptx",
-          "title": "프로젝트 기획 강의 PPT · 큰 글씨",
-          "description": "102장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
+          "title": "프로젝트 기획 강의 PPT",
+          "description": "102장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-30/beginner-start.md",
