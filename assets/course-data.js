@@ -25,7 +25,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-08/readable-slides.pptx",
           "title": "데이터 기초, CSV/JSON 강의 PPT",
-          "description": "105장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "107장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-08/beginner-start.md",
@@ -268,7 +268,7 @@ window.COURSE_DATA = {
           "scope": "JSON 값과 Python 자료형 대응"
         }
       ],
-      "slide_count": 105,
+      "slide_count": 107,
       "workbook": {
         "modules": [
           {
@@ -853,7 +853,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-14/readable-slides.pptx",
           "title": "Python 기초 강의 PPT",
-          "description": "101장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "117장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-14/beginner-start.md",
@@ -1040,7 +1040,7 @@ window.COURSE_DATA = {
           "scope": "공식 동작 확인, 2026-09-26"
         }
       ],
-      "slide_count": 101,
+      "slide_count": 117,
       "workbook": {
         "modules": [
           {
@@ -1492,7 +1492,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-15/readable-slides.pptx",
           "title": "Python 심화 강의 PPT",
-          "description": "99장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "120장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-15/beginner-start.md",
@@ -1695,7 +1695,7 @@ window.COURSE_DATA = {
           "scope": "공식 동작 확인, 2026-09-26"
         }
       ],
-      "slide_count": 99,
+      "slide_count": 120,
       "workbook": {
         "modules": [
           {
@@ -2155,7 +2155,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-16/readable-slides.pptx",
           "title": "Git/GitHub 강의 PPT",
-          "description": "111장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "117장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-16/beginner-start.md",
@@ -2385,7 +2385,7 @@ window.COURSE_DATA = {
           "scope": "공식 동작 확인, 2026-09-26"
         }
       ],
-      "slide_count": 111,
+      "slide_count": 117,
       "workbook": {
         "modules": [
           {
@@ -2839,7 +2839,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-20/readable-slides.pptx",
           "title": "AI 코드에이전트 강의 PPT",
-          "description": "103장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "107장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-20/beginner-start.md",
@@ -3032,7 +3032,7 @@ window.COURSE_DATA = {
           "scope": "함수·조건·반환 기본 동작"
         }
       ],
-      "slide_count": 103,
+      "slide_count": 107,
       "workbook": {
         "modules": [
           {
@@ -3508,7 +3508,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-21/readable-slides.pptx",
           "title": "HTML/CSS/React/MCP 강의 PPT",
-          "description": "109장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "112장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-21/beginner-start.md",
@@ -3737,7 +3737,7 @@ window.COURSE_DATA = {
           "scope": "tools/list와tools/call·입력 스키마"
         }
       ],
-      "slide_count": 109,
+      "slide_count": 112,
       "workbook": {
         "modules": [
           {
@@ -4228,7 +4228,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-22/readable-slides.pptx",
           "title": "OpenCV + 웹캠 실습 강의 PPT",
-          "description": "109장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "117장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-22/beginner-start.md",
@@ -4446,7 +4446,7 @@ window.COURSE_DATA = {
           "scope": "imshow·waitKey·destroyAllWindows"
         }
       ],
-      "slide_count": 109,
+      "slide_count": 117,
       "workbook": {
         "modules": [
           {
@@ -4889,7 +4889,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-23/readable-slides.pptx",
           "title": "전자회로·ESP32 강의 PPT",
-          "description": "108장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "117장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-23/beginner-start.md",
@@ -5122,7 +5122,7 @@ window.COURSE_DATA = {
           "scope": "Serial.begin·직렬경로·보드별차이,2026-09-26 확인"
         }
       ],
-      "slide_count": 108,
+      "slide_count": 117,
       "workbook": {
         "modules": [
           {
@@ -5552,7 +5552,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-29/readable-slides.pptx",
           "title": "웹 대시보드 강의 PPT",
-          "description": "104장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "117장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-29/beginner-start.md",
@@ -5763,7 +5763,7 @@ window.COURSE_DATA = {
           "scope": "로컬 POST 요청"
         }
       ],
-      "slide_count": 104,
+      "slide_count": 117,
       "workbook": {
         "modules": [
           {
@@ -6239,7 +6239,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-30/readable-slides.pptx",
           "title": "프로젝트 기획 강의 PPT",
-          "description": "104장 · 개념·예제·실습 · 상세 해설은 발표자 노트"
+          "description": "75장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-30/beginner-start.md",
@@ -6453,7 +6453,7 @@ window.COURSE_DATA = {
           "scope": "검증 가능한 요구와 추적 관계의 개념 참고,2026-09-26 확인. 사례·점수·양식은 자체 제작."
         }
       ],
-      "slide_count": 104,
+      "slide_count": 75,
       "workbook": {
         "modules": [
           {
