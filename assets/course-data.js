@@ -23,9 +23,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-08/data-foundations.pptx",
-          "title": "데이터 기초, CSV/JSON PPT",
-          "description": "87장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-08/readable-slides.pptx",
+          "title": "데이터 기초, CSV/JSON 강의 PPT · 큰 글씨",
+          "description": "101장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-08/beginner-start.md",
@@ -268,7 +268,7 @@ window.COURSE_DATA = {
           "scope": "JSON 값과 Python 자료형 대응"
         }
       ],
-      "slide_count": 87,
+      "slide_count": 101,
       "workbook": {
         "modules": [
           {
@@ -851,9 +851,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-14/slides.pptx",
-          "title": "Python 기초 PPT",
-          "description": "71장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-14/readable-slides.pptx",
+          "title": "Python 기초 강의 PPT · 큰 글씨",
+          "description": "99장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-14/beginner-start.md",
@@ -1040,7 +1040,7 @@ window.COURSE_DATA = {
           "scope": "공식 동작 확인, 2026-09-26"
         }
       ],
-      "slide_count": 71,
+      "slide_count": 99,
       "workbook": {
         "modules": [
           {
@@ -1490,9 +1490,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-15/slides.pptx",
-          "title": "Python 심화 PPT",
-          "description": "69장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-15/readable-slides.pptx",
+          "title": "Python 심화 강의 PPT · 큰 글씨",
+          "description": "97장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-15/beginner-start.md",
@@ -1695,7 +1695,7 @@ window.COURSE_DATA = {
           "scope": "공식 동작 확인, 2026-09-26"
         }
       ],
-      "slide_count": 69,
+      "slide_count": 97,
       "workbook": {
         "modules": [
           {
@@ -2153,9 +2153,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-16/slides.pptx",
-          "title": "Git/GitHub PPT",
-          "description": "68장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-16/readable-slides.pptx",
+          "title": "Git/GitHub 강의 PPT · 큰 글씨",
+          "description": "109장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-16/beginner-start.md",
@@ -2385,7 +2385,7 @@ window.COURSE_DATA = {
           "scope": "공식 동작 확인, 2026-09-26"
         }
       ],
-      "slide_count": 68,
+      "slide_count": 109,
       "workbook": {
         "modules": [
           {
@@ -2837,9 +2837,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-20/slides.pptx",
-          "title": "AI 코드에이전트 PPT",
-          "description": "66장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-20/readable-slides.pptx",
+          "title": "AI 코드에이전트 강의 PPT · 큰 글씨",
+          "description": "101장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-20/beginner-start.md",
@@ -3032,7 +3032,7 @@ window.COURSE_DATA = {
           "scope": "함수·조건·반환 기본 동작"
         }
       ],
-      "slide_count": 66,
+      "slide_count": 101,
       "workbook": {
         "modules": [
           {
@@ -3506,9 +3506,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-21/slides.pptx",
-          "title": "HTML/CSS/React/MCP PPT",
-          "description": "70장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-21/readable-slides.pptx",
+          "title": "HTML/CSS/React/MCP 강의 PPT · 큰 글씨",
+          "description": "107장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-21/beginner-start.md",
@@ -3737,7 +3737,7 @@ window.COURSE_DATA = {
           "scope": "tools/list와tools/call·입력 스키마"
         }
       ],
-      "slide_count": 70,
+      "slide_count": 107,
       "workbook": {
         "modules": [
           {
@@ -4226,9 +4226,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-22/slides.pptx",
-          "title": "OpenCV + 웹캠 실습 PPT",
-          "description": "86장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-22/readable-slides.pptx",
+          "title": "OpenCV + 웹캠 실습 강의 PPT · 큰 글씨",
+          "description": "107장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-22/beginner-start.md",
@@ -4446,7 +4446,7 @@ window.COURSE_DATA = {
           "scope": "imshow·waitKey·destroyAllWindows"
         }
       ],
-      "slide_count": 86,
+      "slide_count": 107,
       "workbook": {
         "modules": [
           {
@@ -4887,9 +4887,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-23/slides.pptx",
-          "title": "전자회로·ESP32 PPT",
-          "description": "75장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-23/readable-slides.pptx",
+          "title": "전자회로·ESP32 강의 PPT · 큰 글씨",
+          "description": "106장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-23/beginner-start.md",
@@ -5122,7 +5122,7 @@ window.COURSE_DATA = {
           "scope": "Serial.begin·직렬경로·보드별차이,2026-09-26 확인"
         }
       ],
-      "slide_count": 75,
+      "slide_count": 106,
       "workbook": {
         "modules": [
           {
@@ -5550,9 +5550,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-29/slides.pptx",
-          "title": "웹 대시보드 PPT",
-          "description": "67장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-29/readable-slides.pptx",
+          "title": "웹 대시보드 강의 PPT · 큰 글씨",
+          "description": "102장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-29/beginner-start.md",
@@ -5763,7 +5763,7 @@ window.COURSE_DATA = {
           "scope": "로컬 POST 요청"
         }
       ],
-      "slide_count": 67,
+      "slide_count": 102,
       "workbook": {
         "modules": [
           {
@@ -6237,9 +6237,9 @@ window.COURSE_DATA = {
           "description": "압축을 풀고 README부터 읽으세요. 예제 코드, 실습 데이터, 작성 양식이 들어 있습니다."
         },
         {
-          "href": "downloads/2026-10-30/slides.pptx",
-          "title": "프로젝트 기획 PPT",
-          "description": "67장 · 개념 설명·시연·학생 활동·풀이"
+          "href": "downloads/2026-10-30/readable-slides.pptx",
+          "title": "프로젝트 기획 강의 PPT · 큰 글씨",
+          "description": "102장 · 개념과 코드 화면 분리 · 상세 설명은 발표자 노트"
         },
         {
           "href": "downloads/2026-10-30/beginner-start.md",
@@ -6453,7 +6453,7 @@ window.COURSE_DATA = {
           "scope": "검증 가능한 요구와 추적 관계의 개념 참고,2026-09-26 확인. 사례·점수·양식은 자체 제작."
         }
       ],
-      "slide_count": 67,
+      "slide_count": 102,
       "workbook": {
         "modules": [
           {
