@@ -538,9 +538,11 @@ code/proposal_a.py를 읽으면 `threshold=27`과 None을 0으로 바꾸는 줄�
 
 확인일2026-09-26. 정의는 짧게 요약하고 활동·데이터·설명은 수업용으로 새로 작성했습니다.
 
-- 원본 Track A / A3.pptx, 슬라이드 119–163: 기존 요청·에이전트 흐름 참고. 현행 도구 사용법으로 단정하지 않습니다. 원본은 강사용 로컬 자료에 보존합니다.
 - [코드에이전트의 작업 흐름](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent): 읽기·변경·실행·검토의 개념 참고, 특정 계정 사용 실습 아님
+
 - [Python 조건과 함수](https://docs.python.org/3/tutorial/controlflow.html): 함수·조건·반환 기본 동작
+
+
 
 
 ### 개념 보충 공식 근거 (2026-10-05 확인)

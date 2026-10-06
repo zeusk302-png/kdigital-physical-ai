@@ -57,7 +57,7 @@
 
 입력·답칸·확인 순서는 [실습지의 A01](practice-guide.md#a01)와 [활동 원문](examples/course/data/A01_input.md)에 있습니다.
 
-### A02 · 관찰 단위와 최신 기록
+### A02 · 무엇을 한 건으로 기록하고 최신값을 고를까요?
 
 **뜻과 비유.** 한 행은 센서의 한 시점 관찰입니다. 최신 기록은 배열의 마지막 줄이라는 뜻이 아니라 측정 시각을 비교해 정한 기록입니다.
 
@@ -566,8 +566,11 @@ API 실패 시 제공 앱은 이전 기록을 유지하고 수신 실패 메시�
 
 확인일2026-09-26. 정의는 짧게 요약하고 활동·데이터·설명은 수업용으로 새로 작성했습니다.
 
-- 원본 Track A / A4.pptx, 슬라이드 153–178: 센서 현황판 흐름 참고. 원본 목업을 실제 동작으로 간주하지 않습니다. 원본은 강사용 로컬 자료에 보존합니다.
 - [DOM 선택](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector): 화면 요소 연결
+
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch): HTTP 요청·응답과오류처리
+
 - [HTTP 서버](https://docs.python.org/3/library/http.server.html): 로컬 교육용 서버 동작, 제품 운영용이 아님
+
 - [Python HTTP 요청](https://docs.python.org/3/library/urllib.request.html): 로컬 POST 요청
+

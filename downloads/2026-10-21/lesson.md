@@ -585,14 +585,21 @@ recorded_responses.json의 id 3 결과는 content 안의 text에 S01 기록이 �
 
 확인일2026-09-26. 정의는 짧게 요약하고 활동·데이터·설명은 수업용으로 새로 작성했습니다.
 
-- 원본 Track A / A3.pptx, 슬라이드 164–189: HTML/CSS/JavaScript 참고. React 본문과 MCP 실제 예제는 신규 제작했습니다. 원본은 강사용 로컬 자료에 보존합니다.
 - [HTML 기초](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax): 태그·요소·속성의 의미
+
 - [DOM 선택](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector): 요소 선택 동작
+
 - [React 상태](https://react.dev/reference/react/useState): 상태와 setter 동작
+
 - [React 화면 시작](https://react.dev/reference/react-dom/client/createRoot): DOM 루트에 컴포넌트 렌더링
+
 - [MCP 수명주기](https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle): 명시 버전의 initialize와 initialized
+
 - [MCP STDIO](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports): 한 줄 JSON-RPC·표준입출력
+
 - [MCP 도구](https://modelcontextprotocol.io/specification/2025-11-25/server/tools): tools/list와tools/call·입력 스키마
+
+
 
 
 ### 개념 보충 공식 근거 (2026-10-05 확인)
