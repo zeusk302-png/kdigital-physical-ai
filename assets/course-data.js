@@ -1,5 +1,5 @@
 window.COURSE_DATA = {
-  "generated_on": "2026-10-05",
+  "generated_on": "2026-10-06",
   "sessions": [
     {
       "session_number": 1,
@@ -25,7 +25,7 @@ window.COURSE_DATA = {
         {
           "href": "downloads/2026-10-08/readable-slides.pptx",
           "title": "데이터 기초, CSV/JSON 강의 PPT",
-          "description": "107장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
+          "description": "117장 · 개념·완성 예제·실습 순서·풀이·영상 링크"
         },
         {
           "href": "downloads/2026-10-08/beginner-start.md",
@@ -268,7 +268,7 @@ window.COURSE_DATA = {
           "scope": "JSON 값과 Python 자료형 대응"
         }
       ],
-      "slide_count": 107,
+      "slide_count": 117,
       "workbook": {
         "modules": [
           {
