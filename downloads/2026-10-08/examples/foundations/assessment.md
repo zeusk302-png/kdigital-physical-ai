@@ -1,6 +1,6 @@
 # 오늘 배운 내용 확인
 
-남길 결과: work/A22_dictionary.md; work/A22_final.csv; work/A22_final.json; work/A22_issues.md; work/A22_notes.md
+남길 결과: A22_fixed.csv와 새 문제 파일, 수정 이유
 
 | 확인할 것 | 배점 | 충족 기준 | 일부 충족 |
 | --- | ---: | --- | --- |
