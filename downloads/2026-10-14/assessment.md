@@ -1,6 +1,6 @@
 # 오늘 배운 내용 확인
 
-남길 결과: A17_notes.md, A17_sensor_summary.py / A18_notes.md, A18_final.py
+남길 결과: work/A17_normal.py, work/A17_broken.py, work/A17_fixed.py, 수정 이유와 새 문제 코드 / work/A18_normal.py, work/A18_broken.py, work/A18_fixed.py, 수정 이유와 새 문제 코드
 
 | 확인할 것 | 배점 | 충족 기준 | 일부 충족 |
 | --- | ---: | --- | --- |

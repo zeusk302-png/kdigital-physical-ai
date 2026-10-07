@@ -176,7 +176,7 @@
       const names={python:'Python',py:'Python',json:'JSON',csv:'CSV',bash:'실행 명령',sh:'실행 명령',powershell:'PowerShell',text:'예시 / 출력',html:'HTML',css:'CSS',javascript:'JavaScript',js:'JavaScript'};
       pre.dataset.language=names[language]||language;pre.tabIndex=0;pre.setAttribute('aria-label',`${names[language]||language} 코드 또는 예시`);
       const btn=document.createElement('button');btn.type='button';btn.className='copy-code';btn.innerHTML=icon('copy')+'복사';btn.setAttribute('aria-label','코드 복사');
-      btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(code.textContent);notify('코드를 복사했습니다.');}catch{notify('복사를 사용할 수 없습니다. 코드를 선택해 복사하세요.');}});pre.append(btn);
+      btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(code.textContent);btn.textContent='복사됨';notify('코드를 복사했습니다.');}catch{btn.textContent='직접 선택';notify('복사를 사용할 수 없습니다. 코드를 선택해 복사하세요.');}});pre.append(btn);
     });
     const toc=main.querySelector('.toc');
     if(toc){
