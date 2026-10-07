@@ -1,5 +1,5 @@
 {
-  "id": 1,
-  "temperature_c": "null",
-  "active": "false"
+  "id": "001",
+  "temperature_c": null,
+  "active": false
 }
