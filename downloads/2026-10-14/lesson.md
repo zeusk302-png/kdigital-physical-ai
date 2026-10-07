@@ -4,11 +4,50 @@
 
 짧은 Python 코드를 읽고 실행합니다. 변수, 조건, 반복을 이용해 센서 기록을 점검해 봅니다.
 
-**확정 운영은 50분×6교시·순수 수업 300분이며 중식은 11:50~13:00입니다. 계정이나 실제 장비 없이 연습용 자료를 사용합니다.
+수업은 50분×6교시·순수 수업 300분이며 중식은 11:50~13:00입니다. 계정이나 실제 장비 없이 연습용 자료를 사용합니다.
 
 
 
 # 1구간 · 파일에서 출력까지
+
+
+### 값·이름·기호 · 필수
+
+따옴표 안은 그대로 보여 줄 글자입니다. 따옴표 없는 이름은 그 이름에 연결된 값을 찾습니다. print 뒤 괄호는 보여 줄 값을 넣는 자리입니다. 쉼표는 여러 값을 나누고 # 뒤는 사람에게 남기는 주석입니다.
+
+저장: `work/symbols.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+name = "민수"
+print(name)
+print("name")
+print("안녕하세요", name)
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/symbols.py
+```
+
+예상 출력:
+
+```text
+민수
+name
+안녕하세요 민수
+```
+
+**직접 설명할 질문:** 두 번째 print에 따옴표가 있으면 왜 민수가 나오지 않을까요?
+
+<details><summary>설명 확인하기</summary>
+
+이름을 찾는 대신 name이라는 네 글자를 출력하기 때문입니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
 
 ## A01 · 입력·처리·출력과 코드 파일
 
@@ -223,6 +262,98 @@ S01 22.5
 [활동 자료와 작성칸](practice-guide.md#a03--저장실행-순서와-오류-단서)에서 A03를 엽니다.
 
 # 2구간 · 값에 이름 붙이기
+
+
+### 대입은 오른쪽부터 읽습니다 · 필수
+
+변수는 값을 다시 찾을 이름입니다. stock = stock + 3은 이전 stock 값을 읽고 3을 더한 다음 결과에 같은 이름을 붙입니다. 수학의 등식과 다릅니다. 화면에 이미 출력한 값은 나중 대입으로 바뀌지 않습니다.
+
+저장: `work/assignment.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+stock = 8
+print(stock)
+stock = stock + 3
+print(stock)
+stock = stock - 2
+print(stock)
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/assignment.py
+```
+
+예상 출력:
+
+```text
+8
+11
+9
+```
+
+| 실행한 줄 | 현재 stock | 새 출력 |
+| --- | ---: | --- |
+| stock = 8 | 8 | 없음 |
+| 첫 print | 8 | 8 |
+| stock = stock + 3 | 11 | 없음 |
+| 둘째 print | 11 | 11 |
+| stock = stock - 2 | 9 | 없음 |
+| 마지막 print | 9 | 9 |
+
+**직접 설명할 질문:** 출고를 4개로 바꾸면 어떤 출력 줄만 바뀔까요?
+
+<details><summary>설명 확인하기</summary>
+
+마지막 출력만 7로 바뀝니다. 앞서 출력한 8과 11은 유지됩니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+### 값의 종류를 눈으로 확인하기 · 필수
+
+int는 정수, float는 소수 표현을 쓰는 숫자, str은 글자, bool은 참·거짓 상태입니다. None은 값이 없음을 나타냅니다. type은 값의 종류를 보여 줍니다. "3"과 3은 화면 모양이 비슷해도 같은 종류가 아닙니다.
+
+저장: `work/types.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+count = 3
+text = "3"
+print(type(count))
+print(type(text))
+print(type(22.5))
+print(type(True))
+print(type(None))
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/types.py
+```
+
+예상 출력:
+
+```text
+<class 'int'>
+<class 'str'>
+<class 'float'>
+<class 'bool'>
+<class 'NoneType'>
+```
+
+**직접 설명할 질문:** 사번 "001"을 int로 바꾸면 무엇을 잃을까요?
+
+<details><summary>설명 확인하기</summary>
+
+앞의 0 두 개를 잃습니다. 사번은 계산할 수량이 아니라 식별자라 문자열로 보존합니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
 
 ## A04 · 변수는 값에 붙인 이름
 
@@ -493,6 +624,131 @@ S01 22.5
 
 # 3구간 · 문자와 숫자의 연산
 
+<details><summary>더 해보기 · input으로 받은 값은 문자열입니다</summary>
+
+
+### input으로 받은 값은 문자열입니다 · 추가
+
+input은 터미널에서 사용자가 입력할 때까지 기다립니다. 화면의 안내를 읽고 숫자 3을 입력한 뒤 Enter를 누릅니다. 받은 값은 문자열이므로 수량 계산에는 int로 변환합니다. 변환하기 전의 raw를 남겨 원문과 결과를 비교합니다.
+
+저장: `work/input.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+raw = input("수량: ")
+count = int(raw)
+print("받은 글자", raw)
+print("총액", count * 2000)
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/input.py
+```
+
+실행 후 수량 안내에 `3`을 입력하고 Enter를 누릅니다. 아래 출력은 입력한 3 자체를 제외한 프로그램 출력입니다.
+
+예상 출력:
+
+```text
+수량: 받은 글자 3
+총액 6000
+```
+
+**직접 설명할 질문:** 3개라고 입력하면 왜 ValueError가 날까요?
+
+<details><summary>설명 확인하기</summary>
+
+int는 숫자 표현 3을 해석하지만 단위가 붙은 3개를 정수로 바로 해석하지 못합니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+</details>
+<details><summary>더 해보기 · 문자열 길이와 위치 읽기</summary>
+
+
+### 문자열 길이와 위치 읽기 · 추가
+
+len은 항목 수를 셉니다. 문자열도 글자가 순서대로 있으므로 0부터 시작하는 위치로 읽을 수 있습니다. [0]은 첫 글자이며 [1:3]은 위치 1부터 3 직전까지 읽습니다. 번호의 앞 0도 글자 하나입니다.
+
+저장: `work/string.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+sensor_id = "S001"
+print(len(sensor_id))
+print(sensor_id[0])
+print(sensor_id[1:3])
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/string.py
+```
+
+예상 출력:
+
+```text
+4
+S
+00
+```
+
+**직접 설명할 질문:** 마지막 글자의 위치는 왜 4가 아니라 3일까요?
+
+<details><summary>설명 확인하기</summary>
+
+길이는 4개이지만 위치는 0, 1, 2, 3으로 세기 때문입니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+</details>
+<details><summary>더 해보기 · 원문과 정리한 문자열 따로 두기</summary>
+
+
+### 원문과 정리한 문자열 따로 두기 · 추가
+
+strip은 양끝 공백을 제거한 새 문자열을 돌려주며 중간 공백은 남깁니다. upper는 영문 소문자를 대문자로 바꾼 새 문자열을 만듭니다. 원문 raw를 별도로 남깁니다. 메서드는 값 뒤 점으로 연결해 부르는 기능 이름입니다.
+
+저장: `work/clean_text.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+raw = " s01 "
+cleaned = raw.strip().upper()
+print("[" + raw + "]")
+print("[" + cleaned + "]")
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/clean_text.py
+```
+
+예상 출력:
+
+```text
+[ s01 ]
+[S01]
+```
+
+**직접 설명할 질문:** raw도 자동으로 S01로 바뀌나요?
+
+<details><summary>설명 확인하기</summary>
+
+아닙니다. 새 결과는 cleaned에 연결했고 raw에는 원래 문자열이 남아 있습니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+</details>
+
+
 ## A07 · 숫자 더하기와 문자열 연결
 
 <!-- enrichment:2026-10-14:P3 -->
@@ -759,6 +1015,91 @@ python -X utf8 work/A09_example.py
 [활동 자료와 작성칸](practice-guide.md#a09--연산과-괄호로-작은-계산-만들기)에서 A09를 엽니다.
 
 # 4구간 · 기준에 따라 나누기
+
+
+### 두 조건을 함께 판단하기 · 필수
+
+and는 두 조건이 모두 참이어야 참입니다. or는 하나 이상 참이면 참입니다. not은 참·거짓을 뒤집습니다. 예를 들어 근무자이고 출입증이 있는지 확인할 때 and를 씁니다. 업무에서 둘 다 필요한지 하나면 충분한지 먼저 문장으로 정합니다.
+
+저장: `work/logic.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+worker = True
+badge = False
+print(worker and badge)
+print(worker or badge)
+print(not badge)
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/logic.py
+```
+
+예상 출력:
+
+```text
+False
+True
+True
+```
+
+| A | B | A and B | A or B |
+| --- | --- | --- | --- |
+| True | True | True | True |
+| True | False | False | True |
+| False | True | False | True |
+| False | False | False | False |
+
+**직접 설명할 질문:** 출입증이 없어도 근무자면 들어갈 수 있다는 규칙은 and인가요, or인가요?
+
+<details><summary>설명 확인하기</summary>
+
+근무자 또는 출입증 중 하나를 만족하면 되므로 or입니다. 실제 출입 정책은 별도로 정해야 합니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+### elif는 앞 조건이 거짓일 때 확인합니다 · 필수
+
+if부터 차례로 조건을 확인하며 처음 참인 묶음 하나만 실행합니다. 점수가 80이면 60 이상도 맞지만 첫 조건이 참이므로 뒤 elif를 실행하지 않습니다. 콜론과 공백 네 칸은 어떤 문장이 같은 묶음인지 표시합니다.
+
+저장: `work/branches.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+score = 80
+if score >= 80:
+    print("우수")
+elif score >= 60:
+    print("통과")
+else:
+    print("재연습")
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/branches.py
+```
+
+예상 출력:
+
+```text
+우수
+```
+
+**직접 설명할 질문:** 60 이상 조건을 맨 앞에 놓으면 80의 결과는 어떻게 달라질까요?
+
+<details><summary>설명 확인하기</summary>
+
+첫 조건을 만족해 통과가 나오므로 높은 기준부터 확인해야 우수와 구별할 수 있습니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
 
 ## A10 · 비교 결과는 참 또는 거짓
 
@@ -1037,6 +1378,138 @@ python -X utf8 work/A12_example.py
 [활동 자료와 작성칸](practice-guide.md#a12--미측정과-경계값의-세-갈래)에서 A12를 엽니다.
 
 # 5구간 · 여러 기록을 반복하기
+
+<details><summary>더 해보기 · range로 정해진 횟수 반복하기</summary>
+
+
+### range로 정해진 횟수 반복하기 · 추가
+
+range(3)은 0, 1, 2를 차례로 제공합니다. 끝값 3은 포함하지 않습니다. range(1, 4)는 1부터 4 직전까지 제공합니다. print를 들여쓰면 매번 실행하고 반복 밖이면 끝난 뒤 한 번 실행합니다.
+
+저장: `work/range.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+for number in range(1, 4):
+    print(number)
+print("완료")
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/range.py
+```
+
+예상 출력:
+
+```text
+1
+2
+3
+완료
+```
+
+**직접 설명할 질문:** 1부터 5까지 출력하려면 끝값을 무엇으로 바꿀까요?
+
+<details><summary>설명 확인하기</summary>
+
+끝값을 6으로 바꿉니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+</details>
+
+### 반복마다 현재 값과 합계를 적기 · 필수
+
+합계는 반복 전에 0으로 시작합니다. total = total + weight는 이전 합계에 이번 무게를 더해 다시 저장합니다. 각 반복에서 weight와 total을 나란히 출력하면 계산 과정을 확인할 수 있습니다. 초기화를 반복 안에 두면 이전 합계를 잃습니다.
+
+저장: `work/accumulate.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+weights = [2, 5, 1]
+total = 0
+for weight in weights:
+    total = total + weight
+    print(weight, total)
+print("합계", total)
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/accumulate.py
+```
+
+예상 출력:
+
+```text
+2 2
+5 7
+1 8
+합계 8
+```
+
+| 이번 weight | 이전 total | 더한 뒤 total |
+| ---: | ---: | ---: |
+| 2 | 0 | 2 |
+| 5 | 2 | 7 |
+| 1 | 7 | 8 |
+
+**직접 설명할 질문:** weights가 빈 목록이면 마지막 합계는 무엇인가요?
+
+<details><summary>설명 확인하기</summary>
+
+반복을 한 번도 실행하지 않으므로 초기값 0을 출력합니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+<details><summary>더 해보기 · while은 조건을 다시 확인합니다</summary>
+
+
+### while은 조건을 다시 확인합니다 · 추가
+
+for는 목록이나 정한 횟수를 따라가고 while은 조건이 참인 동안 반복합니다. 아래 예에서는 매번 number를 1 늘려 결국 조건이 거짓이 됩니다. 증가 줄을 빼면 계속 같은 값이 나옵니다. 이 무한 반복 오류는 직접 만들지 않고 원인을 종이로 설명합니다. 실행을 멈춰야 할 때는 터미널에서 Ctrl+C를 누릅니다.
+
+저장: `work/while.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+number = 1
+while number <= 3:
+    print(number)
+    number = number + 1
+print("완료")
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/while.py
+```
+
+예상 출력:
+
+```text
+1
+2
+3
+완료
+```
+
+**직접 설명할 질문:** number 증가를 반복 바깥으로 옮기면 왜 끝나지 않을까요?
+
+<details><summary>설명 확인하기</summary>
+
+반복 중 number가 계속 1이어서 조건이 계속 참입니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
+</details>
+
 
 ## A13 · 리스트와 위치로 여러 값 담기
 
@@ -1320,6 +1793,46 @@ python -X utf8 work/A15_example.py
 [활동 자료와 작성칸](practice-guide.md#a15--반복-안에서-조건-확인과-개수-세기)에서 A15를 엽니다.
 
 # 6구간 · 작은 점검 프로그램
+
+
+### 괄호 모양마다 역할이 다릅니다 · 필수
+
+()는 print 같은 기능을 부르거나 계산 순서를 묶습니다. []는 목록을 만들거나 위치·키로 값을 찾습니다. {}는 이 예제에서 이름표와 값을 묶는 딕셔너리를 만듭니다. 딕셔너리에서 콜론은 키와 값을 연결하고 쉼표는 다음 항목을 나눕니다.
+
+저장: `work/containers.py`. Python 코드만 편집기에 복사하고 저장합니다.
+
+```python
+record = {"sensor_id": "S01", "temperature_c": 22.5}
+values = [22.5, 24.0]
+print(record["sensor_id"])
+print(values[0])
+print((2 + 3) * 4)
+```
+
+실행 명령은 터미널에 입력합니다.
+
+```text
+python -X utf8 work/containers.py
+```
+
+예상 출력:
+
+```text
+S01
+22.5
+20
+```
+
+**직접 설명할 질문:** record[0]과 values["sensor_id"]는 왜 맞지 않을까요?
+
+<details><summary>설명 확인하기</summary>
+
+record에는 0 키가 없고 values는 이 예에서 숫자 위치로 읽는 리스트입니다. 저장 구조에 맞는 방법을 사용해야 합니다.
+
+</details>
+
+**확인과 복구:** 예측을 먼저 적고 실행 결과와 비교하세요. NameError는 이름과 첫 대입 위치, SyntaxError는 괄호·따옴표·콜론, IndentationError는 같은 묶음의 들여쓰기를 확인합니다. 새로운 코드는 기존 파일을 지우지 않고 위 파일 이름으로 저장합니다.
+
 
 ## A16 · 관찰 한 건과 점검표 구조
 
