@@ -1,0 +1,8 @@
+sensor_id,temperature_c,active
+S01,22.5,true
+S02,0,false
+S03,,true
+S04,30,true
+S05,오류,true
+S01,24,true
+S06,26.2,unknown

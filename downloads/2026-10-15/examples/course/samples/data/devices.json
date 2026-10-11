@@ -1,0 +1,17 @@
+[
+  {
+    "id": "S01",
+    "temperature_c": 0,
+    "active": false
+  },
+  {
+    "id": "S02",
+    "temperature_c": 22.5,
+    "active": "false"
+  },
+  {
+    "id": "S03",
+    "temperature_c": null,
+    "active": true
+  }
+]
