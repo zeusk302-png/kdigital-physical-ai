@@ -391,7 +391,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .optional-lesson summary { font-weight: 600; color: var(--muted); }
 @media (min-width: 1200px) {
  .lesson-layout { display: grid; grid-template-columns: minmax(0,780px) minmax(180px,220px); gap: 28px; max-width: 1060px; }
- .lesson-article { grid-column: 1; grid-row: 1; min-width: 0; }
+ .lesson-article { grid-column: 1; grid-row: 1; min-width: 0; width: 100%; }
  .toc { grid-column: 2; grid-row: 1; position: sticky; top: 82px; align-self: start; max-height: calc(100dvh - 110px); overflow: auto; }
  .toc-links { display: block; padding: 12px; }
  .toc summary { padding: 12px; }
