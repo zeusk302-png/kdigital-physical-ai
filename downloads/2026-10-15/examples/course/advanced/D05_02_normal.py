@@ -1,0 +1,49 @@
+# D05 · 입력 오류와 미측정 값을 구분하기
+# ====================================================================
+# 이 파일은 사람이 읽는 설명과 컴퓨터가 실행할 코드를 함께 담습니다.
+# # 뒤는 주석입니다. 코드에 초록색이 표시되는지는 편집기 설정에 따라 다릅니다.
+# 저장: course/advanced/D05_02_normal.py
+# 실행: course 폴더의 터미널에서 python -X utf8 advanced/D05_02_normal.py
+# 편집기에 명령을 적지 않습니다. 코드 수정 후 Ctrl+S로 저장합니다.
+# 파일 전체는 실행 가능하며, data와 함수 파일은 advanced 폴더에 함께 둡니다.
+# 입력 파일 data는 읽고, 생성 결과는 work에 저장합니다.
+#
+# 무엇을 배우나요?
+# 숫자 0은 실제로 측정한 값일 수 있지만 빈칸은 측정값이 없는 상태일 수 있습니다. 잘못된 글자를 0으로 바꾸면 합계와
+# 평균이 왜곡됩니다. 정상 값·미측정·잘못된 값을 구분해 보관합니다.
+#
+# 구성요소와 기호
+# strip: 앞뒤 공백을 제거한 새 문자열입니다. 원문은 별도로 보관할 수 있습니다.
+# try와 except: 변환을 시도하고 예상한 오류를 잡습니다. 모든 오류를 무조건 숨기지 않습니다.
+# raise ValueError: 입력 약속을 위반했음을 호출한 코드에 알립니다.
+# math.isfinite: float 변환에 성공해도 NaN·Infinity는 정상적인 유한 측정값인지 따로 확인합니다.
+# None과 0: None은 측정하지 않은 상태, 0은 수치입니다. 평균 계산에서 None은 개수에 포함하지 않습니다.
+#
+# 이 단원의 첫 예제 실행을 따라가기
+# 공백만 있는 입력을 strip하면 빈 문자열이 됩니다. 이 값은 None으로 보관합니다. "0"은 0.0으로 변환합니다.
+# "bad"는 변환 오류, "NaN"은 유한성 검사 오류로 별도 기록합니다.
+#
+# 한 부분 바꾸고 확인하기
+# 두 번째 예제의 입력 목록에 " -3.5 "와 "Infinity"를 추가하세요. 첫 값은 측정값, 두 번째는 오류로
+# 구분되는지 확인하세요.
+
+import math
+
+def parse_measurement(text):
+    cleaned = text.strip()
+    if cleaned == "":
+        return None  # 숫자 0으로 바꾸지 않습니다.
+    value = float(cleaned)  # "bad"라면 이 줄에서 ValueError가 납니다.
+    if not math.isfinite(value):
+        raise ValueError("유한한 숫자가 필요합니다")
+    return value
+
+values = []
+errors = []
+for raw in ["", "0", " 2.5 ", "bad", "NaN"]:
+    try:
+        values.append(parse_measurement(raw))
+    except ValueError:
+        errors.append(raw)  # 문제가 난 원문을 남겨 다시 확인합니다.
+print(f"사용 값: {values}")
+print(f"오류 원문: {errors}")

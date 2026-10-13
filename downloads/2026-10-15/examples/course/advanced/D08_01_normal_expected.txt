@@ -1,0 +1,3 @@
+S01: 사용 False, 온도 0
+S02: active 종류 오류
+S03: 사용 True, 온도 None
