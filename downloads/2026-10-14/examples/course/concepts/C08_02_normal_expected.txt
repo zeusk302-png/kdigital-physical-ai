@@ -1,0 +1,3 @@
+주문 가능: True
+범위 밖: True
+범위 안: False

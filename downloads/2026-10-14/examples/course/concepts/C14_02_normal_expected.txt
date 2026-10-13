@@ -1,0 +1,2 @@
+명령(start/skip/done): 처리: start
+명령(start/skip/done): 명령(start/skip/done): 종료

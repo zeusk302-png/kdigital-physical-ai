@@ -1,0 +1,3 @@
+원본: [  START  ]
+공백 제거: [START]
+소문자: [start]

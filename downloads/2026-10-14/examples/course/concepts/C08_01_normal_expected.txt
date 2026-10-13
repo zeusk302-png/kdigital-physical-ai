@@ -1,0 +1,4 @@
+초과: False
+이상: True
+같음: True
+다름: False
