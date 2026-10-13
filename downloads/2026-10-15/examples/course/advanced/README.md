@@ -1,6 +1,6 @@
 # Python 심화 · 개념별 실습
 
-ZIP을 모두 추출하고 course 폴더에서 시작합니다. advanced 폴더의 D01.md~D12.md를 순서대로 읽으세요. 두 개의 _normal.py는 실행 가능한 완성 예제, _broken.py는 의도한 오류, _starter.py는 직접 작성용 파일입니다. 심화 연습은 별도 제출 과제가 아닙니다.
+ZIP을 모두 추출하고 course 폴더에서 시작합니다. advanced 폴더의 D01.md~D12.md를 순서대로 읽으세요. 두 개의 _normal.py는 실행 가능한 완성 예제, _broken.py는 의도한 오류, _starter.py는 직접 작성용 파일입니다. 이 폴더의 단원 연습은 제출하지 않습니다. 별도 심화 과제 AH01~AH03은 advanced-homework 폴더에서 작성합니다.
 
 실행 예: `python -X utf8 advanced/D01_01_normal.py`. 다른 단원도 같은 방식으로 실행합니다. Python 3.12로 검사했습니다. 별도 패키지 설치·로그인은 필요하지 않습니다. data·sample_helpers.py·price_helpers.py도 함께 보존하세요. 수정 전에 Ctrl+S로 저장하고 work 결과를 확인하세요.
 

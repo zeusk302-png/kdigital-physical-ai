@@ -34,7 +34,7 @@ python 명령을 찾지 못하면 Windows에서 py 명령을 확인하세요. �
 
 먼저 D01 → D02 → D05 → D06 → D07 → D08 → D09 → D11 → D12 순서로 함수·입력 검사·파일·종합 프로그램을 연결하세요. D03의 깊은 복사, D04의 짝짓기, D10의 구역별 집계는 관련 작업을 할 때 더 읽는 선택 개념입니다. D12의 전체 코드를 한 번에 외우지 말고 읽기·검사·집계·저장 함수를 하나씩 완성하세요.
 
-[직접 작성 연습 12개](#/sessions/2026-10-15/practice-problems) · [기초부터 다시 보기](#/sessions/2026-10-14/lesson) · [제출 과제 3개](#/sessions/2026-10-14/assignments) · [실습 ZIP](student-examples.zip)
+[직접 작성 연습 12개](#/sessions/2026-10-15/practice-problems) · [기초부터 다시 보기](#/sessions/2026-10-14/lesson) · [심화 제출 과제 3개](#/sessions/2026-10-15/assignments) · [실습 ZIP](student-examples.zip)
 
 ## 공식 문서
 

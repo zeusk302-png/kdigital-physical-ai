@@ -22,7 +22,7 @@ python -X utf8 advanced/D01_01_normal.py
 
 ## 실습과 제출 과제
 
-심화 직접 작성 연습은 제출 과제를 추가하는 것이 아닙니다. 별도 제출 과제는 기초 화면의 HW01~HW03 세 개입니다.
+심화 직접 작성 연습은 제출 과제를 추가하는 것이 아닙니다. 별도 제출 과제는 기초 HW01~HW03 세 개와 심화 AH01~AH03 세 개, 총 여섯 개입니다. 심화 답안·입력 자료는 [advanced-homework](advanced-homework/README.md)에서 확인하세요.
 
 ## 이전 추가 자료
 
