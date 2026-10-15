@@ -500,3 +500,11 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .mini-program-guide { margin-top: 30px; padding-top: 24px; border-top: 2px solid var(--line); }
 .mini-program-guide h4 { margin: 0 0 10px; font-size: 17px; }
 .mini-program-guide li { margin-bottom: 10px; }
+
+.git-guide-entry { padding: 28px 30px; margin: 0 0 32px; background: var(--tint, #edf4ee); border: 1px solid var(--line); border-left: 5px solid var(--accent, #087f75); border-radius: 14px; }
+.git-guide-entry h2 { margin-top: 10px; }
+.git-guide-entry p { max-width: 72ch; }
+.git-guide-group { margin: 34px 0; }
+.git-guide-group .activity-card { min-width: 0; }
+.git-guide-kicker { color: var(--accent, #087f75); font-weight: 700; margin-bottom: 18px; }
+@media (max-width: 600px) { .git-guide-entry { padding: 20px 16px; } .git-guide-entry .actions { align-items: stretch; } }
