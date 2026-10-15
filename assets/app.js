@@ -10,6 +10,7 @@
     return pending.get(date);
   }
   let renderVersion=0;
+  let miniProjectModule=null,miniProjectDispose=null;
   const main = document.querySelector('#main');
   const sidebar = document.querySelector('#sidebar');
   const e = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -47,7 +48,7 @@
     return render(primary)+`<details class="extra-downloads"><summary>PPT와 원문 파일 더 보기</summary>${render(more)}</details>`;
   }
 
-  function tabs(s, active) { const key=active==='files'?'files':['lesson','glossary','assessment','assignments','practice-problems'].includes(active)?'lesson':'today';return `<nav class="tabs" aria-label="수업 메뉴">${[['today','오늘 할 일'],['lesson','교안'],['files','자료']].map(([k,label])=>`<a href="${url(s)}/${k}" ${k===key?'aria-current="page"':''}>${label}</a>`).join('')}</nav><div class="reading-progress" aria-hidden="true"><span></span></div>`; }
+  function tabs(s, active) { const key=active==='mini-project'?'mini-project':active==='files'?'files':['lesson','glossary','assessment','assignments','practice-problems'].includes(active)?'lesson':'today';const items=[['today','오늘 할 일'],['lesson','교안'],...(s.date==='2026-10-15'?[['mini-project','미니 프로젝트']]:[]),['files','자료']];return `<nav class="tabs" aria-label="수업 메뉴">${items.map(([k,label])=>`<a href="${url(s)}/${k}" ${k===key?'aria-current="page"':''}>${label}</a>`).join('')}</nav><div class="reading-progress" aria-hidden="true"><span></span></div>`; }
   function card(s,a){return `<article class="activity-card ${a.current_required?'required':'optional'}"><span class="eyebrow">${a.id} · ${a.current_required?'필수':'더 해보기'}</span><h3><a href="${url(s)}/activity-${a.id}">${e(a.title)}</a></h3><p>${inline(a.purpose)}</p><p class="text-note">남길 결과: ${inline(a.student_output)}</p><a href="${url(s)}/activity-${a.id}">직접 해보기 →</a></article>`;}
   function submissionEndpoint(s){return s.submission_api||(['127.0.0.1','localhost'].includes(location.hostname)?'http://127.0.0.1:9001':'');}
   function submissionForm(s){const endpoint=submissionEndpoint(s);return `<section class="submission-panel"><h2>과제 파일 올리기</h2><p>로그인 없이 이름이 들어간 .py 파일을 올립니다. 예: 김철수_${s.assignment_catalog[0].id}.py. 파일은 1MB 이하, UTF-8로 저장합니다.</p>${endpoint?'':'<p class="notice-box">제출 서버 연결 전입니다. 지금은 과제를 내려받아 작성할 수 있으며 온라인 접수는 아직 열리지 않았습니다.</p>'}<form id="assignment-upload"><label for="submission-assignment">제출할 과제</label><select id="submission-assignment">${s.assignment_catalog.map(t=>`<option value="${e(t.id)}">${e(t.id)} · ${e(t.title)}</option>`).join('')}</select><label for="submission-file">수강생이름_과제명.py 파일</label><input id="submission-file" type="file" accept=".py"><button class="button" type="submit" ${endpoint?'':'disabled'}>파일 제출</button></form><p id="submission-result" role="status">${endpoint?'파일을 선택하고 제출하세요.':'서버 연결 후 제출할 수 있습니다.'}</p><p class="text-note">파일명에 적힌 이름으로 접수합니다. 재제출도 별도 기록으로 보관하며, 접수번호가 표시되어야 제출 완료입니다.</p></section>`;}
@@ -55,7 +56,7 @@
     const advanced=s.date==='2026-10-15',first=s.concept_course.chapters[0].id;
     const chapters=[...s.concept_course.chapters].sort((a,b)=>a.id.localeCompare(b.id));
     const renderCards=items=>`<div class="activity-grid">${items.map(c=>`<article class="activity-card"><span class="eyebrow">${e(c.id)} · 개념</span><h3><a href="${url(s)}/lesson?concept=${c.id}">${e(c.title)}</a></h3><p>${e(c.intro)}</p><a href="${url(s)}/lesson?concept=${c.id}">설명과 코드 읽기 →</a></article>`).join('')}</div>`;
-    return `<section><h2>개념별로 읽고 직접 작성하기</h2><p>${advanced?'함수·자료 처리·파일 입출력을 배우고 CSV·JSON 보고서로 연결합니다.':'print부터 함수까지 순서대로 배웁니다.'} 각 단원에는 구성요소·주석 예제·실행 과정·직접 작성·오류 수정이 있습니다.</p><div class="actions"><a class="button" href="${url(s)}/lesson?concept=${first}">${advanced?'함수부터 시작하기':'첫 파일부터 시작하기'}</a><a class="button secondary" href="${url(s)+'/assignments'}">제출 과제 3개</a><a class="button secondary" href="${url(s)}/files">실습 파일 받기</a></div>${advanced?'<p class="text-note">D01부터 D12까지 모든 단원을 순서대로 표시합니다. 심화 단원 연습과 제출 과제 3개는 별도입니다.</p>':''}</section>${renderCards(chapters)}`;
+    return `${advanced?`<section class="mini-entry"><span class="eyebrow">4시간 개인 프로젝트</span><h2>파이썬 미니 프로젝트</h2><p>장르·단어·돌발 상황을 독립적으로 뽑고, 캡처를 익명 갤러리에 등록한 뒤 나만의 프로그램을 만듭니다.</p><a class="button" href="${url(s)}/mini-project">돌림판과 미션 갤러리 열기 →</a></section>`:''}<section><h2>개념별로 읽고 직접 작성하기</h2><p>${advanced?'함수·자료 처리·파일 입출력을 배우고 CSV·JSON 보고서로 연결합니다.':'print부터 함수까지 순서대로 배웁니다.'} 각 단원에는 구성요소·주석 예제·실행 과정·직접 작성·오류 수정이 있습니다.</p><div class="actions"><a class="button" href="${url(s)}/lesson?concept=${first}">${advanced?'함수부터 시작하기':'첫 파일부터 시작하기'}</a><a class="button secondary" href="${url(s)+'/assignments'}">제출 과제 3개</a><a class="button secondary" href="${url(s)}/files">실습 파일 받기</a></div>${advanced?'<p class="text-note">D01부터 D12까지 모든 단원을 순서대로 표시합니다. 심화 단원 연습과 제출 과제 3개는 별도입니다.</p>':''}</section>${renderCards(chapters)}`;
   }
 
   function todayPage(s){if(s.concept_course)return conceptLanding(s);const times=['10:00–10:50','11:00–11:50','13:00–13:50','14:00–14:50','15:00–15:50','16:00–16:50'];return `<section class="today-intro"><h2>오늘 필수 활동 ${s.required_count}개</h2><p>아래 순서대로 설명을 듣고 직접 해 봅시다. 더 해보기는 먼저 마쳤을 때 선택하세요.</p><div class="actions"><a class="button secondary" href="${url(s)}/start">처음 실행하는 방법</a><a class="button secondary" href="${url(s)}/files">실습 파일 준비</a></div><label class="filter-toggle"><input id="essential-only" type="checkbox" checked>필수 활동만 보기</label><p class="text-note">50분 수업 뒤 10분 휴식 · 중식 11:50–13:00 · 16:50–17:00 파일 저장과 마무리</p></section>${s.study_plan.map((p,i)=>{const m=s.workbook.modules[i],required=m.activities.filter(a=>a.current_required),optional=m.activities.filter(a=>!a.current_required);return `<section class="period-section"><div class="period-heading"><span class="chapter-tag">${i+1}교시 · ${times[i]}</span><h2>${e(m.title)}</h2></div><p class="period-allocation">설명 15분 → 시연 8분 → 직접 해보기 20분 → 풀이 7분</p><p class="text-note">함께 볼 예: ${p.demonstration.map(a=>e(a.title)).join(' · ')}</p><a class="concept-link" href="${url(s)}/lesson?period=${i+1}">이 교시의 설명과 예제 읽기 →</a><div class="activity-grid">${required.map(a=>card(s,a)).join('')}</div><details class="optional-practice" hidden><summary>더 해보기 · ${optional.length}개</summary><div class="activity-grid">${optional.map(a=>card(s,a)).join('')}</div></details></section>`;}).join('')}<section><h2>마지막에 확인할 것</h2>${assessmentTable(s)}<a href="${url(s)}/assessment">확인 문제 풀기 →</a></section>`;}
@@ -63,7 +64,8 @@
 
   function lesson(s, tab) {
     const activityId=tab?.startsWith('activity-')?tab.slice(9):null;
-    const active = (['today','start','overview','lesson','workbook','practice','glossary','assessment','assignments','practice-problems','files'].includes(tab)||s.activity_pages?.[activityId]) && (s.ready || tab==='overview') ? tab : (s.ready?'today':'overview');
+    const active = (['today','start','overview','lesson','workbook','practice','glossary','assessment','assignments','practice-problems','files','mini-project'].includes(tab)||s.activity_pages?.[activityId]) && (s.ready || tab==='overview') ? tab : (s.ready?'today':'overview');
+    if(active==='mini-project'&&s.date==='2026-10-15'&&miniProjectModule)return `<div class="mini-session-context"><a href="${url(s)}">Python 심화</a><span> / 파이썬 미니 프로젝트</span></div>${tabs(s,'mini-project')}${miniProjectModule.render()}`;
     let content = '';
     if(activityId && s.activity_pages?.[activityId]) content=activityPage(s,activityId);
     else if(['today','workbook','overview','practice'].includes(active)) content=todayPage(s);
@@ -221,6 +223,7 @@
   }
   async function render() {
     const version=++renderVersion;
+    if(miniProjectDispose){miniProjectDispose();miniProjectDispose=null;}
     if(window.tocObserver)window.tocObserver.disconnect();
     let route=location.hash.split('?')[0]||'#/';if(route==='#main'){main.focus();return;}
     const parts=route.slice(2).split('/');let s;
@@ -228,14 +231,15 @@
     const labActivity=new URLSearchParams(location.hash.split('?')[1]||'').get('activity');if(route==='#/data-lab'&&labActivity){const activity=(await loadSession(data.sessions[0].date)).workbook.modules.flatMap(m=>m.activities).find(a=>a.id===labActivity);if(activity){csvFilename=activity.work_files.find(f=>f.endsWith('.csv'))?.split('/').pop()||csvFilename;jsonFilename=activity.work_files.find(f=>f.endsWith('.json'))?.split('/').pop()||jsonFilename;}}
     try {
     if(parts[0]==='sessions')s=await loadSession(parts[1]);
+    if(s?.date==='2026-10-15'&&parts[2]==='mini-project'&&!miniProjectModule)miniProjectModule=await import(new URL('assets/mini-project.js?v=534c38afe27b',document.baseURI).href);
     if(route==='#/resources')await loadSession(resourceDate);
     if(version!==renderVersion)return;
     }catch(error){if(version===renderVersion){nav(route);main.innerHTML=`<h1>자료를 불러오지 못했습니다</h1><p>인터넷 연결을 확인하고 다시 눌러 주세요.</p><button class="button" onclick="location.reload()">다시 불러오기</button>`;}return;}
     nav(route);if(route==='#/'||route==='#')main.innerHTML=home();else if(route==='#/prepare')main.innerHTML=prepare();else if(route==='#/resources')main.innerHTML=resources();else if(route==='#/data-lab')main.innerHTML=dataLab();else if(parts[0]==='sessions' && s)main.innerHTML=lesson(s,parts[2]||(s.ready?'today':'overview'));else main.innerHTML=`${header('페이지 찾기','요청한 강의를 찾지 못했습니다.','목차에서 날짜를 다시 선택해 주세요.')}<a class="button" href="#/">과정 홈</a>`;
-    document.title=`${s?s.topic:route==='#/prepare'?'시작 전 준비':route==='#/resources'?'자료':route==='#/data-lab'?'데이터 실습실':'전체 수업'} · 피지컬AI 강의실`;
+    document.title=`${s?.date==='2026-10-15'&&parts[2]==='mini-project'?'파이썬 미니 프로젝트':s?s.topic:route==='#/prepare'?'시작 전 준비':route==='#/resources'?'자료':route==='#/data-lab'?'데이터 실습실':'전체 수업'} · 피지컬AI 강의실`;
     document.querySelector('#page-context').textContent=s?s.topic:route==='#/prepare'?'시작 전 준비':route==='#/resources'?'자료':route==='#/data-lab'?'데이터 실습실':'전체 수업';
     if(s){lastLesson=location.hash;try{localStorage.setItem('physical-ai-last-lesson',lastLesson);}catch{}}
-    enhance(s);closeMenu(false);window.scrollTo(0,0);main.focus({preventScroll:true});
+    if(s?.date==='2026-10-15'&&parts[2]==='mini-project')miniProjectDispose=miniProjectModule.mount(main.querySelector('#mini-project'),notify);else enhance(s);closeMenu(false);window.scrollTo(0,0);main.focus({preventScroll:true});
     const activeTab=main.querySelector('.tabs [aria-current=page]');if(activeTab){const tabbar=activeTab.parentElement;tabbar.scrollLeft=Math.max(0,activeTab.offsetLeft-tabbar.offsetLeft-(tabbar.clientWidth-activeTab.clientWidth)/2);}
     const query=new URLSearchParams(location.hash.split('?')[1]||''),activity=query.get('activity'),section=query.get('section');
     const period=query.get('period');
