@@ -1,3 +1,3 @@
-# Git/GitHub 실습 자료
+# Git 수업 실습
 
-[course/README.md](course/README.md)부터 읽으세요.
+[최신 실습 묶음](course/git-starter/README.md)부터 읽으세요.
