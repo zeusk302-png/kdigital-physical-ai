@@ -448,7 +448,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .mini-project select,.mini-project textarea,.mini-project input[type=file] { max-width: 100%; border: 1px solid #cad8ce; border-radius: 10px; padding: 12px; background: white; color: var(--ink); }
 .mini-project textarea { width: 100%; resize: vertical; }
 .mini-project button:disabled { opacity: .5; cursor: default; }
-.mini-wheel-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin: 28px 0; }
+.mini-wheel-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 28px 0; }
 .mini-wheel-card { background: #f6f8f3; border: 1px solid #e0e6da; border-radius: 18px; padding: 17px; text-align: center; min-width: 0; }
 .mini-wheel-card.incident { background: #fff5e7; border-color: #ecd9b6; }
 .mini-wheel-label { display: flex; justify-content: space-between; align-items: center; gap: 8px; text-align: left; font-size: 14px; font-weight: 650; }
@@ -496,3 +496,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
  .mini-steps a { font-size: 12px; padding: 7px 10px; }
 }
 @media (prefers-reduced-motion: reduce) { .mini-reel.spinning .mini-reel-ring { animation: none; } }
+
+.mini-program-guide { margin-top: 30px; padding-top: 24px; border-top: 2px solid var(--line); }
+.mini-program-guide h4 { margin: 0 0 10px; font-size: 17px; }
+.mini-program-guide li { margin-bottom: 10px; }
