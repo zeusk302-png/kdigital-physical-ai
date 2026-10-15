@@ -1,4 +1,4 @@
-import {AXES,validMission,drawMission,missionText,aiPrompt,currentMission,programGuide} from './mini-project-data.js?v=e0f2e493ac15';
+import {AXES,validMission,drawMission,missionText,aiPrompt,currentMission,programGuide} from './mini-project-data.js?v=6472e093c74b';
 const ENDPOINT='https://ylgedlgpyuejuyykhxvt.supabase.co/functions/v1/kdigital-mini-project';
 const STORE='physical-ai-mini-project-v1';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

@@ -51,7 +51,7 @@ export function programGuide(mission){
  if(!validMission(mission))throw Error('미션을 먼저 뽑아 주세요.');
  const base=GENRE_GUIDES[mission.genre],index=AXES.find(a=>a.key==='incident').values.indexOf(mission.incident);
  return {...base,title:`${mission.subject} · ${mission.space} ${base.idea}`,
-  premise:`‘${mission.subject}’를 주인공·사용자·관리 대상 중 하나로 정하고, ‘${mission.space}’에서 필요한 일이나 일어나는 일을 ${base.idea}로 만들어 보세요.`,
+  premise:`주어는 ‘${mission.subject}’입니다. 주인공·사용자·관리 대상 중 어떤 역할인지 정해 보세요. ‘${mission.space}’ 배경에서 필요한 일이나 일어나는 일을 다루는 ${base.idea}입니다.`,
   incident:mission.incident,reproduce:INCIDENT_GUIDES[index][0],solution:INCIDENT_GUIDES[index][1]};
 }
 export function drawMission(previous=null,locks={},genre='',random=Math.random){

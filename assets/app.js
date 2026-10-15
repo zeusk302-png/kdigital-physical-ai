@@ -231,7 +231,7 @@
     const labActivity=new URLSearchParams(location.hash.split('?')[1]||'').get('activity');if(route==='#/data-lab'&&labActivity){const activity=(await loadSession(data.sessions[0].date)).workbook.modules.flatMap(m=>m.activities).find(a=>a.id===labActivity);if(activity){csvFilename=activity.work_files.find(f=>f.endsWith('.csv'))?.split('/').pop()||csvFilename;jsonFilename=activity.work_files.find(f=>f.endsWith('.json'))?.split('/').pop()||jsonFilename;}}
     try {
     if(parts[0]==='sessions')s=await loadSession(parts[1]);
-    if(s?.date==='2026-10-15'&&parts[2]==='mini-project'&&!miniProjectModule)miniProjectModule=await import(new URL('assets/mini-project.js?v=0448db586640',document.baseURI).href);
+    if(s?.date==='2026-10-15'&&parts[2]==='mini-project'&&!miniProjectModule)miniProjectModule=await import(new URL('assets/mini-project.js?v=9509c6a95671',document.baseURI).href);
     if(route==='#/resources')await loadSession(resourceDate);
     if(version!==renderVersion)return;
     }catch(error){if(version===renderVersion){nav(route);main.innerHTML=`<h1>자료를 불러오지 못했습니다</h1><p>인터넷 연결을 확인하고 다시 눌러 주세요.</p><button class="button" onclick="location.reload()">다시 불러오기</button>`;}return;}
