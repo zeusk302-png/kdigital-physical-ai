@@ -203,6 +203,14 @@ clone은 파일뿐 아니라 저장소의 이력도 내 PC로 가져오는 작�
 4. Repository → Show in Explorer로 폴더를 열고 README.md를 찾습니다.
 5. README.md를 편집기로 열어 봅니다. Desktop의 History에는 웹에서 만든 첫 기록이 보입니다.
 
+### 실제 화면 · Code 메뉴에서 PC로 가져오기
+
+![GitHub 실제 화면: Code 메뉴에서 PC로 가져오기](examples/course/git-starter/assets/live/01-code-clone.jpg)
+
+Code → Local → HTTPS를 확인합니다. Open with GitHub Desktop을 누릅니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai)
+
 ### 예상 결과
 
 내 PC에 README.md와 Git 이력이 있고 Desktop에서 저장소를 선택할 수 있습니다.
@@ -254,6 +262,28 @@ Python을 배우며 생활 속 불편을 해결하고 있습니다.
 
 [GitHub 공식 안내](https://docs.github.com/)
 ```
+
+### 실제 화면 · Edit에서 Markdown을 입력하기
+
+![GitHub 실제 화면: Edit에서 Markdown을 입력하기](examples/course/git-starter/assets/live/03-readme-edit.jpg)
+
+README.md의 Edit에서 내용을 씁니다. Preview로 표시 결과를 확인합니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai/new/main?filename=README.md)
+
+### 실제 화면 · 웹 편집 · 커밋 전 확인
+
+![GitHub 실제 화면: 웹 편집 · 커밋 전 확인](examples/course/git-starter/assets/live/05-commit-dialog.jpg)
+
+1. 무엇을 바꿨는지 Commit message에 적습니다.
+
+2. 내 소개 문서는 main에 직접 기록할 수 있습니다.
+
+3. 협업 수정은 새 브랜치와 PR을 선택합니다.
+
+4. 웹 커밋은 곧바로 반영됩니다. Desktop 커밋 뒤에는 push합니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai/new/main?filename=README.md)
 
 ### 예상 결과
 
@@ -377,6 +407,14 @@ README만 올리고 demo.gif를 안 올리면 어떻게 될까요?
 ![Python 학습 중](assets/python-learning.svg)
 ```
 
+### 실제 화면 · Preview에서 제목·배지·링크 확인
+
+![GitHub 실제 화면: Preview에서 제목·배지·링크 확인](examples/course/git-starter/assets/live/04-readme-preview.jpg)
+
+작성 중 미리보기입니다. 제목·목록·배지·링크가 보이는지 확인합니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai/new/main?filename=README.md)
+
 ### 예상 결과
 
 Python·Git 학습 배지와 내 색 조합을 고른 README가 완성됩니다.
@@ -413,6 +451,22 @@ Python·Git 학습 배지와 내 색 조합을 고른 README가 완성됩니다.
 4. History에서 방금 기록과 수정한 줄을 확인합니다. 아직 웹에 안 보이는 것이 정상입니다.
 5. Push origin을 누르고 완료를 기다린 뒤 브라우저 프로필을 새로고침합니다. 이제 소개·배지·GIF를 확인합니다.
 6. 자기소개 한 문장만 다시 바꾸어 저장→비교→커밋→push를 두 번째로 수행합니다. 두 커밋의 목적을 다르게 적습니다.
+
+### 실제 화면 · Commits에서 이전 기록 찾기
+
+![GitHub 실제 화면: Commits에서 이전 기록 찾기](examples/course/git-starter/assets/live/06-commit-history.jpg)
+
+기록의 제목·작성 시각·짧은 ID를 확인합니다. 제목을 누르면 바뀐 줄을 봅니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai/commits/main/)
+
+### 실제 화면 · diff · 없어진 줄과 추가된 줄
+
+![GitHub 실제 화면: diff · 없어진 줄과 추가된 줄](examples/course/git-starter/assets/live/07-diff.jpg)
+
+빨강의 −는 이전 줄, 초록의 +는 추가된 줄입니다. 오류 표시가 아닙니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai/commit/ddb81edf6cf65dcdc771dcb1dd5114a9129316ad)
 
 ### 예상 결과
 
@@ -495,6 +549,20 @@ git add 뒤에 파일을 다시 고치면 새 내용까지 자동 선택되나�
 3. venv·.venv·__pycache__·.env·개인정보 파일은 넣지 않습니다. 제공한 project/.gitignore를 참고합니다.
 4. 그 폴더에서 프로그램을 실행해 동작을 확인합니다. 다른 폴더의 파일을 실행하지 않습니다.
 5. Desktop에서 파일을 비교하고 Add first working program으로 커밋합니다. Publish repository에서 공개 범위를 직접 확인해 게시합니다. 공개 전 파일 목록을 다시 봅니다.
+
+### 실제 화면 · 작품 저장소 · 생성 전 설정
+
+![GitHub 실제 화면: 작품 저장소 · 생성 전 설정](examples/course/git-starter/assets/live/02-new-repository.jpg)
+
+1. Repository name에 작품 이름을 적습니다. 예: python-mini-project
+
+2. Public은 누구나 볼 수 있다는 뜻입니다.
+
+3. Add README를 On으로 켭니다.
+
+4. 설정을 확인한 뒤 Create repository를 누릅니다.
+
+[같은 화면 열기](https://github.com/new)
 
 ### 예상 결과
 
@@ -655,6 +723,14 @@ Issue는 질문·오류·개선 제안을 기록하는 대화입니다. 상대 �
 확인: 파일명과 명령을 대조했습니다.
 프로그램 실행 여부는 직접 확인한 범위만 씁니다.
 ```
+
+### 실제 화면 · PR이 안 만들어질 때 · 같은 브랜치
+
+![GitHub 실제 화면: PR이 안 만들어질 때 · 같은 브랜치](examples/course/git-starter/assets/live/08-compare-branches.jpg)
+
+base와 compare가 둘 다 main입니다. compare를 내 작업 브랜치로 바꿉니다.
+
+[같은 화면 열기](https://github.com/zeusk302-png/kdigital-physical-ai/compare)
 
 ### 예상 결과
 
