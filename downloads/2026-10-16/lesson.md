@@ -115,11 +115,11 @@ private 저장소여도 프로필 소개로 보일까요?
 
 [프로필 README 공식 안내](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme)
 
-# 2구간 · Git·Desktop 설치와 연결
-
 ![GitHub 공식 안내 화면](examples/course/git-starter/assets/profile-0.png)
 
 공식 문서의 예시 화면입니다. 계정과 파일 이름은 내 화면에서 확인하세요.
+
+# 2구간 · Git·Desktop 설치와 연결
 
 ## A04 · Git 설치와 터미널 확인
 
@@ -223,11 +223,11 @@ ZIP을 받아 풀면 같은 Git 작업 폴더가 될까요?
 
 [저장소 가져오기 공식 안내](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop)
 
-# 3구간 · README·프로필·이미지와 GIF
-
 ![GitHub 공식 안내 화면](examples/course/git-starter/assets/clone-1.png)
 
 공식 문서의 예시 화면입니다. 계정과 파일 이름은 내 화면에서 확인하세요.
+
+# 3구간 · README·프로필·이미지와 GIF
 
 ## A07 · Markdown으로 자기소개 쓰기
 
@@ -349,11 +349,11 @@ README만 올리고 demo.gif를 안 올리면 어떻게 될까요?
 
 [Markdown 문법 공식 안내](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) · [이미지·GIF 공식 안내](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files)
 
-# 4구간 · 배지 꾸미기와 변경 기록
-
 ![교안 화면으로 만든 GIF 예시](examples/course/git-starter/assets/demo.gif)
 
 이 GIF는 따라 넣어 볼 수 있는 교안 화면 예시입니다. 본인 프로그램의 시연으로 바꿔 보세요.
+
+# 4구간 · 배지 꾸미기와 변경 기록
 
 ## A10 · 기술 배지와 학습 배지 꾸미기
 
