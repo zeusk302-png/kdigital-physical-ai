@@ -1,5 +1,101 @@
-# 본인 GitHub Pages에 게시
-본인 계정·저장소 권한·이미지 권리를 먼저 확인합니다. 자동 게시 파일은 여기 설명으로만 제공합니다. 본인 저장소에 아래 내용을 .github/workflows/pages.yml로 직접 저장하면 main push 때 게시됩니다. 원본을 푸시하고 Settings → Pages → Source: GitHub Actions를 선택합니다. Actions 성공 뒤 공개URL에서 index와 react.html, 이미지·CSS·키보드·폼을 확인합니다.
+# W10 GitHub Pages에 처음 배포하기
+
+## 내 PC의 화면을 다른 사람도 열게 하기
+
+localhost는 내 PC에서 실행 중인 주소입니다. 친구에게 보내도 친구 PC에서 같은 서버가 켜지는 것은 아닙니다. GitHub Pages는 저장소의 웹 파일을 공개 주소로 제공하는 서비스입니다. 오늘은 원본을 GitHub에 올리고 자동 작업인 GitHub Actions가 설치·시험·빌드·배포하도록 합니다.
+
+필요한 것: 본인 GitHub 로그인, Git, Node.js 22.12 이상 또는 24 LTS, VS Code, 인터넷. [Node 공식 설치](https://nodejs.org/en/download), [Git 공식 설치](https://git-scm.com/downloads), [VS Code](https://code.visualstudio.com/). 설치 화면은 기본 옵션으로 진행하고 설치 후 VS Code를 다시 엽니다. GitHub 계정이 없으면 [GitHub](https://github.com/)에서 본인 이메일로 가입·이메일 인증을 완료합니다. 암호나 인증 코드를 다른 학생과 공유하지 않습니다.
+
+## 1. ZIP과 작업 폴더 준비
+
+수업 자료 ZIP을 내려받아 탐색기에서 ‘모두 압축 풀기’를 누릅니다. 압축 안에서 파일을 직접 편집하지 않습니다. kit 폴더를 개인 작업 위치에 두고 VS Code의 File → Open Folder로 엽니다. 터미널에서 pwd와 dir을 실행했을 때 package.json, index.html, src, .github가 같은 위치에 있어야 합니다. 이 kit 폴더가 저장소의 맨 위가 됩니다. 상위의 수업자료 전체를 올리지 않습니다.
+
+```powershell
+pwd
+dir -Force
+node --version
+npm.cmd --version
+git --version
+npm.cmd ci
+npm.cmd test
+npm.cmd run build
+npm.cmd run preview
+```
+
+npm ci는 package-lock.json에 기록된 버전대로 설치합니다. test는 준비한 자동시험, build는 배포 파일 만들기입니다. preview가 알려 준 주소에서 /와 /react.html을 확인하고 종료는 Ctrl+C입니다. npm.ps1 실행 정책 오류는 npm.cmd로 실행하면 됩니다. ENOENT는 package.json이 없는 폴더인지 먼저 확인합니다.
+
+## 2. Git에 올릴 파일 고르기
+
+탐색기에서 .gitignore를 엽니다. node_modules, dist, .env는 제외합니다. .github/workflows/pages.yml은 배포 절차이고 .vscode/mcp.json은 비밀값 없는 Notion 서버 주소이므로 포함할 수 있습니다. OAuth 로그인 정보는 이 설정 파일에 적지 않습니다. src·public·HTML·package.json·package-lock.json·README·AGENTS·docs는 원본이므로 포함합니다.
+
+```powershell
+git status
+```
+
+‘not a git repository’가 나오고 이곳이 개인 kit 폴더라면 아래부터 진행합니다. 이미 다른 저장소 이름·파일이 보이면 현재 위치를 다시 확인합니다. 폴더가 맞는지 모른 채 중첩 저장소를 만들지 않습니다.
+
+```powershell
+git init
+git branch -M main
+git add .
+git status
+git diff --cached --stat
+git diff --cached
+git commit -m "feat: publish my landing page"
+```
+
+Author identity unknown이면 아래 값은 본인 GitHub 표시 이름·설정에서 확인한 이메일로 바꾸고 이 저장소에만 설정합니다. 이메일 공개를 원치 않으면 GitHub Settings → Emails에서 본인의 noreply 주소를 확인해 사용합니다. 예시 문자열 그대로 입력하지 않습니다.
+
+```powershell
+git config user.name "본인 표시 이름"
+git config user.email "본인 이메일 또는 GitHub noreply 주소"
+git commit -m "feat: publish my landing page"
+```
+
+## 3. 빈 GitHub 저장소 만들고 연결
+
+GitHub 우측 상단 + → New repository를 선택합니다. 이름은 my-landing처럼 영문 소문자·하이픈으로 정합니다. 본인 공개용 콘텐츠만 들어 있는지 확인하고 Public을 선택합니다. 무료 개인 계정의 공통 실습은 공개 저장소를 기준으로 합니다. 로컬에 이미 파일이 있으므로 README·.gitignore·License 자동 추가는 선택하지 않고 Create repository를 누릅니다.
+
+생성된 화면의 HTTPS 주소를 복사합니다. 아래 YOUR-ID와 MY-REPO를 본인 값으로 바꾸세요. 각 명령 뒤 결과를 확인합니다.
+
+```powershell
+git remote add origin https://github.com/YOUR-ID/MY-REPO.git
+git remote -v
+git push -u origin main
+```
+
+브라우저 로그인 창이 뜨면 본인 GitHub 계정으로 인증합니다. GitHub 비밀번호를 터미널에 반복해서 넣지 않습니다. origin already exists이면 git remote -v로 현재 주소를 확인하고, 이번 개인 저장소 주소가 틀린 경우에만 git remote set-url origin 본인주소로 변경합니다. rejected 오류가 나면 강제 push하지 말고 GitHub에서 자동 생성한 파일과 로컬 이력을 확인합니다.
+
+## 4. Pages 켜기와 자동 배포 확인
+
+저장소 Code 탭에서 .github/workflows/pages.yml과 package.json이 맨 위 기준으로 존재하는지 확인합니다. Settings → Pages → Build and deployment → Source를 GitHub Actions로 선택합니다. Branch에서 dist를 선택하는 방식이 아닙니다.
+
+Actions 탭에서 Publish landing 실행을 엽니다. 이미 실패했다면 Pages 설정 후 Re-run all jobs를 누릅니다. 실행 자체가 없으면 Actions → Publish landing → Run workflow → main → Run workflow로 시작합니다. 자동 실행은 main에 push할 때 작동합니다.
+
+실행 목록의 초록 체크는 작업 성공입니다. 실행을 열어 deploy 작업의 각 단계를 확인합니다. npm ci → npm test → npm run build → artifact 업로드 → deploy 순서입니다. artifact는 전달할 파일 묶음이며 이 예제는 dist만 올립니다. 배포에 필요한 contents: read, pages: write, id-token: write는 포함된 워크플로에 설정되어 있습니다. 별도 개인 토큰을 코드에 넣지 않습니다.
+
+## 5. 공개 주소에서 완료 확인
+
+Settings → Pages의 Visit site 또는 배포 결과 링크를 엽니다. 일반 프로젝트 저장소 주소는 https://YOUR-ID.github.io/MY-REPO/입니다. 저장소 Code 화면 주소와 다릅니다. 첫 배포는 반영까지 잠시 걸릴 수 있으므로 Actions 결과와 Pages 주소를 먼저 확인합니다.
+
+다른 팀원에게 공개 URL을 보내고 /, /react.html, 이미지, 메뉴, FAQ, 문의 입력 검사를 확인받습니다. 예제 문의 폼은 입력 검사만 하며 실제 메시지를 보내지 않습니다. PC에서 보인다는 이유로 휴대전화 확인을 생략하지 않습니다. GitHub Actions 실패와 화면의 기능 오류는 따로 기록합니다.
+
+## 경로를 이해하기
+
+kit/vite.config.js의 base: './'는 자산을 현재 페이지 기준의 상대 주소로 빌드합니다. 예를 들어 /MY-REPO/assets/...에서 읽어야 하는 파일을 /assets/...로 요청하면 도메인의 맨 위를 찾아 404가 납니다. 이미지도 public/images에 있다면 images/파일명처럼 사용하고, C:\Users\... 같은 PC 절대 경로를 쓰지 않습니다. 윈도에서는 보이던 Photo.svg가 공개 환경에서 photo.svg와 다른 파일일 수 있습니다.
+
+HTML판은 /MY-REPO/, React판은 /MY-REPO/react.html입니다. 이번 예제는 두 입구를 빌드하므로 React Router 설치나 새 라우팅 설정이 필요하지 않습니다. 대표로 제출할 페이지를 하나 정해 정확한 URL을 적습니다.
+
+## 직접 해보기와 예상 결과
+
+제목을 자기 문장으로 바꾸고 src 또는 index.html 변경이 커밋에 들어갔는지 확인한 뒤 push합니다. Actions가 새 커밋으로 실행되고 공개 페이지에 새 제목이 보여야 완료입니다. 마지막 배포 커밋과 URL을 docs/release.md에 기록합니다.
+
+출처: [GitHub Pages 게시 원본 설정](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [Vite Pages 배포](https://vite.dev/guide/static-deploy.html).
+
+
+## 포함된 자동 배포 파일
+
+위치는 .github/workflows/pages.yml입니다. 아래 원본과 비교할 수 있습니다.
 
 ```yaml
 name: Publish landing
@@ -36,5 +132,3 @@ jobs:
       - uses: actions/deploy-pages@v4
         id: deployment
 ```
-
-브랜치 이름이 main인지 먼저 확인합니다. 저장소 루트에 package.json이 있어야 이 예제가 그대로 작동합니다. 프로젝트 하위폴더에 넣었다면 실행위치와 artifact 경로를 함께 조정해야 합니다. 로컬 npm preview는 공개 게시 증거가 아닙니다.

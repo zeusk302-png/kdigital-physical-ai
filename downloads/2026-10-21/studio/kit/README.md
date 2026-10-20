@@ -39,3 +39,10 @@ preview는 다시 출력된 주소를 엽니다. 소스를 수정하면 build를
 ENOENT: 현재 폴더 확인. npm.ps1 정책 오류: npm.cmd 사용. 이미지404: 대소문자·경로 확인. 흰 화면: 터미널과 Console 첫 오류. 화면 그대로: dev/preview 주소·저장 파일 확인. 포트 충돌: 터미널에 출력된 실제 주소 사용. MCP 미연결: 수동 개발자 도구 검수를 계속하고 미실행 기록.
 
 Windows에서 npm ci가 esbuild.exe EPERM으로 실패하면 실행 중인 이 프로젝트 dev 서버를 Ctrl+C로 종료한 뒤 다시 설치합니다. 서버가 파일을 사용 중일 수 있으며 시스템 정책을 임의로 바꾸지 않습니다.
+
+
+## 개인 Pages 배포와 팀 Notion MCP
+
+[GitHub Pages 상세 안내](docs/deploy.md) 순서로 저장소·Actions·공개 URL을 확인합니다. kit 폴더가 저장소 루트이며 .github/workflows/pages.yml을 포함합니다. 공개 페이지에서 동작 확인까지 해야 배포 완료입니다. HTML판은 /, React판은 /react.html입니다.
+
+[Notion 연결](docs/notion-mcp.md)은 VS Code GitHub Copilot을 기준으로 .vscode/mcp.json → 서버 시작 → OAuth → 팀 확인 문장 조회를 안내합니다. 각자 인증하며 토큰을 저장소에 넣지 않습니다. [팀 양식](docs/team-review-template.md)과 [검수·수정 흐름](docs/team-workflow.md)을 사용하고 [공개 결과](docs/release.md)를 작성합니다.
