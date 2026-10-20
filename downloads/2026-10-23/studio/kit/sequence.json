@@ -1,0 +1,5 @@
+[
+  {"action": "forward", "speed": 20, "seconds": 0.3},
+  {"action": "left", "speed": 15, "seconds": 0.2},
+  {"action": "stop"}
+]

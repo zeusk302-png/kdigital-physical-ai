@@ -511,6 +511,14 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .agent-hero h2 { margin-top: 12px; max-width: 22ch; }
 .agent-hero p { max-width: 68ch; }
 .agent-group { margin: 38px 0; }
+.studio-hero { padding: 30px; border: 1px solid var(--line); border-left: 5px solid var(--accent,#087f75); border-radius: 14px; background: linear-gradient(120deg,#edf4ee,#f8f7f0); }
+.studio-hero h2 { margin: 10px 0 16px; max-width: 32ch; }
+.studio-hero p { max-width: 70ch; }
+.studio-outcomes { padding: 4px 0 12px; }
+.studio-group { margin: 30px 0; }
+.studio-group .activity-card { min-width: 0; }
+.studio-plan { border-top: 1px solid var(--line); margin: 30px 0; padding: 18px 0; }
+@media(max-width:600px) { .studio-hero { padding:22px 16px; } }
 .agent-group .activity-card { min-width: 0; }
 .agent-outcomes { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
 .agent-outcomes article { border-top: 3px solid var(--accent,#087f75); padding: 18px; background: var(--rail,#f1f4ef); border-radius: 0 0 10px 10px; }

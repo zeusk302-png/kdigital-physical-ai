@@ -1,0 +1,5 @@
+[
+  {"action": "servo", "joint": "arm", "position": 0.4, "seconds": 0.2},
+  {"action": "servo", "joint": "gripper", "position": 0.6, "seconds": 0.2},
+  {"action": "stop"}
+]

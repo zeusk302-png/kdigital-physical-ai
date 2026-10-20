@@ -1,0 +1,121 @@
+{
+  "title": "전자회로·ESP32: Python으로 만드는 RaspTank 명령 프로젝트",
+  "summary": "지정 ADR013 Raspberry Pi 로봇의 준비부터 명령·주행 어댑터·서보 설계·시퀀스·정지·시험을 연결합니다. 기본은 PC dryrun이며 실물 리비전과 기구 보정 확인을 분리합니다.",
+  "chapters": [
+    {
+      "id": "R01",
+      "title": "오늘 만들 로봇 프로그램과 작업 폴더",
+      "intro": "파일과 명령의 관계를 익히고 PC에서 첫 모의 실행을 합니다.",
+      "group": "준비와 회로",
+      "source": "lessons/R01.md"
+    },
+    {
+      "id": "R02",
+      "title": "부품·회로·보드 리비전과 조립 준비",
+      "intro": "신호·전원·모터·서보 역할을 구분하고 초록/보라 보드의 준비 경로를 확인합니다.",
+      "group": "준비와 회로",
+      "source": "lessons/R02.md"
+    },
+    {
+      "id": "R03",
+      "title": "PC와 Raspberry Pi를 구별하고 OS를 준비하기",
+      "intro": "OS와 실행 위치를 구분하고 Pi 준비와 라이브러리 확인 절차를 익힙니다.",
+      "group": "준비와 회로",
+      "source": "lessons/R03.md"
+    },
+    {
+      "id": "R04",
+      "title": "명령·인자·검사로 주행을 표현하기",
+      "intro": "JSON 명령을 직접 작성하고 타입·범위·오타를 검사합니다.",
+      "group": "명령과 제어",
+      "source": "lessons/R04.md"
+    },
+    {
+      "id": "R05",
+      "title": "어댑터로 실제 제조사 주행 코드 연결하기",
+      "intro": "공식 제조사 주행 함수의 서로 다른 계약을 번역합니다.",
+      "group": "명령과 제어",
+      "source": "lessons/R05.md"
+    },
+    {
+      "id": "R06",
+      "title": "서보·위치·보정과 동작 경계",
+      "intro": "모의 위치 명령을 만들고 실물 서보 보정의 근거를 구분합니다.",
+      "group": "명령과 제어",
+      "source": "lessons/R06.md"
+    },
+    {
+      "id": "R07",
+      "title": "시퀀스·상태·정지와 실패 복구",
+      "intro": "순서와 상태를 연결하고 중단·오류에서도 정지 요청을 시험합니다.",
+      "group": "프로젝트 완성",
+      "source": "lessons/R07.md"
+    },
+    {
+      "id": "R08",
+      "title": "AI와 파일을 나누어 고치고 증거를 제출하기",
+      "intro": "AI 수정 범위·diff·Git 추적 파일과 재현 근거를 완성합니다.",
+      "group": "프로젝트 완성",
+      "source": "lessons/R08.md"
+    }
+  ],
+  "periods": [
+    {
+      "title": "파일·부품·보드 확인",
+      "chapters": [
+        "R01",
+        "R02"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "PC/Pi·명령 작성",
+      "chapters": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "제조사 주행 번역",
+      "chapters": [
+        "R05"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "서보 명령과 보정",
+      "chapters": [
+        "R06"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "시퀀스·상태·정지",
+      "chapters": [
+        "R07"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "AI·Git·새 요구 수행",
+      "chapters": [
+        "R08"
+      ],
+      "minutes": 50
+    }
+  ],
+  "deliverables": [
+    "자기 시퀀스 JSON",
+    "Python 명령·상태·어댑터 소스",
+    "정상·입력거절·중단 시험 기록",
+    "장비·OS·리비전 확인표",
+    "AI 수정 요청·diff·실행 안내"
+  ],
+  "prerequisites": [
+    "Python 3.10 이상과 텍스트 편집기",
+    "kit 폴더 압축 해제",
+    "실물 경로는 강사 사전 조립·OS·전원·리비전 확인",
+    "외부 계정·패키지 없이 PC dryrun 가능"
+  ]
+}

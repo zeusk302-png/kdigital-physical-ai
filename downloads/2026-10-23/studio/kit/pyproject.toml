@@ -1,0 +1,9 @@
+[project]
+name = "rasptank-classroom"
+version = "0.1.0"
+description = "RaspTank classroom dryrun and reviewed motor adapter"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["robotlab"]

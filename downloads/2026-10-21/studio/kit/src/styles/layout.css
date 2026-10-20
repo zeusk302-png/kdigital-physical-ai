@@ -1,0 +1,44 @@
+/* 별표는 모든 요소를 선택합니다. 폭 계산에 안쪽 여백과 테두리를 포함합니다. */
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:system-ui,sans-serif; line-height:1.7; }
+a { color:inherit; } button,input,textarea { font:inherit; }
+button,a,input,textarea { touch-action:manipulation; }
+:focus-visible { outline:3px solid #a4540b; outline-offset:4px; }
+.container { width:min(100% - 2rem,70rem); margin-inline:auto; }
+.site-header { border-bottom:1px solid var(--line); padding-block:1rem; }
+.header-row,nav { display:flex; align-items:center; gap:1.25rem; justify-content:space-between; }
+.brand { font-size:1.5rem; font-weight:800; text-decoration:none; }
+.menu-button { display:none; }
+nav a { text-decoration:none; padding:.4rem; }
+.hero { display:grid; grid-template-columns:1.1fr 1fr; align-items:center; gap:3rem; padding-block:4rem; }
+h1 { font-size:clamp(2rem,5vw,3.8rem); line-height:1.2; letter-spacing:-.04em; overflow-wrap:anywhere; }
+h2 { font-size:1.9rem; line-height:1.35; }
+h1,h2,h3 { word-break:keep-all; overflow-wrap:anywhere; }
+.eyebrow { letter-spacing:.15em; font-size:.8rem; font-weight:800; }
+.button,button { border:1px solid var(--accent); border-radius:.6rem; background:var(--accent); color:white; padding:.7rem 1.15rem; cursor:pointer; }
+.button { display:inline-block; text-decoration:none; }
+img { display:block; max-width:100%; height:auto; border-radius:1rem; }
+section { padding-block:2.5rem; scroll-margin-top:1rem; }
+.cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--space); }
+.card { padding:1.5rem; border:1px solid var(--line); border-radius:1rem; min-width:0; overflow-wrap:anywhere; background:#fff; }
+.card h3 { margin-top:0; }
+details,.faq-item { border-bottom:1px solid var(--line); padding:1rem 0; }
+summary { cursor:pointer; font-weight:700; }
+.faq-toggle { width:100%; text-align:left; background:transparent; color:var(--ink); }
+.about { background:#e7efe4; padding:2rem; border-radius:1rem; }
+form { display:grid; gap:.8rem; max-width:38rem; }
+label { display:grid; gap:.25rem; font-weight:650; }
+input,textarea { width:100%; min-width:0; padding:.7rem; border:1px solid #6d8377; border-radius:.4rem; background:white; }
+textarea { min-height:7rem; } .message { min-height:2rem; font-weight:700; }
+footer { border-top:1px solid var(--line); padding-block:2rem; }
+/* 좁은 화면에서는 열을 하나로 줄입니다. 글자를 숨기지 않습니다. */
+@media(max-width:700px) {
+ .hero,.cards { grid-template-columns:1fr; gap:1.5rem; }
+ .hero { padding-block:2rem; }
+ .header-row { flex-wrap:wrap; }
+ .menu-button { display:block; }
+ nav { display:none; width:100%; flex-direction:column; align-items:stretch; }
+ nav.is-open { display:flex; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }

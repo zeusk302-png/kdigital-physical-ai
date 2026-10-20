@@ -1,0 +1,117 @@
+{
+  "title": "내 프로그램을 연결하는 웹 대시보드",
+  "summary": "YOLO·로봇의 실제 기록을 API와 SQLite로 수집하고 React 화면·필터·차트·장애 복구로 연결합니다.",
+  "chapters": [
+    {
+      "id": "B01",
+      "title": "사용자가 판단할 내용을 화면으로 설계",
+      "intro": "YOLO나 RaspTank의 실제 동작을 누가 왜 보는지 정하고 지표·이력·상태를 배치합니다.",
+      "group": "목적과 데이터",
+      "source": "lessons/B01.md"
+    },
+    {
+      "id": "B02",
+      "title": "API 요청·검사·실제 프로그램 연결",
+      "intro": "송신 성공 문구보다 서버가 받은 값과 응답을 확인합니다.",
+      "group": "목적과 데이터",
+      "source": "lessons/B02.md"
+    },
+    {
+      "id": "B03",
+      "title": "SQLite 저장·중복·시간 범위",
+      "intro": "서버를 다시 실행해도 기록이 남도록 저장과 조회의 책임을 나눕니다.",
+      "group": "수신·저장·화면",
+      "source": "lessons/B03.md"
+    },
+    {
+      "id": "B04",
+      "title": "React 요청·상태·필터",
+      "intro": "화면에 같은 수치를 붙여 넣는 대신 응답과 상태를 연결합니다.",
+      "group": "수신·저장·화면",
+      "source": "lessons/B04.md"
+    },
+    {
+      "id": "B05",
+      "title": "KPI·시계열·이력의 의미 맞추기",
+      "intro": "보기 좋은 그래프보다 무엇을 집계했는지 설명할 수 있어야 합니다.",
+      "group": "수신·저장·화면",
+      "source": "lessons/B05.md"
+    },
+    {
+      "id": "B06",
+      "title": "실제 원천 연결과 사건 어댑터",
+      "intro": "원천의 필드 이름을 바꾸기 전에 그 값이 뜻하는 것을 확인합니다.",
+      "group": "실제 연결과 검증",
+      "source": "lessons/B06.md"
+    },
+    {
+      "id": "B07",
+      "title": "장애 주입·복구·자동 시험",
+      "intro": "정상 요청만 통과하는 화면이 아니라 중단을 알아차리는 화면을 만듭니다.",
+      "group": "실제 연결과 검증",
+      "source": "lessons/B07.md"
+    },
+    {
+      "id": "B08",
+      "title": "AI 작업 지시·파일 구조·Git 인수인계",
+      "intro": "하루 동안 만든 결과를 다른 사람이 다시 실행할 수 있도록 정리합니다.",
+      "group": "AI와 프로젝트 관리",
+      "source": "lessons/B08.md"
+    }
+  ],
+  "periods": [
+    {
+      "title": "화면과 실제 원천 선택",
+      "chapters": [
+        "B01",
+        "B06"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "API와 입력 검사",
+      "chapters": [
+        "B02"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "DB와 재시작 복원",
+      "chapters": [
+        "B03"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "화면·지표·차트",
+      "chapters": [
+        "B04",
+        "B05"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "장애와 오류 해결",
+      "chapters": [
+        "B07"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "개별 변경과 인수인계",
+      "chapters": [
+        "B08"
+      ],
+      "minutes": 50
+    }
+  ],
+  "deliverables": [
+    "자기 목적의 웹 대시보드",
+    "실제 수신·DB·조회·복구 기록",
+    "AI 작업 지시·Git·재실행 안내"
+  ],
+  "prerequisites": [
+    "VS Code·Python·브라우저와 앞선 수업의 작업 파일",
+    "에이전트 서비스는 사용 가능한 계정이 있을 때 활용. 수동 작업 경로도 제공."
+  ]
+}
