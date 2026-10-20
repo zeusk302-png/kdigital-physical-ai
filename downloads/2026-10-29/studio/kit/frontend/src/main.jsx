@@ -1,3 +1,4 @@
+import {distanceStatus} from './measurement.js';
 import React,{useState,useEffect} from 'react';
 import {createRoot} from 'react-dom/client';
 import {readEvents} from './api.js';
@@ -23,6 +24,7 @@ function Trend({rows}){
 }
 
 function App(){
+  const [threshold,setThreshold]=useState(20);
   const [minutes,setMinutes]=useState(60),[device,setDevice]=useState(''),[kind,setKind]=useState('');
   const [data,setData]=useState(null),[error,setError]=useState(''),[loading,setLoading]=useState(true),[now,setNow]=useState(Date.now()/1000);
   useEffect(()=>{
@@ -43,12 +45,12 @@ function App(){
   const average=nums.length&&homogeneous?(nums.reduce((a,b)=>a+b,0)/nums.length).toFixed(2):'—';
   const lastReceived=rows.length?Math.max(...rows.map(r=>r.received_at)):null;
   const stale=lastReceived!==null&&now-lastReceived>10;
-  return <main><style>{style}</style><header><p>나의 프로그램 · 실제 수신 기록</p><h1>웹 대시보드</h1><p>YOLO나 로봇 프로그램의 사건을 연결하세요. 입력을 보내기 전에는 빈 화면이 정상입니다.</p></header>
+  return <main><style>{style}</style><header><p>나의 프로그램 · 실제 수신 기록</p><h1>웹 대시보드</h1><p>ESP32 실제 측정 또는 YOLO 사건을 연결하세요. 입력을 보내기 전에는 빈 화면이 정상입니다.</p></header>
     <section className="controls" aria-label="조회 범위"><label>시간 범위<select value={minutes} onChange={e=>setMinutes(Number(e.target.value))}><option value="5">최근5분</option><option value="60">최근1시간</option><option value="1440">최근24시간</option></select></label><label>장치 ID<input value={device} onChange={e=>setDevice(e.target.value)} placeholder="전체 또는 실제 ID"/></label><label>사건 종류<select value={kind} onChange={e=>setKind(e.target.value)}><option value="">전체</option>{types.map(t=><option key={t}>{t}</option>)}</select></label></section>
     <p role="status" className={'notice '+(error?'failed':'')}>{error?'연결 실패 · 마지막 성공 기록을 유지합니다. '+error:loading?'불러오는 중':!rows.length?'선택 범위에 기록이 없습니다.':stale?'조회 연결은 정상 · 새 수신 기록이10초 이상 없습니다.':'조회 연결 정상 · 수신 기록 확인'}</p>
     <section className="kpis"><div className="card">선택 범위 기록<strong>{rows.length}</strong></div><div className="card">주의 사건<strong>{rows.filter(r=>r.level==='warning').length}</strong></div><div className="card">숫자 평균<strong>{average}</strong><small>같은 장치·종류의 숫자만</small></div></section>
     {data?.truncated&&<p className="notice">조회 한도를 넘었습니다. 최근5000건 범위이며 시간 범위를 좁혀 주세요.</p>}
-    <section className="chart"><h2>추세</h2><Trend rows={rows}/></section>
+    <section className="chart"><h2>거리 판단 기준</h2><label>기준 거리(cm)<input type="number" min="0.1" step="0.1" value={Number.isNaN(threshold)?'':threshold} onChange={e=>setThreshold(e.target.valueAsNumber)}/></label><p role="status">{distanceStatus(rows,threshold)}</p><p className="muted">장치·종류 필터로 한 거리 센서를 선택하세요. 화면 판단 기준이며 보드의 LED 기준을 바꾸지는 않습니다. 수신 중단 여부는 위 연결 상태에서 따로 확인합니다.</p></section><section className="chart"><h2>추세</h2><Trend rows={rows}/></section>
     <section><h2>사건 이력</h2><p className="muted">최근200건 표시 / KPI는 조회된 전체 범위. 시각은 브라우저 현지 시각입니다.</p><div className="scroll"><table><thead><tr><th>측정 시각</th><th>장치</th><th>종류</th><th>값</th><th>단계</th></tr></thead><tbody>{rows.slice(0,200).map(r=><tr key={r.event_id}><td>{new Date(r.occurred_at*1000).toLocaleString()}</td><td>{r.device_id}</td><td>{r.kind}</td><td>{r.value===null?'미측정':r.value}</td><td>{r.level}</td></tr>)}</tbody></table></div></section>
   </main>;
 }

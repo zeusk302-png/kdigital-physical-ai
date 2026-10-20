@@ -33,11 +33,12 @@ def create_app(db_path=None):
             key=(row["device_id"],row["kind"])
             if key not in latest:latest[key]=row
         nums=[r["value"] for r in rows if r["value"] is not None]
+        homogeneous=len({(r["device_id"],r["kind"]) for r in rows})<=1
         warnings=sum(r["level"]=="warning" for r in rows)
         last=max((r["received_at"] for r in rows),default=None)
         return {"server_time":now,"minutes":minutes,"device":device,"rows":rows,
                 "latest":list(latest.values()),"count":len(rows),"warnings":warnings,
-                "average":sum(nums)/len(nums) if nums else None,
+                "average":sum(nums)/len(nums) if nums and homogeneous else None,
                 "last_received_at":last,"truncated":truncated}
 
     # 이 앱은 별도 프런트 서버 없이 같은 주소로 파일을 제공합니다.

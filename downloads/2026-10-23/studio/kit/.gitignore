@@ -1,8 +1,6 @@
 .venv/
+runtime/
 __pycache__/
 *.pyc
-*.egg-info/
 .env
-runtime/
-vendor/
-hardware.local.json
+*.local.*

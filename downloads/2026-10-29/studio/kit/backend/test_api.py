@@ -50,4 +50,9 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.client.get('/api/events?device=other').json()['count'],0)
         self.assertEqual(self.client.get('/api/events?minutes=0').status_code,422)
 
+    def test_mixed_units_not_averaged(self):
+        self.client.post('/api/events',json=self.event)
+        self.client.post('/api/events',json={**self.event,'event_id':'different','kind':'accel_x_m_s2','value':9.8})
+        self.assertIsNone(self.client.get('/api/events').json()['average'])
+
 if __name__=='__main__':unittest.main()

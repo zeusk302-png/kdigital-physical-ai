@@ -1,6 +1,6 @@
 {
   "title": "내 프로그램을 연결하는 웹 대시보드",
-  "summary": "YOLO·로봇의 실제 기록을 API와 SQLite로 수집하고 React 화면·필터·차트·장애 복구로 연결합니다.",
+  "summary": "ESP32 실제 시리얼 또는 YOLO 사건을 API·SQLite·React로 연결하고 자기 기준·필터·차트·연결 상태를 구현합니다.",
   "chapters": [
     {
       "id": "B01",
@@ -57,50 +57,74 @@
       "intro": "하루 동안 만든 결과를 다른 사람이 다시 실행할 수 있도록 정리합니다.",
       "group": "AI와 프로젝트 관리",
       "source": "lessons/B08.md"
+    },
+    {
+      "id": "B09",
+      "title": "실제 ESP32 스트림을 API·DB·화면으로 연결",
+      "intro": "## 센서부터 화면까지 세 개의 터미널",
+      "group": "실제 연동과 개인 화면",
+      "source": "lessons/B09.md"
+    },
+    {
+      "id": "B10",
+      "title": "사용자 기준·단위·현재값과 연결 상태",
+      "intro": "대시보드는 숫자를 전부 나열하는 곳보다 사용자가 판단할 순서를 보여주는 화면이어야 합니다. 지금 확인할 것, 최근 변화, 이상 사건, 연결 상태를 나눕니다. 거리 cm와 가속도 m/s²를 한 평균으로 섞지 않습니다. 사람의 추적 ID도 측정값으로 평균내지 않습니다.",
+      "group": "실제 연동과 개인 화면",
+      "source": "lessons/B10.md"
+    },
+    {
+      "id": "B11",
+      "title": "팀 검수·Notion MCP·실행과 배포 범위",
+      "intro": "10/21의 Notion 팀 검수 방식을 그대로 사용하되 이번에는 실제 연동 경로를 기록합니다. 팀 문서에 입력 장치·실행 PC·서버 주소·장치 ID·측정 종류·필드·단위·새 기록 주기를 적습니다. localhost는 각자의 PC를 뜻하므로 다른 학생의 localhost를 내 브라우저에서 열어 같은 서버가 나올 것으로 생각하지 않습니다.",
+      "group": "실제 연동과 개인 화면",
+      "source": "lessons/B11.md"
     }
   ],
   "periods": [
     {
-      "title": "화면과 실제 원천 선택",
+      "title": "화면 목적·서버 실행",
       "chapters": [
         "B01",
-        "B06"
-      ],
-      "minutes": 50
-    },
-    {
-      "title": "API와 입력 검사",
-      "chapters": [
         "B02"
       ],
       "minutes": 50
     },
     {
-      "title": "DB와 재시작 복원",
+      "title": "실제 입력·계약·수신",
       "chapters": [
-        "B03"
+        "B03",
+        "B09"
       ],
       "minutes": 50
     },
     {
-      "title": "화면·지표·차트",
+      "title": "DB·이력·중복",
       "chapters": [
-        "B04",
-        "B05"
+        "B04"
       ],
       "minutes": 50
     },
     {
-      "title": "장애와 오류 해결",
+      "title": "React·단위·자기 판정",
       "chapters": [
+        "B05",
+        "B10"
+      ],
+      "minutes": 50
+    },
+    {
+      "title": "중단·복구·개인 기능",
+      "chapters": [
+        "B06",
         "B07"
       ],
       "minutes": 50
     },
     {
-      "title": "개별 변경과 인수인계",
+      "title": "팀 검수·실행 인수인계",
       "chapters": [
-        "B08"
+        "B08",
+        "B11"
       ],
       "minutes": 50
     }
