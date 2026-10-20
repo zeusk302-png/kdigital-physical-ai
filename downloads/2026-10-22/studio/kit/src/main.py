@@ -34,7 +34,8 @@ def run(args):
                           'scores': boxes.conf.tolist()}, ensure_ascii=False))
         return
     source = int(args.source) if args.source.isdecimal() else args.source
-    capture = cv2.VideoCapture(source)
+    from .camera import open_input
+    capture = open_input(args.source, getattr(args, 'backend', 'auto'))
     writer = None
     frames, process_seconds = 0, []
     engine = EventEngine(cfg['zone'], cfg['line_x'], cfg['margin'], cfg['max_gap'])
@@ -101,6 +102,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='YOLO 검출/추적/구역 사건 프로그램')
     parser.add_argument('--source', required=True, help='동영상 경로 또는 웹캠 번호 0')
     parser.add_argument('--image', action='store_true')
+    parser.add_argument('--backend', choices=['auto','dshow','msmf'], default='auto')
     parser.add_argument('--weights', default='runtime/models/yolo11n.pt')
     parser.add_argument('--config', default='configs/default.json')
     parser.add_argument('--output', default='runtime/results/run1')
