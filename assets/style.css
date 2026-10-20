@@ -507,4 +507,13 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .git-guide-group { margin: 34px 0; }
 .git-guide-group .activity-card { min-width: 0; }
 .git-guide-kicker { color: var(--accent, #087f75); font-weight: 700; margin-bottom: 18px; }
+.agent-hero { padding: 30px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(125deg,#edf4ee,#f7f6ef); }
+.agent-hero h2 { margin-top: 12px; max-width: 22ch; }
+.agent-hero p { max-width: 68ch; }
+.agent-group { margin: 38px 0; }
+.agent-group .activity-card { min-width: 0; }
+.agent-outcomes { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+.agent-outcomes article { border-top: 3px solid var(--accent,#087f75); padding: 18px; background: var(--rail,#f1f4ef); border-radius: 0 0 10px 10px; }
+.agent-outcomes strong { font-size: 19px; }
+@media (max-width: 600px) { .agent-hero { padding: 22px 16px; } .agent-outcomes { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .git-guide-entry { padding: 20px 16px; } .git-guide-entry .actions { align-items: stretch; } }
