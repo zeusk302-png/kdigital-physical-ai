@@ -1,0 +1,2650 @@
+{
+  "title": "아두이노 고급키트 · 개인 실습",
+  "parts": [
+    {
+      "id": 0,
+      "name": "UNO 호환보드",
+      "lab": "K00",
+      "description": "USB를 꽂는 큰 은색 단자와 UNO 글자를 찾습니다. 오늘 오후의 보드는 UNO입니다.",
+      "crop": [
+        22,
+        414,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 1,
+      "name": "USB A–B 케이블",
+      "lab": "K00",
+      "description": "컴퓨터 쪽은 납작한 USB A, 보드 쪽은 네모난 USB B입니다. Sense용 USB C와 다릅니다.",
+      "crop": [
+        344,
+        414,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 2,
+      "name": "LCD1602 · I2C 모듈",
+      "lab": "K15",
+      "description": "뒷면의 작은 기판과 GND·VCC·SDA·SCL 네 핀을 확인합니다. 16핀 병렬 LCD 예제를 사용하지 않습니다.",
+      "crop": [
+        22,
+        712,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 3,
+      "name": "RFID RC522",
+      "lab": "K25",
+      "description": "RFID를 읽는 파란 모듈입니다. 전원과 신호가 3.3V이므로 UNO와 직접 연결하지 않습니다.",
+      "crop": [
+        344,
+        712,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 4,
+      "name": "RFID 카드",
+      "lab": "K25",
+      "description": "RFID 리더에 가까이 대는 카드입니다. 전선을 꽂거나 빵판에 꽂는 부품이 아닙니다.",
+      "crop": [
+        22,
+        1013,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 5,
+      "name": "RFID 열쇠고리",
+      "lab": "K25",
+      "description": "카드와 같은 방식으로 태그 ID를 읽습니다. 카드와 다른 ID가 나오는지 비교합니다.",
+      "crop": [
+        344,
+        1013,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 6,
+      "name": "조이스틱",
+      "lab": "K13",
+      "description": "막대를 움직이면 X·Y 값이 바뀌고 누르면 스위치 값이 바뀝니다.",
+      "crop": [
+        22,
+        1311,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 7,
+      "name": "4×4 키패드",
+      "lab": "K14",
+      "description": "16개 버튼을 8개 선으로 읽는 행·열 방식입니다. 판매처 핀표와 실제 방향을 맞춥니다.",
+      "crop": [
+        344,
+        1311,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 8,
+      "name": "DS1302 시계 모듈",
+      "lab": "K17",
+      "description": "시간을 기억하는 DS1302 모듈입니다. CLK·DAT·RST 글자와 전지 종류를 확인합니다.",
+      "crop": [
+        22,
+        1612,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 9,
+      "name": "수위 센서",
+      "lab": "K07",
+      "description": "금속 무늬 부분만 물에 닿게 합니다. 윗부분의 부품과 커넥터는 적시지 않습니다.",
+      "crop": [
+        344,
+        1612,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 10,
+      "name": "DHT11 온습도 모듈",
+      "lab": "K09",
+      "description": "파란 격자 모양의 DHT11입니다. 작은 모듈의 +·−·S 표시에 따라 연결합니다.",
+      "crop": [
+        22,
+        1910,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 11,
+      "name": "RGB LED 모듈",
+      "lab": "K11",
+      "description": "빨강·초록·파랑을 각각 제어합니다. 공통 핀 표시와 저항 유무를 먼저 확인합니다.",
+      "crop": [
+        344,
+        1910,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 12,
+      "name": "ULN2003 모터 드라이버",
+      "lab": "K19",
+      "description": "스텝모터와 UNO 사이에 쓰는 드라이버입니다. 모터를 UNO 신호 핀에 직접 꽂지 않습니다.",
+      "crop": [
+        22,
+        2211,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 13,
+      "name": "28BYJ-48 스텝모터",
+      "lab": "K19",
+      "description": "색깔 선 다섯 개가 흰 커넥터로 모입니다. 5V 모델 표시를 확인합니다.",
+      "crop": [
+        344,
+        2211,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 14,
+      "name": "1채널 릴레이",
+      "lab": "K20",
+      "description": "신호로 접점을 바꾸는 부품입니다. 수업에서는 LED 저전압 회로만 연결합니다.",
+      "crop": [
+        22,
+        2509,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 15,
+      "name": "브레드보드 · 빵판",
+      "lab": "K01",
+      "description": "가운데 홈 양쪽은 서로 연결되지 않습니다. 같은 숫자의 A–E 다섯 구멍만 한 묶음입니다.",
+      "crop": [
+        344,
+        2509,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 16,
+      "name": "양쪽 수 핀 점퍼선",
+      "lab": "K01",
+      "description": "양 끝이 뾰족한 금속 핀입니다. UNO 소켓과 빵판 구멍을 연결합니다.",
+      "crop": [
+        22,
+        2810,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 17,
+      "name": "암–수 점퍼선",
+      "lab": "K07",
+      "description": "한쪽은 구멍, 다른 쪽은 핀입니다. 모듈의 튀어나온 핀과 빵판을 연결합니다.",
+      "crop": [
+        344,
+        2810,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 18,
+      "name": "소리 감지 모듈",
+      "lab": "K08",
+      "description": "마이크와 감도 조절 나사가 있습니다. AO는 크기 값, DO는 기준을 넘었는지입니다.",
+      "crop": [
+        22,
+        3108,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 19,
+      "name": "적외선 리모컨",
+      "lab": "K16",
+      "description": "수신 소자 쪽으로 향하게 누릅니다. 절연 탭·배터리 방향을 확인합니다.",
+      "crop": [
+        344,
+        3108,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 20,
+      "name": "10kΩ 가변저항",
+      "lab": "K04",
+      "description": "가운데 다리는 손잡이 위치에 따라 전압이 달라집니다. 양끝 두 다리는 저항의 양끝입니다.",
+      "crop": [
+        22,
+        3409,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 21,
+      "name": "1자리 FND · 5161BS",
+      "lab": "K21",
+      "description": "5161BS는 공통 애노드입니다. 공통 핀 3·8이 +이고 각 세그먼트를 LOW로 켭니다.",
+      "crop": [
+        344,
+        3409,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 22,
+      "name": "4자리 FND · HS410561K-32",
+      "lab": "K22",
+      "description": "HS410561K-32는 공통 애노드 4자리 부품입니다. TM1637 모듈과 다릅니다.",
+      "crop": [
+        22,
+        3707,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 23,
+      "name": "8×8 도트매트릭스",
+      "lab": "K24",
+      "description": "핀 16개가 있는 맨 LED 표시기입니다. MAX7219 모듈 코드를 그대로 쓰면 안 됩니다.",
+      "crop": [
+        344,
+        3707,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 24,
+      "name": "SG90 서보모터",
+      "lab": "K18",
+      "description": "갈색 GND, 빨강 전원, 주황 신호를 구분합니다. 전원을 신호 핀에서 공급하지 않습니다.",
+      "crop": [
+        22,
+        4008,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 25,
+      "name": "2핀 부저",
+      "lab": "K12",
+      "description": "사진에 두 종류가 있습니다. 능동·수동 여부와 정격 전류를 먼저 구분합니다.",
+      "crop": [
+        344,
+        4008,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 26,
+      "name": "볼 · 기울기 스위치",
+      "lab": "K06",
+      "description": "몸체를 기울이면 안쪽 접점이 붙거나 떨어집니다. 두 다리에 극성은 없습니다.",
+      "crop": [
+        22,
+        4305,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 27,
+      "name": "조도 센서 · CdS",
+      "lab": "K05",
+      "description": "동그란 면에 굽은 무늬가 있습니다. 주변이 밝고 어두울 때 저항이 달라집니다.",
+      "crop": [
+        344,
+        4305,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 28,
+      "name": "9V 배터리 클립",
+      "lab": "K27",
+      "description": "전원을 연결하는 보조품입니다. 9V 배터리는 상품 구성표에 포함돼 있지 않습니다.",
+      "crop": [
+        22,
+        4606,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 29,
+      "name": "빨강·노랑·초록 LED",
+      "lab": "K03",
+      "description": "긴 다리 +, 짧은 다리 −를 확인하고 저항을 함께 사용합니다. 색이 달라도 연결 원리는 같습니다.",
+      "crop": [
+        344,
+        4606,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 30,
+      "name": "고정저항",
+      "lab": "K01",
+      "description": "색띠로 값을 구별합니다. 방향은 없지만 저항 값은 반드시 구별합니다.",
+      "crop": [
+        22,
+        4904,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 31,
+      "name": "2핀 화염 감지 소자",
+      "lab": "K26",
+      "description": "사진은 2핀 소자입니다. KY-026처럼 3·4핀 모듈로 가정하지 않습니다.",
+      "crop": [
+        344,
+        4904,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 32,
+      "name": "택트 스위치와 캡",
+      "lab": "K02",
+      "description": "네 다리 중 같은 쪽 두 다리는 원래 연결된 경우가 많습니다. 가운데 홈을 가로질러 놓습니다.",
+      "crop": [
+        22,
+        5203,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 33,
+      "name": "적외선 수신 소자",
+      "lab": "K16",
+      "description": "겉모양이 같아도 전원 핀 순서가 다릅니다. 몸체의 모델명을 읽고 핀표를 확인합니다.",
+      "crop": [
+        344,
+        5203,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 34,
+      "name": "74HC595",
+      "lab": "K23",
+      "description": "홈·점이 1번 핀 기준입니다. 16핀 칩을 빵판 가운데 홈을 가로질러 꽂습니다.",
+      "crop": [
+        22,
+        5501,
+        308,
+        284
+      ]
+    },
+    {
+      "id": 35,
+      "name": "LM35DZ 온도 센서",
+      "lab": "K10",
+      "description": "평평한 면의 LM35DZ 글자를 확인합니다. 공식 자료의 바닥에서 본 그림을 뒤집어 해석하지 않습니다.",
+      "crop": [
+        344,
+        5501,
+        306,
+        284
+      ]
+    },
+    {
+      "id": 36,
+      "name": "보관 케이스",
+      "lab": "K27",
+      "description": "사용 후 부품을 종류별로 돌려놓습니다. 젖은 센서·휘어진 다리를 그대로 섞지 않습니다.",
+      "crop": [
+        22,
+        5797,
+        308,
+        284
+      ]
+    }
+  ],
+  "labs": [
+    {
+      "id": "K00",
+      "title": "처음 연결 · 설치와 업로드",
+      "parts": [
+        0,
+        1
+      ],
+      "concept": "스케치는 UNO에 넣는 프로그램이고 .ino가 파일 확장자입니다. 업로드는 PC의 코드를 보드로 보내는 과정입니다. 컴파일은 실행할 수 있는 형태로 바꾸면서 문법을 검사하는 과정입니다.",
+      "components": [],
+      "lines": [],
+      "code": "// 처음 연결 · 설치와 업로드\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nvoid setup() {\n  pinMode(LED_BUILTIN, OUTPUT); // 보드 위 L 표시 LED를 출력으로 사용합니다.\n  Serial.begin(9600); // 도구 → 시리얼 모니터도 같은 속도로 맞춥니다.\n}\nvoid loop() {\n  digitalWrite(LED_BUILTIN, HIGH); // 보드 안 LED를 켭니다. 외부 배선은 없습니다.\n  Serial.println(\"UNO ready\");\n  delay(500); // 밀리초: 1000이 1초입니다.\n  digitalWrite(LED_BUILTIN, LOW);\n  delay(500);\n}\n",
+      "expected": "보드의 L LED가 0.5초씩 켜지고 꺼집니다. 시리얼 창에 UNO ready가 반복됩니다.",
+      "change": "delay 두 곳을 200으로 바꾸고 다시 업로드합니다.",
+      "errors": "포트가 없다면 데이터 케이블·다른 USB 포트부터 확인합니다. 업로드 중 포트를 쓰는 다른 프로그램을 닫습니다.",
+      "orientation": "아직 빵판을 연결하지 않습니다. Arduino 공식 사이트 → Software → Arduino IDE 2 설치 → 보드 USB 연결 → 보드 선택에서 Arduino Uno → 연결된 COM 포트 선택 → 새 스케치 → 코드 붙여넣기 → 저장(K00/K00.ino) → ✓ 검증 → → 업로드 → 시리얼 모니터 9600 순서입니다. UNO R4나 XIAO를 선택하지 않습니다.",
+      "gate": "",
+      "library": "",
+      "refs": [
+        "https://www.arduino.cc/en/software/",
+        "https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/"
+      ]
+    },
+    {
+      "id": "K01",
+      "title": "빵판 읽기 · 저항과 LED",
+      "parts": [
+        15,
+        16,
+        29,
+        30
+      ],
+      "concept": "빵판은 구멍 안의 금속으로 부품을 연결합니다. 같은 숫자의 A~E는 한 묶음, F~J는 다른 한 묶음입니다. 옆 숫자 줄끼리는 이어지지 않습니다. 전압은 두 점 사이의 차이, 전류는 회로를 따라 흐르는 양, 저항은 그 흐름을 제한하는 부품입니다. 5V → LED → GND 경로에는 반드시 저항을 둡니다.",
+      "components": [
+        {
+          "name": "1kΩ 저항",
+          "pins": {
+            "한쪽": "C15",
+            "다른쪽": "C10"
+          },
+          "kind": "resistor",
+          "part": 30
+        },
+        {
+          "name": "LED",
+          "pins": {
+            "긴 다리 +": "E10",
+            "짧은 다리 −": "E11"
+          },
+          "kind": "led",
+          "part": 29
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D8",
+          "b": "A15",
+          "text": "UNO 8번과 A15를 연결합니다.",
+          "why": "A15와 C15는 같은 묶음입니다. 출력이 저항으로 들어갑니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A11",
+          "text": "UNO GND와 A11을 연결합니다.",
+          "why": "A11과 E11이 이어져 LED의 짧은 다리가 GND로 돌아갑니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 빵판 읽기 · 저항과 LED\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int LED_PIN = 8; // UNO에서 8이라고 적힌 소켓입니다.\nvoid setup() {\n  pinMode(LED_PIN, OUTPUT); // 전압을 내보내는 역할로 정합니다.\n}\nvoid loop() {\n  digitalWrite(LED_PIN, HIGH); // 8번에 HIGH를 내보내 LED를 켭니다.\n  delay(1000); // 켜진 상태를 1초 유지합니다.\n  digitalWrite(LED_PIN, LOW); // 8번을 LOW로 바꿔 LED를 끕니다.\n  delay(1000);\n}\n",
+      "expected": "외부 LED가 1초씩 켜졌다 꺼집니다.",
+      "change": "켜진 시간은 200ms, 꺼진 시간은 800ms로 바꿉니다.",
+      "errors": "안 켜지면 LED 극성 → 저항 값 → C10/E10 같은 줄 → GND 순으로 확인합니다. 저항을 제거해 고치지 않습니다.",
+      "orientation": "USB는 왼쪽. 빵판 숫자가 작은 쪽을 위로 맞춥니다. 저항 C10–C15, LED 긴 다리 E10·짧은 다리 E11입니다. 그림은 빵판 가운데 단자 부분이며 긴 전원 레일은 사용하지 않습니다. 1kΩ은 갈색-검정-빨강(4띠) 또는 갈색-검정-검정-갈색-갈색(5띠)입니다. 판매처 사진은 외형이므로 실제 값은 색띠로 확인합니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K02",
+      "title": "택트 스위치 · 누르면 값 바꾸기",
+      "parts": [
+        32,
+        15
+      ],
+      "concept": "입력은 사람이 누른 상태를 컴퓨터가 읽는 것입니다. INPUT_PULLUP은 내부 저항으로 기본값을 HIGH로 유지합니다. 버튼을 누르면 GND와 연결되어 LOW가 됩니다. 떠 있는 입력을 읽으면 손을 대지 않아도 값이 흔들릴 수 있습니다.",
+      "components": [
+        {
+          "name": "택트 스위치 · 홈을 가로질러 배치",
+          "pins": {
+            "왼쪽 위": "E10",
+            "왼쪽 아래": "E12",
+            "오른쪽 위": "F10",
+            "오른쪽 아래": "F12"
+          },
+          "kind": "button",
+          "part": 32
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D2",
+          "b": "A10",
+          "text": "U:D2에서 A10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "J10",
+          "text": "U:GND에서 J10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 택트 스위치 · 누르면 값 바꾸기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int SENSOR_PIN = 2; // 연결표의 신호 핀과 같습니다.\nvoid setup() {\n  pinMode(SENSOR_PIN, INPUT_PULLUP); // 내부 저항으로 미연결 때 HIGH를 유지합니다.\n  Serial.begin(9600);\n}\nvoid loop() {\n  bool closed = digitalRead(SENSOR_PIN) == LOW; // GND와 붙으면 LOW입니다.\n  Serial.println(closed ? \"closed\" : \"open\"); // 조건에 따라 표시할 글자를 고릅니다.\n  delay(50);\n}\n",
+      "expected": "누르지 않으면 open, 누르면 closed입니다.",
+      "change": "digitalRead가 LOW일 때 보드 내장 LED를 켜 봅니다.",
+      "errors": "항상 closed면 버튼을 90도 잘못 놓았거나 내부에서 원래 붙어 있는 다리 두 개를 골랐을 수 있습니다. USB를 빼고 다리 연결을 확인합니다.",
+      "orientation": "버튼 네 다리가 가운데 홈을 가로지르도록 E10·E12와 F10·F12에 놓습니다. 이 그림은 같은 쪽 세로 두 다리가 원래 연결되고, 누르면 좌우가 이어지는 버튼 기준입니다. 다른 형태는 전원이 없는 상태에서 연속성 측정으로 같은 다리를 먼저 확인합니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K03",
+      "title": "세 가지 LED · 신호등 만들기",
+      "parts": [
+        29,
+        30
+      ],
+      "concept": "출력 여러 개를 순서대로 바꾸면 상태를 표현할 수 있습니다. 각 LED에는 각자의 저항이 필요합니다. 신호등처럼 지금 어떤 상태인지 정하고, 그 상태에서 켤 LED를 명확히 정합니다.",
+      "components": [
+        {
+          "name": "빨강 LED",
+          "pins": {
+            "긴 +": "E6",
+            "짧은 −": "E7"
+          },
+          "kind": "led",
+          "part": 29
+        },
+        {
+          "name": "노랑 LED",
+          "pins": {
+            "긴 +": "E12",
+            "짧은 −": "E13"
+          },
+          "kind": "led",
+          "part": 29
+        },
+        {
+          "name": "초록 LED",
+          "pins": {
+            "긴 +": "E18",
+            "짧은 −": "E19"
+          },
+          "kind": "led",
+          "part": 29
+        },
+        {
+          "name": "빨강 1kΩ",
+          "pins": {
+            "한쪽": "C6",
+            "다른쪽": "C9"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "노랑 1kΩ",
+          "pins": {
+            "한쪽": "C12",
+            "다른쪽": "C15"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "초록 1kΩ",
+          "pins": {
+            "한쪽": "C18",
+            "다른쪽": "C21"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D8",
+          "b": "A9",
+          "text": "U:D8에서 A9로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D9",
+          "b": "A15",
+          "text": "U:D9에서 A15로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D10",
+          "b": "A21",
+          "text": "U:D10에서 A21로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A7",
+          "text": "U:GND에서 A7로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B7",
+          "b": "B13",
+          "text": "B7에서 B13로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "C13",
+          "b": "B19",
+          "text": "C13에서 B19로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 세 가지 LED · 신호등 만들기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int RED = 8, YELLOW = 9, GREEN = 10;\n// 같은 모양의 일을 함수로 묶어 어느 LED를 켤지 전달합니다.\nvoid showLight(int activePin) {\n  digitalWrite(RED, activePin == RED);\n  digitalWrite(YELLOW, activePin == YELLOW);\n  digitalWrite(GREEN, activePin == GREEN);\n}\nvoid setup() {\n  pinMode(RED, OUTPUT); pinMode(YELLOW, OUTPUT); pinMode(GREEN, OUTPUT);\n}\nvoid loop() {\n  showLight(RED); delay(2000);\n  showLight(GREEN); delay(2000);\n  showLight(YELLOW); delay(700);\n}\n",
+      "expected": "빨강 → 초록 → 노랑 순서로 한 개씩 켜집니다.",
+      "change": "정지·출발·주의 시간을 각각 바꾸고 이유를 적습니다.",
+      "errors": "한 LED가 안 꺼지면 해당 출력 번호와 연결표를 비교합니다. 세 LED에 저항 하나만 공유하지 않습니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K04",
+      "title": "가변저항 · 손잡이를 숫자로 읽기",
+      "parts": [
+        20
+      ],
+      "concept": "아날로그 입력은 전압이 얼마나 높은지 읽습니다. UNO의 analogRead는 0~약5V를 0~1023 숫자로 바꿉니다. 가변저항 양끝에 5V·GND를 연결하면 가운데 다리 전압이 손잡이에 따라 달라집니다.",
+      "components": [
+        {
+          "name": "10kΩ 가변저항",
+          "pins": {
+            "바깥 다리 1": "E8",
+            "가운데 다리": "E10",
+            "바깥 다리 2": "E12"
+          },
+          "kind": "raw",
+          "part": 20
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 바깥1 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A10",
+          "text": "U:A0에서 A10로 연결합니다.",
+          "why": "부품의 가운데 핀을 놓은 줄과 UNO A0를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A12",
+          "text": "U:GND에서 A12로 연결합니다.",
+          "why": "부품의 바깥2 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 가변저항 · 손잡이를 숫자로 읽기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// setup()은 업로드·리셋 직후 한 번만 실행합니다.\nvoid setup() {\n  Serial.begin(9600); // PC에 값을 보여 줄 통신 속도입니다.\n}\n// loop()는 전원이 들어온 동안 계속 반복합니다.\nvoid loop() {\n  int value = analogRead(A0); // UNO는 입력 전압을 0~1023 값으로 읽습니다.\n  Serial.print(\"knob=\");\n  Serial.println(value); // 숫자 뒤에서 줄을 바꿉니다.\n\n  delay(200); // 값이 너무 빠르게 지나가지 않게 0.2초 기다립니다.\n}\n",
+      "expected": "돌릴 때 값이 대략 0~1023 사이로 변합니다. 실제 끝값은 조금 다를 수 있습니다.",
+      "change": "512보다 큰 때 내장 LED를 켜는 조건문을 추가합니다.",
+      "errors": "값이 늘 0 또는 1023이면 가운데 다리가 A0인지 확인합니다. 양끝을 바꾸면 증가 방향만 뒤집힙니다.",
+      "orientation": "세 다리를 서로 다른 숫자 줄 E8·E10·E12에 꽂도록 부드럽게 벌립니다. 가운데 다리는 A0 신호입니다. 세 다리를 같은 줄 A~E에 나란히 꽂으면 단락됩니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K05",
+      "title": "조도 센서 · 밝기와 저항",
+      "parts": [
+        27,
+        30
+      ],
+      "concept": "CdS는 빛에 따라 저항이 바뀝니다. 저항 변화 자체를 analogRead로 읽을 수 없어 고정저항과 나눠 걸리는 전압을 읽습니다. 이것을 전압 분배라고 합니다. 이 회로에서는 밝아지면 값이 대체로 커집니다.",
+      "components": [
+        {
+          "name": "CdS",
+          "pins": {
+            "다리 1": "E8",
+            "다리 2": "E10"
+          },
+          "kind": "raw",
+          "part": 27
+        },
+        {
+          "name": "10kΩ 저항",
+          "pins": {
+            "한쪽": "C10",
+            "다른쪽": "C14"
+          },
+          "kind": "resistor",
+          "part": 30
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A10",
+          "text": "U:A0에서 A10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A14",
+          "text": "U:GND에서 A14로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 조도 센서 · 밝기와 저항\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// setup()은 업로드·리셋 직후 한 번만 실행합니다.\nvoid setup() {\n  Serial.begin(9600); // PC에 값을 보여 줄 통신 속도입니다.\n}\n// loop()는 전원이 들어온 동안 계속 반복합니다.\nvoid loop() {\n  int value = analogRead(A0); // UNO는 입력 전압을 0~1023 값으로 읽습니다.\n  Serial.print(\"light=\");\n  Serial.println(value); // 숫자 뒤에서 줄을 바꿉니다.\n\n  delay(200); // 값이 너무 빠르게 지나가지 않게 0.2초 기다립니다.\n}\n",
+      "expected": "손으로 가리거나 조명을 가까이 했을 때 숫자가 변합니다.",
+      "change": "밝을 때·가렸을 때 값을 기록하고 그 사이를 경계값으로 정합니다.",
+      "errors": "값이 흔들리면 A10이 CdS와 저항 사이인지 확인합니다. 다른 교실에서 같은 경계값이 통할 것으로 가정하지 않습니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K06",
+      "title": "볼 스위치 · 기울기 감지",
+      "parts": [
+        26
+      ],
+      "concept": "기울기 스위치는 각도를 연속 숫자로 재지 않습니다. 안쪽 접점이 붙었는지 여부를 읽습니다. 흔들면 짧게 여러 번 붙었다 떨어질 수 있으므로 한 번의 변화와 안정된 상태를 구별합니다.",
+      "components": [
+        {
+          "name": "볼 스위치",
+          "pins": {
+            "다리1": "E8",
+            "다리2": "E10"
+          },
+          "kind": "raw",
+          "part": 26
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D2",
+          "b": "A8",
+          "text": "U:D2에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A10",
+          "text": "U:GND에서 A10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 볼 스위치 · 기울기 감지\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int SENSOR_PIN = 2; // 연결표의 신호 핀과 같습니다.\nvoid setup() {\n  pinMode(SENSOR_PIN, INPUT_PULLUP); // 내부 저항으로 미연결 때 HIGH를 유지합니다.\n  Serial.begin(9600);\n}\nvoid loop() {\n  bool closed = digitalRead(SENSOR_PIN) == LOW; // GND와 붙으면 LOW입니다.\n  Serial.println(closed ? \"closed\" : \"open\"); // 조건에 따라 표시할 글자를 고릅니다.\n  delay(50);\n}\n",
+      "expected": "기울였을 때 open과 closed 상태가 바뀝니다.",
+      "change": "같은 상태가 5번 연속 읽혔을 때만 화면을 바꿉니다.",
+      "errors": "기울여도 한쪽 상태라면 선과 입력 핀을 확인한 뒤 여러 방향으로 천천히 돌려 봅니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K07",
+      "title": "수위 센서 · 젖는 면적 비교",
+      "parts": [
+        9
+      ],
+      "concept": "금속 무늬 사이에 물이 닿으면 전기가 흐르는 정도가 달라집니다. 센서 숫자를 곧바로 정확한 수위 cm로 바꿀 수는 없습니다. 먼저 마른 상태·조금 담근 상태·더 담근 상태를 비교합니다.",
+      "components": [
+        {
+          "name": "수위 센서",
+          "pins": {
+            "VCC / +": "E8",
+            "GND / −": "E10",
+            "S": "E12"
+          },
+          "kind": "module",
+          "part": 9
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 전원 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A10",
+          "text": "U:GND에서 A10로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A12",
+          "text": "U:A0에서 A12로 연결합니다.",
+          "why": "부품의 S 핀을 놓은 줄과 UNO A0를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 수위 센서 · 젖는 면적 비교\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// setup()은 업로드·리셋 직후 한 번만 실행합니다.\nvoid setup() {\n  Serial.begin(9600); // PC에 값을 보여 줄 통신 속도입니다.\n}\n// loop()는 전원이 들어온 동안 계속 반복합니다.\nvoid loop() {\n  int value = analogRead(A0); // UNO는 입력 전압을 0~1023 값으로 읽습니다.\n  Serial.print(\"water=\");\n  Serial.println(value); // 숫자 뒤에서 줄을 바꿉니다.\n\n  delay(200); // 값이 너무 빠르게 지나가지 않게 0.2초 기다립니다.\n}\n",
+      "expected": "세 상태의 숫자 범위가 달라지는지 기록합니다.",
+      "change": "경계값을 정해 dry / wet 문구로 출력합니다. 센서가 마른 뒤 값이 돌아오는지도 봅니다.",
+      "errors": "값이 고정되면 +·−·신호의 글자를 확인합니다. 커넥터의 왼쪽부터라는 추측으로 전원을 연결하지 않습니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "컵의 물은 PC·보드에서 떨어뜨려 놓습니다. 금속 무늬만 조금 담그고, 회로·핀·USB는 물에 닿지 않게 합니다. 관찰할 때만 전원을 연결하고 끝나면 분리해 말립니다.",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K08",
+      "title": "소리 모듈 · 감도와 기준",
+      "parts": [
+        18
+      ],
+      "concept": "소리 모듈의 AO는 아날로그 값, DO는 감도 조절 기준을 넘었는지입니다. 마이크 값은 정확한 소음 dB가 아닙니다. 짧은 소리를 놓치지 않으려면 짧은 구간의 최대·최소 차이를 읽는 확장도 할 수 있습니다.",
+      "components": [
+        {
+          "name": "소리 감지 모듈",
+          "pins": {
+            "VCC / +": "E8",
+            "GND / −": "E10",
+            "AO": "E12"
+          },
+          "kind": "module",
+          "part": 18
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 전원 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A10",
+          "text": "U:GND에서 A10로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A12",
+          "text": "U:A0에서 A12로 연결합니다.",
+          "why": "부품의 AO 핀을 놓은 줄과 UNO A0를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 소리 모듈 · 감도와 기준\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// setup()은 업로드·리셋 직후 한 번만 실행합니다.\nvoid setup() {\n  Serial.begin(9600); // PC에 값을 보여 줄 통신 속도입니다.\n}\n// loop()는 전원이 들어온 동안 계속 반복합니다.\nvoid loop() {\n  int value = analogRead(A0); // UNO는 입력 전압을 0~1023 값으로 읽습니다.\n  Serial.print(\"sound=\");\n  Serial.println(value); // 숫자 뒤에서 줄을 바꿉니다.\n\n  delay(200); // 값이 너무 빠르게 지나가지 않게 0.2초 기다립니다.\n}\n",
+      "expected": "평소 값과 손뼉을 쳤을 때 값이 달라지는지 봅니다.",
+      "change": "delay를 줄여 보고 50ms 구간 최대값−최소값을 계산합니다. AO가 없는 제품은 DO 입력으로 바꿉니다.",
+      "errors": "값이 고정되면 +·−·신호의 글자를 확인합니다. 커넥터의 왼쪽부터라는 추측으로 전원을 연결하지 않습니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "이 배선은 AO·DO가 모두 있는 4핀 모듈 기준입니다. 실제가 3핀 S·+·−이면 S가 아날로그인지 디지털인지 모듈 자료를 확인한 뒤 해당 입력을 사용합니다.",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K09",
+      "title": "DHT11 · 온도와 습도",
+      "parts": [
+        10
+      ],
+      "concept": "DHT11은 약속된 디지털 신호로 온도와 습도를 보냅니다. 단순 analogRead 대신 센서 전용 라이브러리로 읽습니다. 읽기 실패는 0°C로 처리하지 않고 실패로 표시합니다.",
+      "components": [
+        {
+          "name": "DHT11 모듈",
+          "pins": {
+            "VCC / +": "E8",
+            "GND / −": "E10",
+            "DATA / S": "E12"
+          },
+          "kind": "module",
+          "part": 10
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 전원 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A10",
+          "text": "U:GND에서 A10로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D2",
+          "b": "A12",
+          "text": "U:D2에서 A12로 연결합니다.",
+          "why": "부품의 DATA 핀을 놓은 줄과 UNO D2를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// DHT11 · 온도와 습도\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <DHT.h> // 라이브러리 관리자에서 DHT sensor library by Adafruit 설치\nDHT dht(2, DHT11); // 첫 값은 DATA 핀, 두 번째는 센서 종류입니다.\nvoid setup() { Serial.begin(9600); dht.begin(); }\nvoid loop() {\n  delay(2000); // DHT11을 너무 자주 읽지 않습니다.\n  float temperature = dht.readTemperature();\n  float humidity = dht.readHumidity();\n  if (isnan(temperature) || isnan(humidity)) { // NaN은 읽기에 실패한 값입니다.\n    Serial.println(\"DHT read failed\");\n    return; // 이번 loop 실행만 끝내고 다음 읽기를 기다립니다.\n  }\n  Serial.print(\"temperature_c=\"); Serial.print(temperature);\n  Serial.print(\", humidity_pct=\"); Serial.println(humidity);\n}\n",
+      "expected": "2초마다 temperature_c와 humidity_pct가 출력됩니다.",
+      "change": "손 가까이 두었을 때 변화와 반복 측정의 차이를 기록합니다.",
+      "errors": "DHT.h 없음은 라이브러리 설치 문제, read failed는 센서 종류·배선·간격 문제로 나눠 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "",
+      "library": "DHT sensor library 1.4.7 · Adafruit Unified Sensor 1.1.15",
+      "refs": [
+        "https://github.com/adafruit/DHT-sensor-library"
+      ]
+    },
+    {
+      "id": "K10",
+      "title": "LM35DZ · 전압을 섭씨로",
+      "parts": [
+        35
+      ],
+      "concept": "LM35DZ는 온도 1°C마다 약 0.01V를 냅니다. analogRead 숫자를 먼저 전압으로 바꾸고, 다시 100을 곱해 섭씨로 바꿉니다. UNO의 5V가 정확히 5.000V는 아니므로 정밀 측정값으로 사용하려면 전원·기준전압을 확인해야 합니다.",
+      "components": [
+        {
+          "name": "LM35DZ · 평평한 면 확인",
+          "pins": {
+            "1 +Vs": "E8",
+            "2 Vout": "E10",
+            "3 GND": "E12"
+          },
+          "kind": "raw",
+          "part": 35
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 +Vs 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A10",
+          "text": "U:A0에서 A10로 연결합니다.",
+          "why": "부품의 Vout 핀을 놓은 줄과 UNO A0를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A12",
+          "text": "U:GND에서 A12로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// LM35DZ · 전압을 섭씨로\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nvoid setup() { Serial.begin(9600); }\nvoid loop() {\n  int raw = analogRead(A0); // 0~1023의 ADC 값\n  float volts = raw * (5.0 / 1023.0); // 기준전압을 5.0V로 두는 근삿값\n  float celsius = volts * 100.0; // 10mV/°C = 0.01V/°C\n  Serial.print(\"raw=\"); Serial.print(raw);\n  Serial.print(\", temperature_c=\"); Serial.println(celsius, 1);\n  delay(500);\n}\n",
+      "expected": "실내 온도 근처 값이 출력되고 손가락으로 몸체를 잡으면 천천히 변합니다.",
+      "change": "raw·volts·celsius를 함께 출력해 계산 단계를 설명합니다.",
+      "errors": "값이 비정상적이거나 부품이 뜨거워지면 즉시 USB를 분리합니다. LM35DZ와 외형이 비슷한 트랜지스터를 혼동하지 않습니다.",
+      "orientation": "LM35DZ의 평평한 글자 면을 정면으로, 다리를 아래로 봤을 때 왼쪽부터 1(+Vs)·2(Vout)·3(GND)입니다. 각 다리를 E8·E10·E12의 다른 줄로 벌립니다. 판매처 도면 assets/reference/6.png는 BOTTOM VIEW(아래에서 본 그림)라는 점을 함께 확인합니다.",
+      "gate": "",
+      "library": "",
+      "refs": [
+        "https://www.ti.com/lit/ds/symlink/lm35.pdf"
+      ]
+    },
+    {
+      "id": "K11",
+      "title": "RGB LED · 세 가지 빛 섞기",
+      "parts": [
+        11,
+        30
+      ],
+      "concept": "RGB는 세 LED를 한 부품에 넣은 것입니다. 채널별로 저항을 달고 PWM 출력으로 밝기를 바꿉니다. PWM은 출력 전압을 연속으로 낮추는 대신 켜진 시간 비율을 바꿉니다. 공통 −와 공통 +는 켜는 값이 반대입니다.",
+      "components": [
+        {
+          "name": "RGB 모듈 · 공통 − 기준",
+          "pins": {
+            "R": "E6",
+            "G": "E10",
+            "B": "E14",
+            "공통 −": "E18"
+          },
+          "kind": "module",
+          "part": 11
+        },
+        {
+          "name": "R 1kΩ",
+          "pins": {
+            "한쪽": "C6",
+            "다른쪽": "C8"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "G 1kΩ",
+          "pins": {
+            "한쪽": "C10",
+            "다른쪽": "C12"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "B 1kΩ",
+          "pins": {
+            "한쪽": "C14",
+            "다른쪽": "C16"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D9",
+          "b": "A8",
+          "text": "U:D9에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D10",
+          "b": "A12",
+          "text": "U:D10에서 A12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D11",
+          "b": "A16",
+          "text": "U:D11에서 A16로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A18",
+          "text": "U:GND에서 A18로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// RGB LED · 세 가지 빛 섞기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int R = 9, G = 10, B = 11; // ~ 표시 PWM 핀입니다.\nconst bool COMMON_ANODE = false; // 공통 -면 false. 공통 +형은 배선도 함께 바꿔야 합니다.\nvoid color(byte red, byte green, byte blue) {\n  analogWrite(R, COMMON_ANODE ? 255-red : red);\n  analogWrite(G, COMMON_ANODE ? 255-green : green);\n  analogWrite(B, COMMON_ANODE ? 255-blue : blue);\n}\nvoid setup() { pinMode(R, OUTPUT); pinMode(G, OUTPUT); pinMode(B, OUTPUT); }\nvoid loop() {\n  color(255,0,0); delay(800); // 빨강\n  color(0,255,0); delay(800); // 초록\n  color(0,0,255); delay(800); // 파랑\n  color(120,40,160); delay(800); // 섞은 색\n}\n",
+      "expected": "빨강·초록·파랑·섞은 색이 차례로 켜집니다.",
+      "change": "색 세 숫자를 바꿔 자신만의 상태 표시 색을 만듭니다.",
+      "errors": "어떤 색만 안 켜지면 해당 채널의 저항과 PWM 핀을 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "그림은 R·G·B·−가 확인되는 공통 음극 모듈 기준입니다. 공통 +라면 공통 핀을 5V로 바꾸고 COMMON_ANODE를 true로 바꿉니다. 표시와 저항 유무를 확인하기 전에는 전원을 연결하지 않습니다.",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K12",
+      "title": "부저 · 짧은 소리 만들기",
+      "parts": [
+        25,
+        30
+      ],
+      "concept": "수동 피에조 부저는 주파수를 넣어야 소리가 납니다. tone(pin,주파수,시간)에서 주파수는 음 높이, 시간은 소리 길이입니다. 능동 부저는 전원을 주면 정해진 소리가 나며 정격 전류에 따라 드라이버가 필요합니다.",
+      "components": [
+        {
+          "name": "수동 피에조 부저",
+          "pins": {
+            "신호 +": "E8",
+            "−": "E10"
+          },
+          "kind": "module",
+          "part": 25
+        },
+        {
+          "name": "1kΩ 제한 저항",
+          "pins": {
+            "한쪽": "C8",
+            "다른쪽": "C14"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D8",
+          "b": "A14",
+          "text": "U:D8에서 A14로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A10",
+          "text": "U:GND에서 A10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 부저 · 짧은 소리 만들기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nvoid setup() { pinMode(8, OUTPUT); }\nvoid loop() {\n  tone(8, 1000, 150); // 8번 핀에서 1000Hz를 150ms 냅니다.\n  delay(1000); // 다음 소리까지 기다립니다.\n  noTone(8); // 소리 출력을 멈춥니다.\n}\n",
+      "expected": "확인된 수동 피에조에서 작은 삐 소리가 주기적으로 납니다.",
+      "change": "주파수를 500·1500으로 바꿔 음 높이를 비교합니다.",
+      "errors": "소리가 없다고 저항을 빼거나 능동 자기 부저를 직접 연결하지 않습니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "수동 피에조형과 정격을 확인한 부품만 이 그림을 사용합니다. 능동형·자기형·모델 미상은 GPIO 직결하지 않고 해당 정격에 맞는 트랜지스터·보호회로를 준비합니다. 사진 속 두 부품을 같은 종류로 가정하지 않습니다.",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K13",
+      "title": "조이스틱 · X·Y·누름 읽기",
+      "parts": [
+        6
+      ],
+      "concept": "조이스틱에는 가변저항 두 개와 버튼 한 개가 있습니다. X·Y는 아날로그, 누름은 디지털로 읽습니다. 가운데 위치가 정확히 512는 아니므로 실제 중립값과 작은 흔들림 범위를 기록합니다.",
+      "components": [
+        {
+          "name": "조이스틱",
+          "pins": {
+            "GND": "E6",
+            "+5V": "E8",
+            "VRx": "E10",
+            "VRy": "E12",
+            "SW": "E14"
+          },
+          "kind": "module",
+          "part": 6
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:GND",
+          "b": "A6",
+          "text": "U:GND에서 A6로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 +5V 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A10",
+          "text": "U:A0에서 A10로 연결합니다.",
+          "why": "부품의 VRx 핀을 놓은 줄과 UNO A0를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A1",
+          "b": "A12",
+          "text": "U:A1에서 A12로 연결합니다.",
+          "why": "부품의 VRy 핀을 놓은 줄과 UNO A1를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D2",
+          "b": "A14",
+          "text": "U:D2에서 A14로 연결합니다.",
+          "why": "부품의 SW 핀을 놓은 줄과 UNO D2를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 조이스틱 · X·Y·누름 읽기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nvoid setup() { Serial.begin(9600); pinMode(2, INPUT_PULLUP); }\nvoid loop() {\n  int x = analogRead(A0); // 좌우 위치\n  int y = analogRead(A1); // 앞뒤 위치\n  bool pressed = digitalRead(2) == LOW; // 누름은 LOW\n  Serial.print(\"x=\"); Serial.print(x);\n  Serial.print(\", y=\"); Serial.print(y);\n  Serial.print(\", pressed=\"); Serial.println(pressed);\n  delay(100);\n}\n",
+      "expected": "X·Y 숫자와 pressed 0/1이 동작에 따라 바뀝니다.",
+      "change": "중립값 ±50 안은 STOP, 밖은 LEFT·RIGHT 등으로 분류합니다.",
+      "errors": "대각선에서 두 축이 함께 바뀌는 것은 정상입니다. SW를 아날로그 핀값으로 해석하지 않습니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K14",
+      "title": "4×4 키패드 · 행과 열",
+      "parts": [
+        7
+      ],
+      "concept": "버튼 하나는 한 행과 한 열을 이어 줍니다. 행 하나만 LOW로 만들고 어느 열이 LOW가 되는지 읽으면 누른 위치를 찾습니다. 다른 행은 입력 상태로 둬 동시에 여러 버튼을 눌러도 HIGH와 LOW 출력이 서로 충돌하지 않게 합니다.",
+      "components": [
+        {
+          "name": "키패드 · 판매처 핀 1~8",
+          "pins": {
+            "핀 1": "E6",
+            "핀 2": "E8",
+            "핀 3": "E10",
+            "핀 4": "E12",
+            "핀 5": "E14",
+            "핀 6": "E16",
+            "핀 7": "E18",
+            "핀 8": "E20"
+          },
+          "kind": "module",
+          "part": 7
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D2",
+          "b": "A6",
+          "text": "U:D2에서 A6로 연결합니다.",
+          "why": "부품의 1 핀을 놓은 줄과 UNO D2를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D3",
+          "b": "A8",
+          "text": "U:D3에서 A8로 연결합니다.",
+          "why": "부품의 2 핀을 놓은 줄과 UNO D3를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D4",
+          "b": "A10",
+          "text": "U:D4에서 A10로 연결합니다.",
+          "why": "부품의 3 핀을 놓은 줄과 UNO D4를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D5",
+          "b": "A12",
+          "text": "U:D5에서 A12로 연결합니다.",
+          "why": "부품의 4 핀을 놓은 줄과 UNO D5를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D6",
+          "b": "A14",
+          "text": "U:D6에서 A14로 연결합니다.",
+          "why": "부품의 5 핀을 놓은 줄과 UNO D6를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D7",
+          "b": "A16",
+          "text": "U:D7에서 A16로 연결합니다.",
+          "why": "부품의 6 핀을 놓은 줄과 UNO D7를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D8",
+          "b": "A18",
+          "text": "U:D8에서 A18로 연결합니다.",
+          "why": "부품의 7 핀을 놓은 줄과 UNO D8를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D9",
+          "b": "A20",
+          "text": "U:D9에서 A20로 연결합니다.",
+          "why": "부품의 8 핀을 놓은 줄과 UNO D9를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 4×4 키패드 · 행과 열\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// 판매처 표: 윗줄 버튼은 핀4, 다음줄3, 다음줄2, 맨아래줄1입니다.\nconst byte rows[4] = {5,4,3,2}; // 물리핀4,3,2,1 → UNO D5,D4,D3,D2\nconst byte cols[4] = {6,7,8,9}; // 물리핀5,6,7,8 → UNO D6,D7,D8,D9\nconst char keys[4][4] = {{'1','2','3','A'},{'4','5','6','B'},\n                         {'7','8','9','C'},{'*','0','#','D'}};\nchar previous = 0;\nvoid setup() {\n  Serial.begin(9600);\n  for (byte c=0;c<4;c++) pinMode(cols[c], INPUT_PULLUP);\n  for (byte r=0;r<4;r++) pinMode(rows[r], INPUT); // 선택하지 않은 행은 출력하지 않습니다.\n}\nvoid loop() {\n  char found = 0;\n  for (byte r=0;r<4;r++) {\n    digitalWrite(rows[r], LOW); pinMode(rows[r], OUTPUT);\n    delayMicroseconds(20); // 입력이 안정될 짧은 시간\n    for (byte c=0;c<4;c++) if (digitalRead(cols[c])==LOW) found=keys[r][c];\n    pinMode(rows[r], INPUT); // 읽은 행을 다시 해제합니다.\n  }\n  if (found && found!=previous) Serial.println(found);\n  previous=found; delay(30); // 누르고 있는 동안 무한히 같은 글자를 찍지 않습니다.\n}\n",
+      "expected": "각 버튼을 누를 때 대응 글자가 한 번 출력됩니다. 동시 입력 인증 장치로 사용하지 않습니다.",
+      "change": "네 자리 입력을 모아 #을 누르면 확인하는 기능을 만듭니다.",
+      "errors": "버튼 이름이 뒤집히면 rows·cols 순서를 판매처 표와 비교합니다.",
+      "orientation": "판매처 핀표를 먼저 펼칩니다. 핀1은 사진 표의 아래쪽, 핀8은 위쪽이며 윗줄 버튼 S1은 핀4와5를 잇습니다. 실제 키패드가 다르면 도통 검사로 행·열을 확인합니다.",
+      "gate": "",
+      "library": "",
+      "refs": [
+        "assets/reference/4.png"
+      ]
+    },
+    {
+      "id": "K15",
+      "title": "LCD1602 · 화면에 값 보여 주기",
+      "parts": [
+        2
+      ],
+      "concept": "I2C는 SDA(데이터)와 SCL(시계) 두 신호로 장치를 연결하는 방식입니다. UNO에서 SDA는 A4, SCL은 A5입니다. 오늘 LCD는 뒤에 I2C 변환 기판이 붙은 모델입니다. 한글 폰트를 바로 표시할 수 있는 화면은 아니어서 짧은 영문과 숫자로 시작합니다.",
+      "components": [
+        {
+          "name": "LCD1602 I2C 뒷면",
+          "pins": {
+            "GND": "E6",
+            "VCC": "E8",
+            "SDA": "E10",
+            "SCL": "E12"
+          },
+          "kind": "module",
+          "part": 2
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:GND",
+          "b": "A6",
+          "text": "U:GND에서 A6로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:5V",
+          "b": "A8",
+          "text": "U:5V에서 A8로 연결합니다.",
+          "why": "부품의 VCC 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A4",
+          "b": "A10",
+          "text": "U:A4에서 A10로 연결합니다.",
+          "why": "부품의 SDA 핀을 놓은 줄과 UNO A4를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A5",
+          "b": "A12",
+          "text": "U:A5에서 A12로 연결합니다.",
+          "why": "부품의 SCL 핀을 놓은 줄과 UNO A5를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// LCD1602 · 화면에 값 보여 주기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <Wire.h>\n#include <hd44780.h>\n#include <hd44780ioClass/hd44780_I2Cexp.h>\nhd44780_I2Cexp lcd; // 지원되는 I2C 백팩의 주소·핀 연결을 자동 탐색합니다.\nvoid setup() {\n  Serial.begin(9600);\n  int status = lcd.begin(16, 2); // 가로 16글자, 세로 2줄\n  if (status) { Serial.println(\"LCD init failed\"); while (true) {} }\n  lcd.backlight(); lcd.print(\"My first circuit\");\n}\nvoid loop() {\n  lcd.setCursor(0, 1); // 첫째 칸, 둘째 줄. 번호는 0부터 시작합니다.\n  lcd.print(\"sec: \"); lcd.print(millis()/1000);\n  delay(200);\n}\n",
+      "expected": "첫 줄에 My first circuit, 둘째 줄에 켜진 뒤 지난 초가 보입니다.",
+      "change": "가변저항 실습을 추가해 둘째 줄에 A0 값을 표시합니다.",
+      "errors": "백라이트만 켜지면 뒤의 대비 조절 나사를 조금씩 돌립니다. init failed면 GND·전원·SDA·SCL과 I2Cexp의 I2CexpDiag 예제로 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "",
+      "library": "hd44780 by Bill Perry 1.3.2",
+      "refs": [
+        "https://github.com/duinoWitchery/hd44780"
+      ]
+    },
+    {
+      "id": "K16",
+      "title": "적외선 리모컨 · 버튼 코드 읽기",
+      "parts": [
+        19,
+        33
+      ],
+      "concept": "리모컨은 빠르게 깜빡이는 적외선으로 코드를 보냅니다. 수신 소자는 이 신호를 읽기 쉬운 디지털 신호로 바꿉니다. 송신 리모컨과 수신 소자를 함께 사용해야 합니다. 일반적인 빛 센서의 analogRead와 다릅니다.",
+      "components": [
+        {
+          "name": "모델 확인 후 IR 수신 소자",
+          "pins": {
+            "OUT": "E8",
+            "GND": "E10",
+            "Vs": "E12"
+          },
+          "kind": "raw",
+          "part": 33
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D2",
+          "b": "A8",
+          "text": "U:D2에서 A8로 연결합니다.",
+          "why": "부품의 OUT 핀을 놓은 줄과 UNO D2를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A10",
+          "text": "U:GND에서 A10로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:5V",
+          "b": "A12",
+          "text": "U:5V에서 A12로 연결합니다.",
+          "why": "부품의 Vs 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 적외선 리모컨 · 버튼 코드 읽기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <IRremote.hpp> // IRremote 4.x의 API입니다.\nvoid setup() {\n  Serial.begin(9600);\n  IrReceiver.begin(2, DISABLE_LED_FEEDBACK); // OUT → D2\n}\nvoid loop() {\n  if (IrReceiver.decode()) { // 받은 신호가 있을 때만 읽습니다.\n    IrReceiver.printIRResultShort(&Serial); // 프로토콜·주소·명령을 표시합니다.\n    IrReceiver.resume(); // 다음 신호를 받을 수 있게 준비합니다.\n  }\n}\n",
+      "expected": "리모컨을 향해 버튼을 누르면 protocol·address·command가 출력됩니다.",
+      "change": "한 버튼의 command를 기록하고 그 값일 때 내장 LED를 켭니다.",
+      "errors": "전원이 맞는데 값이 없으면 리모컨 배터리·수신 방향·OUT 연결·라이브러리 버전을 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "판매처 사진만으로 수신 소자의 모델과 핀 순서를 확정할 수 없습니다. 몸체 글자를 읽고 해당 제조사의 자료에서 OUT·GND·Vs와 5V 허용 여부를 확인해야 이 배선을 사용할 수 있습니다. TSOP38238의 핀1 OUT·2 GND·3 Vs를 다른 부품에 적용하지 않습니다.",
+      "library": "IRremote 4.7.1",
+      "refs": [
+        "https://github.com/Arduino-IRremote/Arduino-IRremote",
+        "https://www.vishay.com/docs/82491/tsop382.pdf"
+      ]
+    },
+    {
+      "id": "K17",
+      "title": "RTC · 껐다 켜도 시간 기억",
+      "parts": [
+        8
+      ],
+      "concept": "millis는 전원을 켠 뒤 흐른 시간이고 달력 시간이 아닙니다. RTC는 별도 시계를 유지합니다. DS1302는 CLK·DAT·RST 세 신호를 쓰며 I2C RTC와 코드가 다릅니다. 통신의 날짜가 유효한지 먼저 확인합니다.",
+      "components": [
+        {
+          "name": "DS1302 모듈",
+          "pins": {
+            "VCC": "E6",
+            "GND": "E8",
+            "CLK": "E10",
+            "DAT": "E12",
+            "RST / CE": "E14"
+          },
+          "kind": "module",
+          "part": 8
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A6",
+          "text": "U:5V에서 A6로 연결합니다.",
+          "why": "부품의 VCC 핀을 놓은 줄과 UNO 5V를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A8",
+          "text": "U:GND에서 A8로 연결합니다.",
+          "why": "부품의 GND 핀을 놓은 줄과 UNO GND를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D6",
+          "b": "A10",
+          "text": "U:D6에서 A10로 연결합니다.",
+          "why": "부품의 CLK 핀을 놓은 줄과 UNO D6를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D7",
+          "b": "A12",
+          "text": "U:D7에서 A12로 연결합니다.",
+          "why": "부품의 DAT 핀을 놓은 줄과 UNO D7를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D8",
+          "b": "A14",
+          "text": "U:D8에서 A14로 연결합니다.",
+          "why": "부품의 RST 핀을 놓은 줄과 UNO D8를 연결합니다. 선 색보다 양 끝을 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// RTC · 껐다 켜도 시간 기억\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <ThreeWire.h>\n#include <RtcDS1302.h>\nThreeWire bus(7, 6, 8); // 순서: IO(DAT), SCLK(CLK), CE(RST)\nRtcDS1302<ThreeWire> rtc(bus);\nvoid setup() {\n  Serial.begin(9600); rtc.Begin();\n  rtc.SetIsWriteProtected(false); rtc.SetIsRunning(true);\n  // 처음 시간을 넣을 때만 true로 바꾸고, 설정 후 다시 false로 업로드합니다.\n  const bool SET_TIME_ONCE = false;\n  if (SET_TIME_ONCE) rtc.SetDateTime(RtcDateTime(__DATE__, __TIME__));\n  // 일부 DS1302 모듈의 충전 회로는 별도 하드웨어입니다. 코드로 배터리 안전을 보장하지 않습니다.\n}\nvoid loop() {\n  if (!rtc.IsDateTimeValid()) { Serial.println(\"Set RTC time first\"); delay(1000); return; }\n  RtcDateTime t = rtc.GetDateTime();\n  char text[24];\n  snprintf(text, sizeof(text), \"%04u-%02u-%02u %02u:%02u:%02u\",\n           t.Year(),t.Month(),t.Day(),t.Hour(),t.Minute(),t.Second());\n  Serial.println(text); delay(1000);\n}\n",
+      "expected": "설정 후 날짜와 시각이 1초마다 나옵니다. PC 컴파일 시각이므로 정확한 표준시 동기화는 아닙니다.",
+      "change": "시각을 한 번 설정한 후 SET_TIME_ONCE=false로 다시 업로드하고 리셋해 비교합니다.",
+      "errors": "재업로드할 때 과거 컴파일 시각으로 돌아가면 SET_TIME_ONCE가 true인지 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "모듈의 코인 전지 종류와 충전 회로를 먼저 확인합니다. 충전 기능이 있는 모듈에 비충전식 CR2032가 장착돼 있으면 5V 연결을 진행하지 않습니다. 전지·충전 회로를 확인할 수 없다면 전지를 분리한 뒤 허용 사양을 확인해 USB 전원 상태에서만 시험합니다. 배터리를 임의로 교체·충전하지 않습니다.",
+      "library": "Rtc by Makuna 2.5.0",
+      "refs": [
+        "https://github.com/Makuna/Rtc",
+        "assets/reference/2.pdf"
+      ]
+    },
+    {
+      "id": "K18",
+      "title": "서보모터 · 각도 지정",
+      "parts": [
+        24
+      ],
+      "concept": "서보는 신호 펄스로 목표 각도를 받습니다. 주황 선은 신호이고 빨강 선으로 전원을 받습니다. 모터는 순간 전류가 커서 UNO가 리셋될 수 있으므로 별도 안정된 5V 전원을 사용합니다. 공통 GND는 신호를 같은 기준으로 읽게 합니다.",
+      "components": [
+        {
+          "name": "SG90",
+          "pins": {
+            "주황 · 신호": "E8",
+            "빨강 · 전원": "E10",
+            "갈색 · GND": "E12"
+          },
+          "kind": "module",
+          "part": 24
+        },
+        {
+          "name": "별도 안정된 5V 전원 · 추가 준비",
+          "pins": {
+            "5V +": "J10",
+            "GND −": "J12"
+          },
+          "kind": "supply",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D9",
+          "b": "A8",
+          "text": "U:D9에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B10",
+          "b": "F10",
+          "text": "서보 빨강 줄 E10과 같은 B10을 외부 +5V의 F10 줄로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B12",
+          "b": "F12",
+          "text": "서보 갈색 줄 E12와 같은 B12를 외부 GND의 F12 줄로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A12",
+          "text": "U:GND에서 A12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 서보모터 · 각도 지정\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <Servo.h> // Arduino AVR 기본 Servo 라이브러리\nServo arm;\nvoid setup() { arm.attach(9); } // 주황 신호선 → D9\nvoid loop() {\n  arm.write(70); delay(1000); // 무리한 양 끝 각도 대신 좁은 범위부터 확인합니다.\n  arm.write(110); delay(1000);\n}\n",
+      "expected": "외부 전원이 준비되면 70°와 110° 사이를 오갑니다. 실제 기계 각도는 제품마다 다릅니다.",
+      "change": "80°와100°로 범위를 줄이고 5°씩 부드럽게 이동하도록 바꿉니다.",
+      "errors": "떨림·리셋·이상음은 즉시 전원을 끄고 전류 용량·공통 GND·기계 간섭을 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "별도 안정된 5V 전원과 적절한 연결 부품은 판매처 37개 구성표에 없습니다. 준비 전에는 전원 연결 단계를 진행하지 않습니다. 모터에 9V를 넣거나 UNO의 신호 핀·3.3V 핀에서 전원을 공급하지 않습니다. 외부 +5V를 UNO 5V에 병렬 연결하지 않습니다.",
+      "library": "Servo 1.3.0",
+      "refs": [
+        "https://docs.arduino.cc/learn/electronics/servo-motors/",
+        "assets/reference/7.png"
+      ]
+    },
+    {
+      "id": "K19",
+      "title": "스텝모터 · 드라이버로 순서 제어",
+      "parts": [
+        12,
+        13
+      ],
+      "concept": "스텝모터는 코일을 순서대로 켜서 조금씩 회전합니다. UNO는 제어 순서만 보내고 ULN2003이 모터 전류를 다룹니다. 28BYJ-48의 기어비와 1회전 스텝 수에는 차이가 있어 코드 상수를 실제 회전과 비교해야 합니다.",
+      "components": [
+        {
+          "name": "ULN2003",
+          "pins": {
+            "IN1": "E6",
+            "IN2": "E8",
+            "IN3": "E10",
+            "IN4": "E12",
+            "+5V": "E16",
+            "GND": "E18"
+          },
+          "kind": "module",
+          "part": 12
+        },
+        {
+          "name": "외부 안정된 5V 전원 · 추가 준비",
+          "pins": {
+            "5V +": "J16",
+            "GND −": "J18"
+          },
+          "kind": "supply",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D8",
+          "b": "A6",
+          "text": "U:D8에서 A6로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D9",
+          "b": "A8",
+          "text": "U:D9에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D10",
+          "b": "A10",
+          "text": "U:D10에서 A10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D11",
+          "b": "A12",
+          "text": "U:D11에서 A12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B16",
+          "b": "F16",
+          "text": "B16에서 F16로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B18",
+          "b": "F18",
+          "text": "B18에서 F18로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A18",
+          "text": "U:GND에서 A18로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 스텝모터 · 드라이버로 순서 제어\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <Stepper.h>\nconst int STEPS_PER_REV = 2048; // 4상 구동의 시작값. 실제 모터로 회전량을 확인합니다.\nStepper motor(STEPS_PER_REV, 8, 10, 9, 11); // 라이브러리의 코일 순서에 맞춘 핀 순서\nvoid releaseCoils() {\n  for (int p=8;p<=11;p++) digitalWrite(p, LOW); // 대기 중 코일 발열을 줄입니다.\n}\nvoid setup() { motor.setSpeed(8); } // 분당 회전수의 시작값\nvoid loop() {\n  motor.step(256); releaseCoils(); delay(1000);\n  motor.step(-256); releaseCoils(); delay(1000);\n}\n",
+      "expected": "모터의 흰 5핀 커넥터를 드라이버 전용 소켓에 꽂은 뒤, 축이 조금씩 정·역회전합니다.",
+      "change": "한 바퀴가 되도록 스텝 수를 관찰해 기록합니다.",
+      "errors": "LED만 켜지고 축이 떨리면 전원·모터 플러그·8,10,9,11 순서를 확인합니다.",
+      "orientation": "모터는 빵판에 꽂지 않습니다. 흰 커넥터의 걸쇠 방향을 맞춰 ULN2003 전용 5핀 소켓에 꽂습니다. 억지로 거꾸로 꽂지 않습니다. UNO D8~D11은 IN1~IN4에 차례로 연결하되 코드 생성자 순서는 8,10,9,11입니다.",
+      "gate": "정격 5V 모터와 별도 5V 전원이 필요합니다. 외부 전원과 UNO는 GND만 공통으로 연결합니다. 모터 정격·드라이버 전원 단자의 +/−가 확인되기 전에는 켜지 않습니다.",
+      "library": "Stepper 1.1.3",
+      "refs": [
+        "assets/reference/8.pdf",
+        "assets/reference/11.png"
+      ]
+    },
+    {
+      "id": "K20",
+      "title": "릴레이 · LED 회로를 접점으로 끊기",
+      "parts": [
+        14,
+        29,
+        30
+      ],
+      "concept": "릴레이에는 제어 쪽 VCC·GND·IN과 접점 쪽 COM·NO·NC가 있습니다. COM–NO는 평소 떨어져 있고 동작하면 붙습니다. 릴레이가 신호에 반응하는 방향은 모듈마다 다르므로 LOW/HIGH를 확인합니다. 수업은 USB의 저전압 LED만 사용합니다.",
+      "components": [
+        {
+          "name": "릴레이 입력",
+          "pins": {
+            "VCC": "E4",
+            "GND": "E6",
+            "IN": "E8"
+          },
+          "kind": "module",
+          "part": 14
+        },
+        {
+          "name": "릴레이 접점",
+          "pins": {
+            "COM": "E12",
+            "NO": "E14",
+            "NC · 비움": "E16"
+          },
+          "kind": "module",
+          "part": 14
+        },
+        {
+          "name": "1kΩ 저항",
+          "pins": {
+            "한쪽": "C14",
+            "다른쪽": "C20"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "LED",
+          "pins": {
+            "긴 +": "E20",
+            "짧은 −": "E22"
+          },
+          "kind": "led",
+          "part": 29
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "A4",
+          "text": "U:5V에서 A4로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A6",
+          "text": "U:GND에서 A6로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D7",
+          "b": "A8",
+          "text": "U:D7에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B4",
+          "b": "A12",
+          "text": "B4에서 A12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B6",
+          "b": "A22",
+          "text": "B6에서 A22로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 릴레이 · LED 회로를 접점으로 끊기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int RELAY = 7;\nconst int ON = LOW; // LOW 활성 모듈 기준. 실제 모듈 설명과 클릭 동작을 확인합니다.\nconst int OFF = HIGH;\nvoid setup() {\n  digitalWrite(RELAY, OFF); // 출력 모드로 바꾸기 전 기본 꺼짐값을 준비합니다.\n  pinMode(RELAY, OUTPUT);\n}\nvoid loop() {\n  digitalWrite(RELAY, ON); delay(1500);\n  digitalWrite(RELAY, OFF); delay(1500);\n}\n",
+      "expected": "클릭 소리와 함께 COM–NO를 거친 LED가 켜졌다 꺼집니다.",
+      "change": "NO 대신 NC를 쓸 때 반대 동작이 되는지 전원을 끈 뒤 바꿔 비교합니다.",
+      "errors": "릴레이 LED는 켜지는데 외부 LED가 꺼져 있으면 COM·NO와 LED 극성을 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "트랜지스터·역기전력 보호가 있는 5V 릴레이 모듈 기준입니다. 맨 릴레이 코일을 GPIO에 연결하지 않습니다. 콘센트·220V·가전제품은 수업 회로에 절대로 연결하지 않습니다.",
+      "library": "",
+      "refs": [
+        "assets/reference/9.pdf"
+      ]
+    },
+    {
+      "id": "K21",
+      "title": "1자리 FND · 숫자 표시",
+      "parts": [
+        21,
+        30
+      ],
+      "concept": "FND의 한 막대를 세그먼트라고 합니다. 5161BS는 공통 +를 쓰므로 세그먼트 쪽을 LOW로 만들면 켜집니다. 막대 7개와 점에 각각 저항을 달아야 합니다. 앞에서 본 핀 번호와 뒤에서 본 번호를 섞지 않습니다.",
+      "components": [
+        {
+          "name": "5161BS · 앞면과 핀표 대조",
+          "pins": {
+            "A · 물리핀 7": "E4",
+            "B · 물리핀 6": "E7",
+            "C · 물리핀 4": "E10",
+            "D · 물리핀 2": "E13",
+            "E · 물리핀 1": "E16",
+            "F · 물리핀 9": "E19",
+            "G · 물리핀 10": "E22",
+            "DP · 물리핀 5": "E25",
+            "공통 + · 물리핀3": "J28",
+            "공통 + · 물리핀8 · 비움": "J29"
+          },
+          "kind": "module",
+          "part": 21
+        },
+        {
+          "name": "A 1kΩ",
+          "pins": {
+            "한쪽": "C4",
+            "다른쪽": "F4"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "B 1kΩ",
+          "pins": {
+            "한쪽": "C7",
+            "다른쪽": "F7"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "C 1kΩ",
+          "pins": {
+            "한쪽": "C10",
+            "다른쪽": "F10"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D 1kΩ",
+          "pins": {
+            "한쪽": "C13",
+            "다른쪽": "F13"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "E 1kΩ",
+          "pins": {
+            "한쪽": "C16",
+            "다른쪽": "F16"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "F 1kΩ",
+          "pins": {
+            "한쪽": "C19",
+            "다른쪽": "F19"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "G 1kΩ",
+          "pins": {
+            "한쪽": "C22",
+            "다른쪽": "F22"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "DP 1kΩ",
+          "pins": {
+            "한쪽": "C25",
+            "다른쪽": "F25"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D2",
+          "b": "J4",
+          "text": "U:D2에서 J4로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D3",
+          "b": "J7",
+          "text": "U:D3에서 J7로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D4",
+          "b": "J10",
+          "text": "U:D4에서 J10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D5",
+          "b": "J13",
+          "text": "U:D5에서 J13로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D6",
+          "b": "J16",
+          "text": "U:D6에서 J16로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D7",
+          "b": "J19",
+          "text": "U:D7에서 J19로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D8",
+          "b": "J22",
+          "text": "U:D8에서 J22로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D9",
+          "b": "J25",
+          "text": "U:D9에서 J25로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:5V",
+          "b": "H28",
+          "text": "U:5V에서 H28로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 1자리 FND · 숫자 표시\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst byte pins[8] = {2,3,4,5,6,7,8,9}; // A,B,C,D,E,F,G,DP 순서\nconst byte patterns[10] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};\nvoid setup() { for (byte p:pins) { digitalWrite(p,HIGH); pinMode(p,OUTPUT); } }\nvoid loop() {\n  for (byte number=0;number<10;number++) {\n    for (byte s=0;s<8;s++) {\n      bool lit = (patterns[number] >> s) & 1; // 해당 막대를 켤지 비트에서 읽습니다.\n      digitalWrite(pins[s], lit ? LOW : HIGH); // 공통 애노드는 LOW가 켜짐입니다.\n    }\n    delay(800);\n  }\n}\n",
+      "expected": "0~9가 순서대로 표시됩니다.",
+      "change": "키패드에서 받은 숫자를 표시하도록 바꿉니다.",
+      "errors": "이상한 모양이면 A~G와 물리핀 대응을 다시 봅니다. 공통 캐소드형 예제의 HIGH 켜짐을 적용하지 않습니다.",
+      "orientation": "판매처 5161BS 핀표를 확대합니다. 앞면 기준 아래줄은 왼쪽부터1~5, 윗줄은 왼쪽부터10~6입니다. 표시기를 빵판 바깥에 두고 각 핀에 암–수 선을 연결해 그림의 지정 구멍으로 펼쳐 꽂습니다. 본체의 핀 간격을 그림의 줄 간격으로 오해하지 않습니다. 공통핀8은 이번에는 비워 둡니다.",
+      "gate": "",
+      "library": "",
+      "refs": [
+        "assets/reference/0.jpg"
+      ]
+    },
+    {
+      "id": "K22",
+      "title": "4자리 FND · 빠르게 번갈아 켜기",
+      "parts": [
+        22,
+        30
+      ],
+      "concept": "여러 자리를 아주 빠르게 번갈아 켜면 눈에는 함께 보입니다. 이를 다중화라고 합니다. 이 예제는 공통 핀 전류를 낮추기 위해 한 번에 한 자리의 한 막대만 켭니다. 드라이버 없이 모든 막대를 한꺼번에 켜지 않습니다.",
+      "components": [
+        {
+          "name": "4자리 FND · 앞면 기준",
+          "pins": {
+            "A · 물리핀 11": "E3",
+            "B · 물리핀 7": "E6",
+            "C · 물리핀 4": "E9",
+            "D · 물리핀 2": "E12",
+            "E · 물리핀 1": "E15",
+            "F · 물리핀 10": "E18",
+            "G · 물리핀 5": "E21",
+            "DP · 물리핀 3": "E24",
+            "DIG1 · 물리핀12": "E26",
+            "DIG2 · 물리핀9": "E27",
+            "DIG3 · 물리핀8": "E28",
+            "DIG4 · 물리핀6": "E29"
+          },
+          "kind": "module",
+          "part": 22
+        },
+        {
+          "name": "A 1kΩ",
+          "pins": {
+            "한쪽": "C3",
+            "다른쪽": "F3"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "B 1kΩ",
+          "pins": {
+            "한쪽": "C6",
+            "다른쪽": "F6"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "C 1kΩ",
+          "pins": {
+            "한쪽": "C9",
+            "다른쪽": "F9"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D 1kΩ",
+          "pins": {
+            "한쪽": "C12",
+            "다른쪽": "F12"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "E 1kΩ",
+          "pins": {
+            "한쪽": "C15",
+            "다른쪽": "F15"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "F 1kΩ",
+          "pins": {
+            "한쪽": "C18",
+            "다른쪽": "F18"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "G 1kΩ",
+          "pins": {
+            "한쪽": "C21",
+            "다른쪽": "F21"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "DP 1kΩ",
+          "pins": {
+            "한쪽": "C24",
+            "다른쪽": "F24"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:D2",
+          "b": "J3",
+          "text": "U:D2에서 J3로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D3",
+          "b": "J6",
+          "text": "U:D3에서 J6로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D4",
+          "b": "J9",
+          "text": "U:D4에서 J9로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D5",
+          "b": "J12",
+          "text": "U:D5에서 J12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D6",
+          "b": "J15",
+          "text": "U:D6에서 J15로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D7",
+          "b": "J18",
+          "text": "U:D7에서 J18로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D8",
+          "b": "J21",
+          "text": "U:D8에서 J21로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D9",
+          "b": "J24",
+          "text": "U:D9에서 J24로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D10",
+          "b": "A26",
+          "text": "U:D10에서 A26로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D11",
+          "b": "A27",
+          "text": "U:D11에서 A27로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D12",
+          "b": "A28",
+          "text": "U:D12에서 A28로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D13",
+          "b": "A29",
+          "text": "U:D13에서 A29로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 4자리 FND · 빠르게 번갈아 켜기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst byte segments[8]={2,3,4,5,6,7,8,9};\nconst byte digits[4]={10,11,12,13};\nconst byte patterns[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};\nconst byte values[4]={1,2,3,4};\nvoid blank() {\n  for (byte p:digits) { digitalWrite(p,LOW); pinMode(p,INPUT); } // 선택하지 않은 공통 핀은 떠 있게 합니다.\n  for (byte p:segments) digitalWrite(p,HIGH); // 모든 막대도 끕니다.\n}\nvoid setup() {\n  for (byte p:segments) { digitalWrite(p,HIGH); pinMode(p,OUTPUT); }\n  for (byte p:digits) { digitalWrite(p,LOW); pinMode(p,INPUT); }\n}\nvoid loop() {\n  for (byte d=0;d<4;d++) for (byte s=0;s<7;s++) {\n    blank();\n    if ((patterns[values[d]] >> s) & 1) {\n      digitalWrite(segments[s],LOW);\n      pinMode(digits[d],OUTPUT); digitalWrite(digits[d],HIGH);\n      delayMicroseconds(250); // 한 번에 한 LED만 켜는 낮은 듀티 예제입니다.\n    }\n  }\n  blank();\n}\n",
+      "expected": "1234가 희미하게 표시됩니다. 카메라에는 줄무늬·깜빡임이 보일 수 있습니다.",
+      "change": "values 배열을 자신의 네 자리 숫자로 바꿉니다.",
+      "errors": "어두운 것은 낮은 듀티 때문일 수 있습니다. 저항을 빼 밝게 만들지 않습니다. 밝은 완성품은 별도 표시기 드라이버로 설계합니다.",
+      "orientation": "판매처 HS410561K-32의 FRONT VIEW 핀표를 확인합니다. A11·B7·C4·D2·E1·F10·G5·DP3, DIG1=12·DIG2=9·DIG3=8·DIG4=6입니다. 표시기를 바깥에 두고 암–수 선으로 각 핀을 그림의 구멍에 펼쳐 연결합니다.",
+      "gate": "막대마다 1kΩ 저항 8개가 필요합니다. 구성표는 저항 종류별 수량을 밝히지 않으므로 실제 수량을 먼저 셉니다. 부족하면 같은 값을 추가 준비하고, 임의로 저항을 생략하지 않습니다. 이 펼친 배선 방식에는 암–수 점퍼선12개가 필요합니다. 기본10개보다2개가 더 필요하므로 추가 준비합니다.",
+      "library": "",
+      "refs": [
+        "assets/reference/3.png"
+      ]
+    },
+    {
+      "id": "K23",
+      "title": "74HC595 · 선 세 개로 출력 늘리기",
+      "parts": [
+        34,
+        29,
+        30
+      ],
+      "concept": "시프트 레지스터는 데이터를 한 비트씩 받은 뒤 한 번에 출력으로 옮깁니다. DS는 데이터, SHCP는 데이터를 밀어 넣는 시계, STCP는 출력에 반영하는 래치입니다. 처음에는 Q0 LED 한 개로 순서를 확인합니다.",
+      "components": [
+        {
+          "name": "74HC595 · 홈이 위",
+          "pins": {
+            "16 VCC": "F6",
+            "15 Q0": "F7",
+            "14 DS": "F8",
+            "13 /OE": "F9",
+            "12 STCP": "F10",
+            "11 SHCP": "F11",
+            "10 /MR": "F12",
+            "9 Q7S · 비움": "F13",
+            "1 Q1 · 비움": "E6",
+            "2 Q2 · 비움": "E7",
+            "3 Q3 · 비움": "E8",
+            "4 Q4 · 비움": "E9",
+            "5 Q5 · 비움": "E10",
+            "6 Q6 · 비움": "E11",
+            "7 Q7 · 비움": "E12",
+            "8 GND": "E13"
+          },
+          "kind": "dip",
+          "part": 34
+        },
+        {
+          "name": "1kΩ",
+          "pins": {
+            "한쪽": "H7",
+            "다른쪽": "H18"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "LED",
+          "pins": {
+            "긴 +": "J18",
+            "짧은 −": "J20"
+          },
+          "kind": "led",
+          "part": 29
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:5V",
+          "b": "J6",
+          "text": "U:5V에서 J6로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A13",
+          "text": "U:GND에서 A13로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B13",
+          "b": "J9",
+          "text": "B13에서 J9로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "I6",
+          "b": "J12",
+          "text": "I6에서 J12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D11",
+          "b": "J8",
+          "text": "U:D11에서 J8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D12",
+          "b": "J10",
+          "text": "U:D12에서 J10로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D13",
+          "b": "J11",
+          "text": "U:D13에서 J11로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "C13",
+          "b": "H20",
+          "text": "C13에서 H20로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 74HC595 · 선 세 개로 출력 늘리기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\nconst int DATA=11, LATCH=12, CLOCK=13;\nvoid setup() { pinMode(DATA,OUTPUT); pinMode(LATCH,OUTPUT); pinMode(CLOCK,OUTPUT); }\nvoid writeByte(byte value) {\n  digitalWrite(LATCH,LOW); // 8비트를 준비하는 동안 출력을 고정합니다.\n  shiftOut(DATA,CLOCK,MSBFIRST,value); // 상위 비트부터 보냅니다.\n  digitalWrite(LATCH,HIGH); // 준비한 값을 Q0~Q7에 반영합니다.\n}\nvoid loop() { writeByte(1); delay(1000); writeByte(0); delay(1000); }\n",
+      "expected": "Q0에 연결한 LED가 1초마다 켜졌다 꺼집니다.",
+      "change": "각 출력에 개별 저항을 추가 준비해 Q1~Q7로 이동하는 불빛을 만듭니다.",
+      "errors": "/OE는 LOW, /MR은 HIGH여야 합니다. 16 VCC와 8 GND를 뒤집지 않습니다.",
+      "orientation": "칩의 반달 홈·점이 위로 보이게 빵판 가운데 홈을 가로질러 E6~E13·F6~F13에 꽂습니다. 위에서 본 1번은 왼쪽 위, 아래로1~8·오른쪽 아래9부터 위로16입니다. 부품을 꽂기 전 모든 다리가 바깥으로 벌어지거나 접히지 않았는지 확인합니다.",
+      "gate": "",
+      "library": "",
+      "refs": [
+        "assets/reference/1.pdf"
+      ]
+    },
+    {
+      "id": "K24",
+      "title": "도트매트릭스 · 한 점과 핀 지도",
+      "parts": [
+        23,
+        30
+      ],
+      "concept": "8×8 표시기는 64개 LED를 행과 열로 묶습니다. 키트 사진은 핀16개짜리 맨 부품이며 MAX7219 통신 모듈이 아닙니다. 핀 번호·행열·극성이 확인돼야 전체 화면 스캔을 만들 수 있습니다. 외형이 같은 1088·1388 부품의 서로 다른 핀표를 섞지 않습니다.",
+      "components": [
+        {
+          "name": "확인된 행 애노드 · 열 캐소드",
+          "pins": {
+            "확인한 ROW 애노드": "E8",
+            "확인한 COL 캐소드": "E12"
+          },
+          "kind": "module",
+          "part": 23
+        },
+        {
+          "name": "1kΩ",
+          "pins": {
+            "한쪽": "C8",
+            "다른쪽": "C16"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:3V3",
+          "b": "A16",
+          "text": "U:3V3에서 A16로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A12",
+          "text": "U:GND에서 A12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 도트매트릭스 · 한 점과 핀 지도\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// 이 단계는 3.3V + 1kΩ으로 확인된 한 점을 켜는 전원 회로입니다.\n// 프로그램으로 16핀을 임의 순회하지 않습니다.\nvoid setup() { Serial.begin(9600); Serial.println(\"Check the documented row/column pair\"); }\nvoid loop() {} // 표시기의 행·열 핀표가 확인되기 전에는 디지털 핀을 연결하지 않습니다.\n",
+      "expected": "자료에서 확인한 행·열의 교차점 LED 한 개가 켜집니다.",
+      "change": "공식 핀표에 각 핀의 행·열을 적고, 전원을 끈 뒤 다른 확인된 한 쌍으로 옮겨 위치를 비교합니다.",
+      "errors": "불이 안 들어오면 무작정 극성을 바꾸지 말고 부품 모델·핀표의 앞/뒤 방향을 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "상품 사진의 SH13888A 글자만으로 공급된 부품의 제조사·행열 핀표·역전압 정격을 확정할 수 없습니다. 이 실습은 해당 부품의 핀표와 허용전압을 확보한 후 진행하는 조건부 한 점 회로입니다. 자료가 없으면 부품 식별·핀 지도 작성까지만 하고 전원을 연결하지 않습니다. 모든 핀을 추측한 완성 배선도로 제공하지 않습니다.",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K25",
+      "title": "RFID · 카드와 열쇠고리 읽기",
+      "parts": [
+        3,
+        4,
+        5,
+        30
+      ],
+      "concept": "SPI는 SCK·MOSI·MISO·SS로 통신합니다. RC522의 SDA 표시는 이 SPI 실습에서는 SS입니다. UNO의 A4 I2C에 연결하지 않습니다. UNO 출력5V는 2.2kΩ·3.3kΩ 분압으로 약3.0V로 낮춥니다. 카드 UID는 비밀번호가 아니며 보안 인증을 대신하지 못합니다.",
+      "components": [
+        {
+          "name": "RC522",
+          "pins": {
+            "3.3V": "E4",
+            "GND": "E6",
+            "SDA / SS": "E9",
+            "SCK": "E13",
+            "MOSI": "E17",
+            "MISO": "E23",
+            "RST": "E21",
+            "IRQ · 비움": "E26"
+          },
+          "kind": "module",
+          "part": 3
+        },
+        {
+          "name": "D10 상단2.2kΩ",
+          "pins": {
+            "한쪽": "F9",
+            "다른쪽": "C9"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D10 하단3.3kΩ",
+          "pins": {
+            "한쪽": "D9",
+            "다른쪽": "D10"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D13 상단2.2kΩ",
+          "pins": {
+            "한쪽": "F13",
+            "다른쪽": "C13"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D13 하단3.3kΩ",
+          "pins": {
+            "한쪽": "D13",
+            "다른쪽": "D14"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D11 상단2.2kΩ",
+          "pins": {
+            "한쪽": "F17",
+            "다른쪽": "C17"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D11 하단3.3kΩ",
+          "pins": {
+            "한쪽": "D17",
+            "다른쪽": "D18"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D9 상단2.2kΩ",
+          "pins": {
+            "한쪽": "F21",
+            "다른쪽": "C21"
+          },
+          "kind": "resistor",
+          "part": null
+        },
+        {
+          "name": "D9 하단3.3kΩ",
+          "pins": {
+            "한쪽": "D21",
+            "다른쪽": "D22"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:3V3",
+          "b": "A4",
+          "text": "U:3V3에서 A4로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A6",
+          "text": "U:GND에서 A6로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "B6",
+          "b": "A2",
+          "text": "B6에서 A2로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D12",
+          "b": "A23",
+          "text": "U:D12에서 A23로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D10",
+          "b": "J9",
+          "text": "U:D10에서 J9로 연결합니다.",
+          "why": "UNO의 5V 출력을 먼저 2.2kΩ 저항으로 보냅니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "A10",
+          "b": "B2",
+          "text": "A10에서 B2로 연결합니다.",
+          "why": "분압 하단 3.3kΩ을 GND에 연결해 신호를 약3.0V로 낮춥니다. 3.3V 전원의 허용범위를 별도 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D13",
+          "b": "J13",
+          "text": "U:D13에서 J13로 연결합니다.",
+          "why": "UNO의 5V 출력을 먼저 2.2kΩ 저항으로 보냅니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "A14",
+          "b": "C2",
+          "text": "A14에서 C2로 연결합니다.",
+          "why": "분압 하단 3.3kΩ을 GND에 연결해 신호를 약3.0V로 낮춥니다. 3.3V 전원의 허용범위를 별도 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D11",
+          "b": "J17",
+          "text": "U:D11에서 J17로 연결합니다.",
+          "why": "UNO의 5V 출력을 먼저 2.2kΩ 저항으로 보냅니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "A18",
+          "b": "D2",
+          "text": "A18에서 D2로 연결합니다.",
+          "why": "분압 하단 3.3kΩ을 GND에 연결해 신호를 약3.0V로 낮춥니다. 3.3V 전원의 허용범위를 별도 확인합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:D9",
+          "b": "J21",
+          "text": "U:D9에서 J21로 연결합니다.",
+          "why": "UNO의 5V 출력을 먼저 2.2kΩ 저항으로 보냅니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "A22",
+          "b": "E2",
+          "text": "A22에서 E2로 연결합니다.",
+          "why": "분압 하단 3.3kΩ을 GND에 연결해 신호를 약3.0V로 낮춥니다. 3.3V 전원의 허용범위를 별도 확인합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// RFID · 카드와 열쇠고리 읽기\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n#include <SPI.h>\n#include <MFRC522.h>\nMFRC522 reader(10,9); // SS, RST\nvoid setup() { Serial.begin(9600); SPI.begin(); reader.PCD_Init(); }\nvoid loop() {\n  if (!reader.PICC_IsNewCardPresent() || !reader.PICC_ReadCardSerial()) return;\n  Serial.print(\"UID:\");\n  for (byte i=0;i<reader.uid.size;i++) {\n    Serial.print(' ');\n    if (reader.uid.uidByte[i]<16) Serial.print('0'); // 두 자리 16진수로 맞춥니다.\n    Serial.print(reader.uid.uidByte[i],HEX);\n  }\n  Serial.println(); reader.PICC_HaltA(); reader.PCD_StopCrypto1();\n}\n",
+      "expected": "카드·열쇠고리를 한 개씩 가까이 대면 서로의 UID가 출력됩니다.",
+      "change": "특정 UID를 표시용 이름에 연결해 인사 문구를 바꿉니다. 실제 출입 보안에는 쓰지 않습니다.",
+      "errors": "아무 값도 없으면 3.3V·공통 GND·네 개 분압과 SPI핀부터 확인합니다. 모듈 헤더 납땜 여부도 확인합니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "2.2kΩ 4개와3.3kΩ 4개 또는 SPI에 맞는 5V→3.3V 레벨 변환기가 필요합니다. 구성표는 저항 값별 수량을 보장하지 않습니다. 부족하면 추가 준비 후 진행합니다. RC522 전원에5V를 넣거나 UNO의5V출력 네 선을 직결하지 않습니다. MISO3.3V는 UNO의 입력으로만 연결합니다.",
+      "library": "MFRC522 1.4.12",
+      "refs": [
+        "https://github.com/miguelbalboa/rfid",
+        "assets/reference/12.jpg"
+      ]
+    },
+    {
+      "id": "K26",
+      "title": "2핀 화염 소자 · 빛 변화와 모델 확인",
+      "parts": [
+        31,
+        30
+      ],
+      "concept": "판매처의 부품은 2핀 감지 소자입니다. 디지털 모듈의 VCC·GND·DO 세 핀을 가진 것처럼 연결하지 않습니다. 광트랜지스터형인지 광다이오드형인지에 따라 동작과 극성·회로가 달라집니다. 이름만 보고 임의로 전원을 넣지 않는 것도 부품 사용의 한 단계입니다.",
+      "components": [
+        {
+          "name": "핀표가 확인된 광트랜지스터형만",
+          "pins": {
+            "Collector C": "E8",
+            "Emitter E": "E12"
+          },
+          "kind": "raw",
+          "part": 31
+        },
+        {
+          "name": "10kΩ",
+          "pins": {
+            "한쪽": "C8",
+            "다른쪽": "C16"
+          },
+          "kind": "resistor",
+          "part": null
+        }
+      ],
+      "lines": [
+        {
+          "a": "U:3V3",
+          "b": "A16",
+          "text": "U:3V3에서 A16로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:A0",
+          "b": "A8",
+          "text": "U:A0에서 A8로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        },
+        {
+          "a": "U:GND",
+          "b": "A12",
+          "text": "U:GND에서 A12로 연결합니다.",
+          "why": "그림의 양 끝 이름을 확인하고 USB를 뺀 상태에서 연결합니다.",
+          "kind": "wire"
+        }
+      ],
+      "code": "// 2핀 화염 소자 · 빛 변화와 모델 확인\n// 보드: Arduino Uno / 시리얼 모니터: 9600 baud\n// USB를 뽑고 배선한 뒤, 아래 연결표와 코드의 핀 번호를 대조하세요.\n\n// setup()은 업로드·리셋 직후 한 번만 실행합니다.\nvoid setup() {\n  Serial.begin(9600); // PC에 값을 보여 줄 통신 속도입니다.\n}\n// loop()는 전원이 들어온 동안 계속 반복합니다.\nvoid loop() {\n  int value = analogRead(A0); // UNO는 입력 전압을 0~1023 값으로 읽습니다.\n  Serial.print(\"infrared_raw=\");\n  Serial.println(value); // 숫자 뒤에서 줄을 바꿉니다.\n\n  delay(200); // 값이 너무 빠르게 지나가지 않게 0.2초 기다립니다.\n}\n",
+      "expected": "핀표·정격이 맞는 광트랜지스터형에서 적외선 광량에 따라 값이 변합니다.",
+      "change": "불꽃 대신 적외선 리모컨을 눌러 가까이 댔을 때의 변화를 비교합니다. 변화가 작으면 센서 파장·샘플링도 함께 확인합니다.",
+      "errors": "반응이 없다고 불을 붙이거나 다리를 바꾸지 않습니다. 다른 광소자면 그 제조사 응용 회로로 바꿉니다.",
+      "orientation": "부품 핀의 이름을 먼저 확인합니다. 모듈 그림은 핀 이름을 읽기 위한 펼친 그림이며, 실물 커넥터의 좌우 순서를 뜻하지 않습니다. 표시가 다른 부품은 연결 전에 해당 모델 핀표와 대조합니다.",
+      "gate": "이 회로는 C·E가 확인되고 해당 전압을 허용하는 광트랜지스터일 때만 사용합니다. 상품 사진은 정확한 모델·극성을 제공하지 않으므로 현물 각인·공급사 자료 확인이 먼저입니다. 광다이오드형이나 미확인 소자는 식별 기록까지만 진행합니다. 불·라이터를 쓰지 않습니다.",
+      "library": "",
+      "refs": []
+    },
+    {
+      "id": "K27",
+      "title": "전원·케이블·정리",
+      "parts": [
+        28,
+        36,
+        16,
+        17
+      ],
+      "concept": "USB 케이블은 코드 업로드·시리얼 통신·전원 공급에 사용합니다. 점퍼선은 핀과 구멍을 연결합니다. 9V 클립은 전압을5V로 바꾸지 않습니다. 정리할 때는 전원을 먼저 분리하고 다른 회로로 넘어가기 전에 이전 선을 모두 제거합니다.",
+      "components": [],
+      "lines": [],
+      "code": "",
+      "expected": "보드·빵판 전원을 분리하고 부품·케이블 수량을 처음 사진과 대조합니다.",
+      "change": "자신의 완성 회로 사진과 연결표·코드·실제 결과를 같은 폴더에 저장합니다.",
+      "errors": "9V를5V·3.3V핀·센서에 넣지 않습니다. 전원 레일이나 부품에 꽂힌 선을 잡아당기지 말고 커넥터를 잡습니다.",
+      "orientation": "9V 클립은 오늘 기본 USB 실습에 사용하지 않습니다. 배터리도 별도 품목입니다. 외부 전원 학습 시에는 보드 DC 입력의 허용 범위·플러그 극성부터 확인합니다. 사용하지 않는 보조품도 이 목록에 남겨 실제 구성품과 대조할 수 있게 했습니다.",
+      "gate": "",
+      "library": "",
+      "refs": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "실제 키트·37개 구성표·상품 사진",
+      "url": "https://www.devicemart.co.kr/goods/view?no=1264627"
+    },
+    {
+      "title": "판매처 구성품 사진 원본",
+      "url": "https://www.devicemart.co.kr/data/editor/goods/1/2019/08/1264627_15895174965072.jpg"
+    },
+    {
+      "title": "Arduino UNO 공식 핀표",
+      "url": "https://content.arduino.cc/assets/Pinout-UNOrev3_latest.pdf"
+    },
+    {
+      "title": "UNO 그림 · Fritzing parts (CC BY-SA 3.0)",
+      "url": "https://github.com/fritzing/fritzing-parts"
+    }
+  ],
+  "checks": [
+    "USB와 외부 전원을 모두 뺀 채 배선했습니다.",
+    "부품의 모델·극성·저항 값을 연결표와 대조했습니다.",
+    "5V·3.3V·GND가 서로 직접 이어지지 않는지 확인했습니다.",
+    "아래 전체 연결표의 양 끝과 실제 선을 한 개씩 대조했습니다."
+  ]
+}

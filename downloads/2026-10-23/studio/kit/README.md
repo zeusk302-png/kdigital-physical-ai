@@ -1,14 +1,5 @@
-# XIAO 센서와 라즈봇V2
+# UNO 개인 실습 파일
 
-firmware의 스케치는 Arduino IDE에서 같은 이름의 폴더와 함께 엽니다. pc/collect.py는 실제 USB 측정을 저장하고 pc/robot_pulse.py는 별도 라즈봇 모터 시험입니다. .venv·runtime은 제외합니다.
+guide/index.html을 웹 서버로 열면 실물 사진·단계별 배선도·코드를 볼 수 있습니다. GitHub Pages의 같은 실습 화면을 이용해도 됩니다. sketches/K번호/K번호.ino를 Arduino IDE에서 열어 Arduino Uno 보드로 검증·업로드합니다. 외부 라이브러리·추가 전원·핀 확인 조건은 각 안내에 있습니다. 오전 Sense PDF는 강사 별도 제공입니다.
 
-설치·배선·실행은 웹 교안 R01~R08과 docs/hardware-check.md를 따릅니다. PC 수집은 Serial Monitor를 닫은 뒤 실행합니다.
-
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m pc.collect --port COM5 --device team01-xiao
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-```
-
-COM5는 실제 포트로 바꿉니다. Ctrl+C로 종료합니다. 펌웨어와 PC 수집 형식은 한 세트입니다. 로봇 제조사 코드·모터 채널을 다른 제품에서 가져오지 않습니다.
+회로를 바꿀 때 전원을 끕니다. 이 자료의 사진은 판매처 구성품 사진이며 자신의 조립 결과와 다릅니다. 실제 장치 실행 결과는 직접 기록합니다.
