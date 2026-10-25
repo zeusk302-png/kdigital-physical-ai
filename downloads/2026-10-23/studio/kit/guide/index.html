@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>아두이노 고급키트 · 개인 실습</title><link rel="stylesheet" href="style.css"></head>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>아두이노 고급키트 · 개인 실습</title><link rel="stylesheet" href="style.css?v=37e6972d05196294"></head>
 <body><a class="skip" href="#workbench">실습으로 건너뛰기</a>
 <header class="top"><a href="../../../../../index.html#/sessions/2026-10-23/lesson">← 수업 목차</a><span>전자회로·ESP32 <b>개인 실습</b></span><a href="../../../student-examples.zip" download>코드·교안 ZIP ↓</a></header>
 <main>
-<section class="hero"><div><p class="eyebrow">HANDS ON · ARDUINO UNO</p><h1>부품을 보고,<br>한 선씩 연결해요.</h1><p class="lead">사진으로 부품을 찾고, 빵판 그림의 위치를 따라 꽂습니다.<br>내 코드로 불빛·숫자·움직임을 바꿔 보세요.</p><div class="actions"><a class="primary" href="?lab=K01#workbench">빵판·LED부터 시작 →</a><a href="#inventory">구성품 전체 보기 ↓</a></div></div><aside><span>오늘의 수업</span><h2>오전 Sense<br>오후 UNO 키트</h2><p>오전은 강사가 별도로 제공하는 PDF로 진행합니다.</p><p>오후에는 각자 자기 키트와 PC로 연결합니다. 회로를 바꿀 때는 전원을 먼저 빼세요.</p><small>13:00–16:50 · 50분 실습 / 10분 휴식</small></aside></section>
+<section class="hero"><div><p class="eyebrow">HANDS ON · ARDUINO UNO</p><h1>부품을 보고,<br>한 선씩 연결해요.</h1><p class="lead">사진으로 부품을 찾고, 빵판 그림의 위치를 따라 꽂습니다.<br>내 코드로 불빛·숫자·움직임을 바꿔 보세요.</p><div class="actions"><a class="primary" href="?lab=K01#workbench">빵판·LED부터 시작 →</a><a href="#breadboard-basics">빵판 연결 원리부터 ↓</a><a href="#inventory">구성품 전체 보기 ↓</a></div></div><aside><span>오늘의 수업</span><h2>오전 Sense<br>오후 UNO 키트</h2><p>오전은 강사가 별도로 제공하는 PDF로 진행합니다.</p><p>오후에는 각자 자기 키트와 PC로 연결합니다. 회로를 바꿀 때는 전원을 먼저 빼세요.</p><small>13:00–16:50 · 50분 실습 / 10분 휴식</small></aside></section>
 <section class="foundation"><h2>처음이라면 이 순서로</h2><div><a href="?lab=K00#workbench"><b>01</b> 설치·보드 업로드</a><a href="?lab=K01#workbench"><b>02</b> 빵판·LED·저항</a><a href="?lab=K02#workbench"><b>03</b> 버튼 입력</a><a href="?lab=K04#workbench"><b>04</b> 손잡이 값을 읽기</a></div><p>모든 부품을 동시에 연결하지 않습니다. 한 회로를 확인한 다음 전원을 끄고 다음 부품으로 넘어갑니다. 전체 안내는 수업 후에도 계속 볼 수 있습니다.</p></section>
+<section id="breadboard-basics" class="breadboard-theory"></section>
 <section id="inventory" class="inventory"><div class="section-heading"><div><p class="eyebrow">WHAT'S IN YOUR KIT</p><h2>상자 안에서 찾아보세요 <small id="part-total"></small></h2></div><label>부품 찾기<input id="part-search" type="search" placeholder="예: LED, LCD, 저항"></label></div><p>판매처가 공개한 구성품 실물 사진입니다. 사진을 누르면 확대하고, 해당 부품 안내로 이동할 수 있습니다. 색상·납땜 상태는 실제 지급된 부품과 대조하세요.</p><div id="part-grid" class="part-grid"></div><p id="no-parts" hidden>일치하는 부품이 없습니다. 검색어를 지우면 전체 구성품이 보입니다.</p></section>
 <section id="workbench" class="workbench"><nav aria-label="부품별 실습" class="lab-nav"><p class="eyebrow">YOUR WORKBENCH</p><h2>실습 목록</h2><div id="lab-list"></div><p>추가 전원·핀표가 필요한 부품도 목록에 남겨 두었습니다. 해당 안내의 연결 조건을 먼저 확인하세요.</p></nav><article id="lab-content" tabindex="-1"></article></section>
 <section class="closing"><h2>내 회로 기록하기</h2><p>완성 사진 한 장, 바꾼 코드, 실제 결과, 고친 오류를 같은 폴더에 남깁니다. 실행한 항목과 준비가 더 필요한 항목을 나눠 적으세요.</p><pre>my-arduino/
@@ -15,5 +16,5 @@
 </main>
 <dialog id="photo-dialog"><button class="close" aria-label="닫기">×</button><h2 id="photo-title"></h2><div id="photo-large"></div><p id="photo-description"></p><a id="photo-lab" class="primary">이 부품 실습 열기 →</a></dialog>
 <dialog id="diagram-dialog"><button class="close" aria-label="닫기">×</button><h2>현재 단계 배선도</h2><p>그림을 가로로 이동해 양 끝 위치를 확인하세요.</p><div id="diagram-large" class="diagram-scroll"></div></dialog>
-<div id="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+<div id="toast" role="status" aria-live="polite"></div><script src="theory.js?v=b58db8c90ceff5ea"></script><script src="app.js?v=d9ec10a88f461c3e"></script>
 </body></html>
