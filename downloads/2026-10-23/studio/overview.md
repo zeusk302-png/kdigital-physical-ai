@@ -1,5 +1,13 @@
 # 전자회로·ESP32
 
+<!-- kit-integration:start -->
+## 오늘 보강: 전체 부품 배선과 목요일 대시보드 준비
+
+[단계별 전체 배선 실습실](kit/integration/index.html) · [Claude에 전달할 전체 MD](kit/integration/CLAUDE-HANDOFF.md) · [전원과 모터드라이버의 각 핀](kit/integration/POWER-AND-DRIVER.md)
+
+고급키트만 보유한 조건으로 P01 기본 통합과 기능별 교체 회로를 제공합니다. 목요일(2026-10-29)에 사용할 회로는 P01입니다. 외부전원이 없는 모터와 미확인 모델은 조건을 확인하기 전 연결·구동을 보류합니다. 전체 모듈을 동시에 연결한 구성은 아닙니다.
+<!-- kit-integration:end -->
+
 ## 오전 Sense · 오후 아두이노 고급키트
 
 오전 10:00~11:50은 **강사 제공 Sense PDF**로 진행합니다. PDF는 강사가 별도로 제공합니다.

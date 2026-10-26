@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>고급키트 전체 배선 · 목요일 준비</title>
+<style>
+[hidden]{display:none!important}:root{color-scheme:light;--green:#205b48;--paper:#fffdf7;--line:#d7dfd3}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:#23392d;font:17px/1.7 "Malgun Gothic",sans-serif}a{color:var(--green)}header,main,footer{max-width:1450px;margin:auto;padding:24px}header{border-bottom:1px solid var(--line)}h1{font-size:32px;line-height:1.3;margin:8px 0}h2{font-size:24px}button,select{font:inherit;border:1px solid #8a9f8e;border-radius:6px;background:#fff;padding:10px 14px;color:#244a37}button{cursor:pointer}button:disabled{opacity:.4;cursor:default}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #ce721f;outline-offset:3px}.notice{background:#f5ebd6;border-left:5px solid #b4742d;padding:16px;margin:18px 0}.layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:24px}.layout>*{min-width:0}.sidebar{position:sticky;top:12px;align-self:start}.sidebar select{width:100%;white-space:normal}.sidebar p{font-size:15px}.step{border:1px solid var(--line);padding:20px;border-radius:10px;background:white;margin:18px 0;min-height:185px}.count{color:#6b725a;font-size:14px}.controls{display:flex;gap:10px;flex-wrap:wrap}.diagram{overflow:auto;border:1px solid var(--line);background:white}.diagram svg{width:100%;min-width:1400px;height:auto;display:block}.photos{display:flex;gap:12px;flex-wrap:wrap}.part{width:145px;border:1px solid var(--line);padding:8px;background:#fff}.part svg{width:100%;height:110px;display:block}.part p{font-size:13px;margin:4px 0}.links{display:flex;gap:16px;flex-wrap:wrap}.step input{width:100%}pre{white-space:pre-wrap;word-break:break-word;background:#eaf0e7;padding:12px}#gate:empty{display:none}footer{font-size:14px;color:#526754}details{margin:20px 0}#allParts{display:flex;gap:12px;flex-wrap:wrap}@media(max-width:850px){.layout{grid-template-columns:1fr}.layout>*{min-width:0}.sidebar{position:static}header,main,footer{padding:16px}h1{font-size:27px}.diagram svg{min-width:1000px}.part{width:130px}}
+</style>
+<header>
+<p>전자회로·ESP32 / 오후 UNO 고급키트</p>
+<h1>오늘 배선과 코드, 목요일 대시보드</h1>
+<p>전체 37품목 · 단품 28안내 · 통합 4회로. 그림의 핀 이름과 실제 부품을 대조하며 한 선씩 연결합니다.</p>
+<nav class="links"><a href="README.md">시작 안내</a><a href="CLAUDE-HANDOFF.md" download>Claude 전달 MD</a><a href="INVENTORY.md">전체 부품표</a><a href="POWER-AND-DRIVER.md">전원·드라이버 핀</a><a href="PROTOCOL.md">목요일 통신 규약</a></nav>
+<nav class="links" id="download-links" aria-label="수업 자료 다운로드"><a href="../integration-downloads/all-wiring-diagrams.zip" download>전체 배선도 ZIP ↓</a><a href="../integration-downloads/arduino-code.zip" download>통합·단품 코드 ZIP ↓</a><a href="../integration-downloads/kit-wiring-and-claude.zip" download>그림·MD·코드 전체 ZIP ↓</a></nav>
+<p id="offline-note" hidden>전체 ZIP을 풀어 연 화면입니다. 이 폴더에 그림·MD·코드가 모두 들어 있습니다.</p>
+<div class="notice">보유품은 고급키트뿐입니다. 한 번에 회로 하나를 선택합니다. 다른 회로의 선을 남겨 합치지 않습니다. 외부전원이 없는 모터는 오늘 구동하지 않습니다.</div>
+</header>
+<main>
+<div class="layout">
+<aside class="sidebar"><label for="lab">회로 선택</label><select id="lab"></select><p>목요일에 사용할 기본 회로는 <b>P01</b>입니다. 다른 회로를 실습했다면 P01로 복원하고 전원을 분리해 보관합니다.</p><div class="links"><a id="md">각 핀·순서 MD</a><a id="svg" download>전체 배선도 SVG</a><a id="ino">기준 코드</a></div><p id="library"></p></aside>
+<article><h2 id="title"></h2><p id="concept"></p><div id="gate" class="notice"></div>
+<details><summary>이 회로의 부품 실물 사진</summary><p>사진은 판매처 구성품의 외형 참고입니다. 실제 모듈의 핀 순서·극성은 실물 표시와 모델 핀표로 확인합니다.</p><div id="photos" class="photos"></div></details>
+<section class="step" aria-live="polite"><span id="count" class="count"></span><h3 id="stepTitle"></h3><p id="stepText"></p><div class="controls"><button id="prev">← 이전</button><button id="next">다음 →</button><button id="complete">전체 그림</button><button id="start">준비부터</button><button id="plan">조건부 설계도 보기</button></div><label>단계 이동<input type="range" id="range" min="0" value="0"></label></section>
+<p>연두색 띠 한 개가 같은 금속판입니다. 가운데 홈 건너편은 분리되어 있습니다. <b>주황 선이 이번 단계</b>입니다. 모듈 카드는 실제 커넥터 순서를 펼친 것이 아니며, 이름별로 점퍼선을 연결합니다. 작은 화면에서는 그림을 가로로 이동하세요.</p>
+<div id="diagram" class="diagram"></div>
+<details><summary>이 회로의 단계 전체 보기</summary><ol id="steps"></ol></details>
+</article></div>
+<details><summary>37품목 전체 사진 보기</summary><div id="allParts"></div></details>
+</main>
+<footer>그림·배선 명세·컴파일 검증과 실물 조립·업로드·전류 측정·동작 검증은 구분합니다. 이 화면은 장치를 제어하는 대시보드가 아니라 오늘 조립할 배선 안내입니다.</footer>
+<script src="data.js"></script><script src="viewer.js"></script>
+</html>
