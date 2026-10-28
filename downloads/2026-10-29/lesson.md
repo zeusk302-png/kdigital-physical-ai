@@ -6,6 +6,8 @@
 
 [디자인 A/B 비교실](kit/uno-dashboard/design-studio.html) · [브라우저 개인 작성지](kit/uno-dashboard/workbook.html) · [코드 줄별 설명](kit/uno-dashboard/CODE-WALKTHROUGH.md) · [제작·실행 확인표](kit/uno-dashboard/SELF-CHECK.md)
 
+[대시보드 실제 사례 20선](kit/uno-dashboard/case-gallery.html) · [사례 해설 MD](kit/uno-dashboard/CASEBOOK.md)
+
 ## 오늘 만들 것
 
 ‘내 책상 환경’ 화면에서 온습도·밝기·가변저항을 확인하고 LED를 켜고 끕니다. 밝기 기준 두 개로 자동 모드도 시험합니다. 같은 P01 연결을 출발점으로 각자 사용자·정보 배치·스타일·핵심 기능을 바꿔 자기 작품으로 완성합니다. 연습 데이터와 실제 USB 입력은 화면에서 구별합니다.
@@ -34,7 +36,7 @@
 
 ## 단원
 
-[D01 · 좋은 대시보드는 어떤 판단을 돕나](lessons/D01.md) — 실제 사례 두 개를 보고 사용자가 확인하고 행동할 내용을 찾습니다.
+[D01 · 좋은 대시보드는 어떤 판단을 돕나](lessons/D01.md) — 20개 사례 중 대표 화면을 비교하고 사용자가 확인하고 행동할 내용을 찾습니다.
 
 [D02 · 정보·단위·색·피드백의 원칙](lessons/D02.md) — 현재값과 이력을 구별하고 잘못된 표시를 직접 고칩니다.
 
