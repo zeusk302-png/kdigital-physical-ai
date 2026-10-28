@@ -4,6 +4,8 @@
 
 웹 화면이 USB로 보드의 값을 받고 명령을 보내는 양방향 연결을 확인합니다. 서버·DB·Node 설치 없이 시작합니다. 브라우저의 통신 기능 이름이 Web Serial입니다. 회로는 10/23 P01 그대로입니다.
 
+[표준 적용 실습실](standards-lab.html) · [표준 해설 MD](STANDARDS-GUIDE.md) · [내 표준 적용표](STANDARDS-CHECKLIST.md). ISO의 범위를 내 화면 규칙으로 옮기는 이유와 WCAG 일부 항목의 직접 확인 방법을 배웁니다. 선택한 사례의 관련 기준·수정 과제와 개인 작성지까지 이어집니다.
+
 [디자인 A/B 비교실](design-studio.html) · [개인 작성지와 스케치](workbook.html) · [줄별 코드 설명](CODE-WALKTHROUGH.md) · [실행 확인표](SELF-CHECK.md). 같은 폴더의 파일을 함께 보관하면 오프라인에서도 비교실·작성지·작은 예제를 열 수 있습니다. 실제 USB 연결은 HTTPS/localhost와 지원 브라우저가 필요합니다.
 
 [대시보드 디자인 사례 20선](case-gallery.html)에서 공식 공개 화면과 설계 원칙을 비교합니다. 분야 검색, 참고 사례 선택, 적용 메모, 선택 사례 MD 다운로드를 제공합니다. [20사례 해설](CASEBOOK.md)과 축소 화면은 ZIP에도 포함됩니다. 원본 출처를 여는 경우 인터넷이 필요합니다.

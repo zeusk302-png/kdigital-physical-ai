@@ -22,6 +22,14 @@ P01 적용: 밝기·LED 상태 옆에 켜기/끄기를 배치한다.
 
 학생 질문: 사용자가 조작 전에 알아야 할 상태는 무엇인가?
 
+관련 기준(관찰 관점): [ISO 9241-110:2020](standards-lab.html#S110), [WCAG 2.2](standards-lab.html#W22)
+
+관찰 포인트: 장치 상태와 조작 위치를 살피고, 조작 전후 무엇이 달라지는지 질문한다.
+
+내 화면 수정 과제: 내 LED 버튼 옆에 전송 중·응답·미확인 문구를 설계한다.
+
+확인 근거: 연습 모드에서 세 문구를 재현하고 실제 점등은 따로 기록한다.
+
 [공식 출처](https://www.home-assistant.io/dashboards/) · [출처 원본 이미지](https://www.home-assistant.io/images/dashboards/section_view_rearrange_cards.gif)
 
 ## C02 · Home Assistant · 에너지 흐름
@@ -41,6 +49,14 @@ P01 적용: 센서→보드→화면→LED의 흐름을 설계에 붙인다.
 적용 범위: 2021년 공식 소개 화면이다. 우리 키트는 전력량 계측기가 아니므로 전력 수치를 만들지 않는다.
 
 학생 질문: 시간에 따른 변화와 장치 사이 흐름은 어떻게 다른가?
+
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-11:2018](standards-lab.html#S11)
+
+관찰 포인트: 에너지 종류·흐름·양의 의미를 어떻게 구별하는지 살핀다.
+
+내 화면 수정 과제: 우리 키트의 raw·°C·%를 각각 이름과 단위로 구별한다.
+
+확인 근거: 실제 부품과 표시 항목을 대조하고 전력량을 측정하지 않았음을 적는다.
 
 [공식 출처](https://www.home-assistant.io/blog/2021/08/04/home-energy-management/) · [출처 원본 이미지](https://www.home-assistant.io/images/blog/2021-08-energy/sidebar-widgets.png)
 
@@ -62,6 +78,14 @@ P01 적용: 책상 위 센서의 위치를 간단한 그림으로 표시한다.
 
 학생 질문: 이 화면에서 도면이 숫자 목록보다 도움이 되는 이유는?
 
+관련 기준(관찰 관점): [ISO 9241-210:2019](standards-lab.html#S210), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 사용자에게 실제 위치·공간 정보가 필요한 이유를 생각한다.
+
+내 화면 수정 과제: 사용자·책상 상황을 한 문장으로 정하고 배치가 필요한지 결정한다.
+
+확인 근거: 스케치의 각 구역이 어떤 사용자 질문에 답하는지 설명한다.
+
 [공식 출처](https://thingsboard.io/iot-hub/solution-templates/smart-office/) · [출처 원본 이미지](https://iot-hub.thingsboard.io/api/resources/96c30d30-68e9-11f1-992c-0f4d95fca092)
 
 ## C04 · ThingsBoard · 공기질 지도
@@ -81,6 +105,14 @@ P01 적용: 온습도·밝기마다 이름·단위·상태 설명을 붙인다.
 적용 범위: P01에는 미세먼지·CO₂ 센서가 없다. 공기질을 실제로 측정했다고 쓰지 않는다.
 
 학생 질문: 경고색만으로 충분한가? 어떤 문구를 더할까?
+
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [WCAG 2.2](standards-lab.html#W22)
+
+관찰 포인트: 위치와 색 범례를 읽고 색 없이도 의미를 알 수 있을지 질문한다.
+
+내 화면 수정 과제: 상태에 색과 글자를 함께 붙이고 공기질 실측처럼 표시하지 않는다.
+
+확인 근거: 색을 가려도 상태 이름으로 이해되는지 직접 읽어 본다.
 
 [공식 출처](https://thingsboard.io/use-cases/air-quality-monitoring/) · [출처 원본 이미지](https://thingsboard.io/_astro/aiq-1.DXUpPGI3_Z2u2M98.webp)
 
@@ -102,6 +134,14 @@ P01 적용: 책상 환경판의 입력 카드와 LED 제어 영역을 나눈다.
 
 학생 질문: 값을 본 뒤 사용자가 할 행동이 어디에 있는가?
 
+관련 기준(관찰 관점): [ISO 9241-11:2018](standards-lab.html#S11), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 관찰하려는 대상과 현재값·변화의 관계를 살핀다.
+
+내 화면 수정 과제: 농장 전체 대신 내 책상의 한 과업을 정하고 핵심 입력 두 개를 고른다.
+
+확인 근거: 선택한 두 값이 사용자 행동에 왜 필요한지 적는다.
+
 [공식 출처](https://thingsboard.io/smart-farming-demo/) · [출처 원본 이미지](https://thingsboard.io/images/usecases/smart-farming/customizable-dashboard.webp)
 
 ## C06 · ThingsBoard · 현장 차량 관제
@@ -121,6 +161,14 @@ P01 적용: 전체 입력 요약에서 특정 센서의 자세한 설명으로 �
 적용 범위: 키트에는 GPS가 없다. 위치값을 센서 실측처럼 넣지 않는다.
 
 학생 질문: 전체 상황과 한 장치의 상세를 어떻게 나눌까?
+
+관련 기준(관찰 관점): [ISO 9241-210:2019](standards-lab.html#S210), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 전체 현장과 한 장치의 상세를 나누는 구조를 살핀다.
+
+내 화면 수정 과제: GPS 기능을 추가하는 대신 전체 센서 요약과 한 센서 설명을 나눈다.
+
+확인 근거: 표시 대상과 기간이 전체/상세에서 어떻게 바뀌는지 적는다.
 
 [공식 출처](https://thingsboard.io/use-cases/site-fleet-tracking/) · [출처 원본 이미지](https://thingsboard.io/_astro/site-fleet-tracking-1.Bbf6oyRI_ZmQFRr.webp)
 
@@ -142,6 +190,14 @@ P01 적용: 센서 이름·값·단위·시각의 순서를 일관되게 맞춘�
 
 학생 질문: 첫 화면에서 꼭 필요한 세 값은 무엇인가?
 
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [WCAG 2.2](standards-lab.html#W22)
+
+관찰 포인트: 패널 이름·단위·반복 규칙을 읽고 실제 글자 대비는 별도 검사 대상으로 둔다.
+
+내 화면 수정 과제: 내 카드의 이름·값·단위 순서를 통일하고 실제 CSS 색을 검사한다.
+
+확인 근거: 대비값과 글자 크기 조건을 적는다. 축소 사진으로 수치 판정하지 않는다.
+
 [공식 출처](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) · [출처 원본 이미지](https://grafana.com/api/dashboards/1860/images/18451/image)
 
 ## C08 · Grafana Canvas · 상태를 관계로 배치
@@ -161,6 +217,14 @@ P01 적용: 센서·UNO·LED를 상자로 두고 데이터 흐름을 설명한�
 적용 범위: 이 사례 이미지는 Canvas 편집·구성 예다. 완성된 전체 관제 화면과 구별한다.
 
 학생 질문: 우리 작품에서는 표와 도식 중 무엇이 더 필요한가?
+
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-11:2018](standards-lab.html#S11)
+
+관찰 포인트: 관계를 도식으로 보일 때와 숫자 표로 보일 때의 용도를 비교한다.
+
+내 화면 수정 과제: 센서→보드→화면→LED 관계를 그리고 필요한 방향에 이름을 붙인다.
+
+확인 근거: 도식만 보고 데이터와 명령 방향을 자기 말로 설명한다.
 
 [공식 출처](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/visualizations/canvas/) · [출처 원본 이미지](https://grafana.com/media/docs/grafana/canvas-server-element-9-4-0.png)
 
@@ -182,6 +246,14 @@ P01 적용: 지금 어두운가→어떻게 변했나→LED를 켤까 순서로 
 
 학생 질문: 각 카드가 답하는 질문을 한 문장씩 말할 수 있나?
 
+관련 기준(관찰 관점): [ISO 9241-11:2018](standards-lab.html#S11), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 각 지표가 사용자의 어떤 질문에 답하는지 살핀다.
+
+내 화면 수정 과제: 조명이 필요한가·값이 최신인가·명령이 적용됐나를 구역 제목으로 쓴다.
+
+확인 근거: 목적 없는 카드를 한 개 제거하거나 보조 구역으로 옮긴 이유를 적는다.
+
 [공식 출처](https://www.datadoghq.com/blog/datadog-executive-dashboards/) · [출처 원본 이미지](https://web-assets.dd-static.net/42588/1776293847-datadog-executive-dashboards-executive-dashboard.png?format=auto&fit=bounds&quality=75&disable=upscale&width=1400&dpr=1)
 
 ## C10 · Amazon CloudWatch · 묶어서 보는 지표
@@ -201,6 +273,14 @@ P01 적용: 온도·습도를 묶고 밝기·LED 판단을 별도 묶음으로 �
 적용 범위: 2015년 공식 소개의 과거 UI 사례다. 현재 콘솔 사용법으로 안내하지 않는다.
 
 학생 질문: 모든 차트를 같은 크기로 둘 필요가 있을까?
+
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-210:2019](standards-lab.html#S210)
+
+관찰 포인트: 차트 묶음과 설명이 사용자 과업을 어떻게 지원하는지 질문한다.
+
+내 화면 수정 과제: 온습도 묶음과 밝기·LED 묶음을 나눈 스케치를 만든다.
+
+확인 근거: 사용자가 어느 묶음을 먼저 봐야 하는지 설명하고 순서를 수정한다.
 
 [공식 출처](https://aws.amazon.com/blogs/aws/cloudwatch-dashboards-create-use-customized-metrics-views/) · [출처 원본 이미지](https://media.amazonwebservices.com/blog/2015/cd_my_dashboard_1.png)
 
@@ -222,6 +302,14 @@ P01 적용: 현재 탭의 최근60개라는 그래프 범위를 명시한다.
 
 학생 질문: 차트에서 대상·단위·기간을 어디에 둘까?
 
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-110:2020](standards-lab.html#S110)
+
+관찰 포인트: 대상·지표·기간 선택이 표시 의미를 어떻게 바꾸는지 살핀다.
+
+내 화면 수정 과제: 그래프 제목에 최근60개·PC 수신 시각·raw 범위를 적는다.
+
+확인 근거: 새로고침/중단 뒤 현재값과 과거 그래프의 의미를 구별해 기록한다.
+
 [공식 출처](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/analyze-metrics) · [출처 원본 이미지](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/media/analyze-metrics/metrics-explorer-example.png)
 
 ## C12 · Elastic Kibana · 탐색형 대시보드
@@ -241,6 +329,14 @@ P01 적용: 기간 선택을 추가한다면 카드·그래프의 범위를 설�
 적용 범위: 우리 예제에 아직 없는 필터·저장은 새로 구현하고 확인해야 한다.
 
 학생 질문: 필터를 바꿨는데 카드와 차트가 다른 범위면?
+
+관련 기준(관찰 관점): [ISO 9241-110:2020](standards-lab.html#S110), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 필터가 바꾸는 대상과 범위를 사용자가 예상할 수 있는지 묻는다.
+
+내 화면 수정 과제: 필터를 추가한다면 어느 카드·그래프에 적용되는지 먼저 적는다.
+
+확인 근거: 같은 조건의 카드/그래프를 대조하거나 미구현이면 그렇게 표시한다.
 
 [공식 출처](https://www.elastic.co/docs/explore-analyze/dashboards) · [출처 원본 이미지](https://www.elastic.co/docs/explore-analyze/images/kibana-dashboard-overview.png)
 
@@ -262,6 +358,14 @@ P01 적용: 현재 센서값을 먼저, 변화 그래프와 관찰 메모를 뒤
 
 학생 질문: 전체 요약과 세부 비교가 각각 답하는 것은?
 
+관련 기준(관찰 관점): [ISO 9241-11:2018](standards-lab.html#S11), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 전체 요약과 상세 비교가 각각 어떤 질문을 지원하는지 살핀다.
+
+내 화면 수정 과제: 핵심 현재값을 먼저 두고 변화·관찰 메모를 다음 구역으로 배치한다.
+
+확인 근거: 첫 정보가 사용자 판단에 필요한 이유를 스케치 옆에 적는다.
+
 [공식 출처](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-retail-analysis) · [출처 원본 이미지](https://learn.microsoft.com/en-us/power-bi/create-reports/media/sample-retail-analysis/retail1.png)
 
 ## C14 · Power BI · 인사 현황
@@ -281,6 +385,14 @@ P01 적용: 전체 수신 개수와 현재값을 다른 이름으로 표시한�
 적용 범위: 학생 개인 정보나 실제 인사 자료는 필요 없다. 공식 샘플을 관찰한다.
 
 학생 질문: 현재값·누적 개수·비율을 어떻게 다르게 표시할까?
+
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-11:2018](standards-lab.html#S11)
+
+관찰 포인트: 현재·누적·비율처럼 집계 의미가 다른 값을 구별한다.
+
+내 화면 수정 과제: 버튼 현재 상태와 누적 횟수를 혼동하지 않는 문구를 쓴다.
+
+확인 근거: 1초 상태 읽기로 짧은 누름 횟수를 보장할 수 없는 이유를 적는다.
 
 [공식 출처](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-human-resources) · [출처 원본 이미지](https://learn.microsoft.com/en-us/power-bi/create-reports/media/sample-human-resources/hr-1.png)
 
@@ -302,6 +414,14 @@ P01 적용: 현재 밝기와 켜짐/꺼짐 기준을 함께 설명한다.
 
 학생 질문: 숫자 하나만 있을 때와 기준이 있을 때 판단은?
 
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-110:2020](standards-lab.html#S110)
+
+관찰 포인트: 비교 대상·기준·기간이 수치 해석에 어떤 역할을 하는지 살핀다.
+
+내 화면 수정 과제: 밝기 원시값과 자동 켜짐/꺼짐 두 기준을 함께 설명한다.
+
+확인 근거: raw300→400→500에서 예상/실제 LED를 기록하고 두 경계의 뜻을 설명한다.
+
 [공식 출처](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-sales-and-marketing) · [출처 원본 이미지](https://learn.microsoft.com/en-us/power-bi/create-reports/media/sample-sales-and-marketing/sales1.png)
 
 ## C16 · Metabase · 질문을 묶은 대시보드
@@ -321,6 +441,14 @@ P01 적용: 밝기는 얼마인가·LED는 켜졌나·값은 최신인가를 구
 적용 범위: 필터가 있다면 적용 범위를 설명하고, 빈 결과도 설계한다.
 
 학생 질문: 제목을 질문형으로 바꾸면 어떤 장점이 있나?
+
+관련 기준(관찰 관점): [ISO 9241-11:2018](standards-lab.html#S11), [ISO 9241-210:2019](standards-lab.html#S210)
+
+관찰 포인트: 질문에 맞춰 카드·설명을 묶는 구성을 살핀다.
+
+내 화면 수정 과제: 누가·어디서·무엇을 판단하나를 정하고 카드마다 질문을 붙인다.
+
+확인 근거: 질문과 관계없는 표시가 없는지 다시 보고 수정 전후를 남긴다.
 
 [공식 출처](https://www.metabase.com/docs/latest/dashboards/introduction) · [출처 원본 이미지](https://www.metabase.com/docs/latest/dashboards/images/interactive-dashboard.png)
 
@@ -342,6 +470,14 @@ P01 적용: 시간 변화는 선, 현재 수치는 카드, 관찰 기록은 표�
 
 학생 질문: 우리 데이터에 지도·파이 차트가 꼭 필요한가?
 
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [ISO 9241-210:2019](standards-lab.html#S210)
+
+관찰 포인트: 비교하려는 내용에 따라 차트 선택이 달라지는지 생각한다.
+
+내 화면 수정 과제: 현재는 카드·시간 변화는 선·관찰은 표 중 필요한 표현을 고른다.
+
+확인 근거: 파이·지도 등 쓰지 않은 표현을 제외한 이유를 사용자 목적과 연결한다.
+
 [공식 출처](https://superset.apache.org/) · [출처 원본 이미지](https://superset.apache.org/img/hero-screenshot.jpg)
 
 ## C18 · Uptime Kuma · 서비스 상태
@@ -361,6 +497,14 @@ P01 적용: USB 상태·마지막 정상 수신·최근 그래프를 함께 둔�
 적용 범위: 가용성 비율을 만들려면 측정 기간·규칙이 필요하다. 임의99%를 넣지 않는다.
 
 학생 질문: 지금 정상이라는 말과 지난 한 시간 정상은 같은가?
+
+관련 기준(관찰 관점): [ISO 9241-110:2020](standards-lab.html#S110), [WCAG 2.2](standards-lab.html#W22)
+
+관찰 포인트: 현재 상태·최근 이력·이상 안내를 어떻게 구별하는지 살핀다.
+
+내 화면 수정 과제: USB 중단을 색과 문구로 표시하고 현재값은 숨기되 마지막 시각은 남긴다.
+
+확인 근거: 중단 전후 화면과 키보드 재연결 경로를 확인해 기록한다.
 
 [공식 출처](https://github.com/louislam/uptime-kuma) · [출처 원본 이미지](https://user-images.githubusercontent.com/1336778/212262296-e6205815-ad62-488c-83ec-a5b0d0689f7c.jpg)
 
@@ -382,6 +526,14 @@ P01 적용: 핵심 카드를 크게 두고 부가 정보는 표·상세에 둔�
 
 학생 질문: 여백을 늘리면 무엇이 더 잘 구별되는가?
 
+관련 기준(관찰 관점): [ISO 9241-112:2025](standards-lab.html#S112), [WCAG 2.2](standards-lab.html#W22)
+
+관찰 포인트: 분류 패널의 정렬·간격을 읽고 작은 화면에서의 변화를 생각한다.
+
+내 화면 수정 과제: 핵심 카드와 부가 정보를 나누고 실제 화면을 좁혀 확인한다.
+
+확인 근거: 390px 폭에서 글자 겹침과 핵심 조작의 키보드 접근을 직접 확인한다.
+
 [공식 출처](https://vercel.com/docs/analytics) · [출처 원본 이미지](https://vercel.com/vc-ap-vercel-docs/_next/image?url=https%3A%2F%2F7nyt0uhk7sse4zvn.public.blob.vercel-storage.com%2Ffront%2Fdocs%2Fobservability%2Fpanels-light-mode.png&w=3840&q=75)
 
 ## C20 · Cloudflare · 웹 분석
@@ -401,5 +553,13 @@ P01 적용: 수신 개수·수신 시각·밝기 변화의 범위를 구별한�
 적용 범위: 공식 소개 글의 공개 화면이며 과거 UI일 수 있다. 현재 제품 설치 실습은 아니다.
 
 학생 질문: 같은 숫자라도 집계 정의가 다르면 왜 비교하면 안 될까?
+
+관련 기준(관찰 관점): [ISO 9241-11:2018](standards-lab.html#S11), [ISO 9241-112:2025](standards-lab.html#S112)
+
+관찰 포인트: 같은 숫자라도 집계 정의·기간에 따라 뜻이 달라짐을 살핀다.
+
+내 화면 수정 과제: 현재 밝기·수신 개수·마지막 시각을 각각 다른 이름으로 쓴다.
+
+확인 근거: 각 값의 출처·시간 범위를 README에서 설명하고 혼합 평균을 만들지 않는다.
 
 [공식 출처](https://blog.cloudflare.com/privacy-first-web-analytics/) · [출처 원본 이미지](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW446Q7XMTR03TCMQ9PGJV3T.png&w=715&h=392&f=webp&fit=cover&position=center)

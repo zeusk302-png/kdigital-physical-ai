@@ -1,12 +1,14 @@
 # 원칙에서 스케치로, 내 키트 웹 대시보드
 
-**1~2교시는 좋은 사례·설계 원칙·AI 디자인 소개·개인 스케치, 3교시는 공통 연결, 이후 120분은 개인 제작입니다.** Zoom 개인 수업으로 진행합니다.
+**1~2교시는 표준과 적용·사례 비교·AI 디자인·개인 스케치, 3교시는 공통 연결, 이후 120분은 개인 제작입니다.** Zoom 개인 수업으로 진행합니다.
 
 [P01 대시보드 열기](kit/uno-dashboard/index.html) · [처음 실행 안내](kit/uno-dashboard/README.md) · [개인 스케치 양식](kit/uno-dashboard/IDEA-SKETCH.md) · [Claude 디자인 전달 MD](kit/uno-dashboard/CLAUDE-DESIGN-HANDOFF.md)
 
 [디자인 A/B 비교실](kit/uno-dashboard/design-studio.html) · [브라우저 개인 작성지](kit/uno-dashboard/workbook.html) · [코드 줄별 설명](kit/uno-dashboard/CODE-WALKTHROUGH.md) · [제작·실행 확인표](kit/uno-dashboard/SELF-CHECK.md)
 
 [대시보드 실제 사례 20선](kit/uno-dashboard/case-gallery.html) · [사례 해설 MD](kit/uno-dashboard/CASEBOOK.md)
+
+[표준 적용 실습실](kit/uno-dashboard/standards-lab.html) · [표준 해설 MD](kit/uno-dashboard/STANDARDS-GUIDE.md) · [표준 적용표](kit/uno-dashboard/STANDARDS-CHECKLIST.md)
 
 ## 오늘 만들 것
 
@@ -16,8 +18,8 @@
 
 | 교시 | 설명·시연과 직접 수행 | 남길 결과 |
 | --- | --- | --- |
-| 1 · 10:00~10:50 | 사례20분, 원칙20분, 문제 화면 수정10분 | 사례 두 개 관찰·고친 문구 |
-| 2 · 11:00~11:50 | ISO 적용10분, AI 디자인12분, 스케치20분, 일부 공유8분 | 사용자·입출력·정상/실패 화면 스케치 |
+| 1 · 10:00~10:50 | 표준과 화면 적용35분, 대표 사례 비교15분 | 기준 적용 메모·대표 사례 관찰 |
+| 2 · 11:00~11:50 | 사례 탐색5분, AI 디자인10분, 스케치25분, 피드백10분 | 사용자·입출력·근거·확인 방법을 담은 스케치 |
 | 중식 · 11:50~13:00 | 중식 | — |
 | 3 · 13:00~13:50 | P01 파일·업로드·USB·센서 표시·LED 응답·중단 확인 | 입력→화면→명령→LED 왕복 |
 | 4 · 14:00~14:50 | 개인 제작50분 | 목적에 맞는 화면과 핵심 동작 |
@@ -36,11 +38,11 @@
 
 ## 단원
 
-[D01 · 좋은 대시보드는 어떤 판단을 돕나](lessons/D01.md) — 20개 사례 중 대표 화면을 비교하고 사용자가 확인하고 행동할 내용을 찾습니다.
+[D03 · 국제표준을 내 대시보드의 판단 기준으로 적용하기](lessons/D03.md) — ISO 네 기준과 WCAG를 나쁜 화면·개선 화면·직접 확인으로 연결합니다.
 
 [D02 · 정보·단위·색·피드백의 원칙](lessons/D02.md) — 현재값과 이력을 구별하고 잘못된 표시를 직접 고칩니다.
 
-[D03 · ISO와 접근성 원칙을 설계 질문으로 바꾸기](lessons/D03.md) — 규격의 범위를 이해하고 오늘 화면에 적용할 점검표를 만듭니다.
+[D01 · 좋은 대시보드는 어떤 판단을 돕나](lessons/D01.md) — 20개 사례 중 대표 화면을 비교하고 사용자가 확인하고 행동할 내용을 찾습니다.
 
 [D04 · Claude Design과 Figma MCP로 빠르게 다듬기](lessons/D04.md) — 스케치를 두 가지 화면으로 비교하고 기존 통신 코드를 지키며 디자인을 전달합니다.
 

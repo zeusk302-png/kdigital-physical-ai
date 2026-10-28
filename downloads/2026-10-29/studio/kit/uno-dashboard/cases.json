@@ -14,7 +14,22 @@
     "source_image_url": "https://www.home-assistant.io/images/dashboards/section_view_rearrange_cards.gif",
     "preview": "case-images/C01.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S110",
+        "label": "ISO 9241-110:2020",
+        "url": "https://www.iso.org/standard/75258.html"
+      },
+      {
+        "id": "W22",
+        "label": "WCAG 2.2",
+        "url": "https://www.w3.org/TR/WCAG22/"
+      }
+    ],
+    "standard_observation": "장치 상태와 조작 위치를 살피고, 조작 전후 무엇이 달라지는지 질문한다.",
+    "standard_change_task": "내 LED 버튼 옆에 전송 중·응답·미확인 문구를 설계한다.",
+    "standard_evidence": "연습 모드에서 세 문구를 재현하고 실제 점등은 따로 기록한다."
   },
   {
     "id": "C02",
@@ -31,7 +46,22 @@
     "source_image_url": "https://www.home-assistant.io/images/blog/2021-08-energy/sidebar-widgets.png",
     "preview": "case-images/C02.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      }
+    ],
+    "standard_observation": "에너지 종류·흐름·양의 의미를 어떻게 구별하는지 살핀다.",
+    "standard_change_task": "우리 키트의 raw·°C·%를 각각 이름과 단위로 구별한다.",
+    "standard_evidence": "실제 부품과 표시 항목을 대조하고 전력량을 측정하지 않았음을 적는다."
   },
   {
     "id": "C03",
@@ -48,7 +78,22 @@
     "source_image_url": "https://iot-hub.thingsboard.io/api/resources/96c30d30-68e9-11f1-992c-0f4d95fca092",
     "preview": "case-images/C03.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S210",
+        "label": "ISO 9241-210:2019",
+        "url": "https://www.iso.org/standard/77520.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "사용자에게 실제 위치·공간 정보가 필요한 이유를 생각한다.",
+    "standard_change_task": "사용자·책상 상황을 한 문장으로 정하고 배치가 필요한지 결정한다.",
+    "standard_evidence": "스케치의 각 구역이 어떤 사용자 질문에 답하는지 설명한다."
   },
   {
     "id": "C04",
@@ -65,7 +110,22 @@
     "source_image_url": "https://thingsboard.io/_astro/aiq-1.DXUpPGI3_Z2u2M98.webp",
     "preview": "case-images/C04.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "W22",
+        "label": "WCAG 2.2",
+        "url": "https://www.w3.org/TR/WCAG22/"
+      }
+    ],
+    "standard_observation": "위치와 색 범례를 읽고 색 없이도 의미를 알 수 있을지 질문한다.",
+    "standard_change_task": "상태에 색과 글자를 함께 붙이고 공기질 실측처럼 표시하지 않는다.",
+    "standard_evidence": "색을 가려도 상태 이름으로 이해되는지 직접 읽어 본다."
   },
   {
     "id": "C05",
@@ -82,7 +142,22 @@
     "source_image_url": "https://thingsboard.io/images/usecases/smart-farming/customizable-dashboard.webp",
     "preview": "case-images/C05.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "관찰하려는 대상과 현재값·변화의 관계를 살핀다.",
+    "standard_change_task": "농장 전체 대신 내 책상의 한 과업을 정하고 핵심 입력 두 개를 고른다.",
+    "standard_evidence": "선택한 두 값이 사용자 행동에 왜 필요한지 적는다."
   },
   {
     "id": "C06",
@@ -99,7 +174,22 @@
     "source_image_url": "https://thingsboard.io/_astro/site-fleet-tracking-1.Bbf6oyRI_ZmQFRr.webp",
     "preview": "case-images/C06.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S210",
+        "label": "ISO 9241-210:2019",
+        "url": "https://www.iso.org/standard/77520.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "전체 현장과 한 장치의 상세를 나누는 구조를 살핀다.",
+    "standard_change_task": "GPS 기능을 추가하는 대신 전체 센서 요약과 한 센서 설명을 나눈다.",
+    "standard_evidence": "표시 대상과 기간이 전체/상세에서 어떻게 바뀌는지 적는다."
   },
   {
     "id": "C07",
@@ -116,7 +206,22 @@
     "source_image_url": "https://grafana.com/api/dashboards/1860/images/18451/image",
     "preview": "case-images/C07.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "W22",
+        "label": "WCAG 2.2",
+        "url": "https://www.w3.org/TR/WCAG22/"
+      }
+    ],
+    "standard_observation": "패널 이름·단위·반복 규칙을 읽고 실제 글자 대비는 별도 검사 대상으로 둔다.",
+    "standard_change_task": "내 카드의 이름·값·단위 순서를 통일하고 실제 CSS 색을 검사한다.",
+    "standard_evidence": "대비값과 글자 크기 조건을 적는다. 축소 사진으로 수치 판정하지 않는다."
   },
   {
     "id": "C08",
@@ -133,7 +238,22 @@
     "source_image_url": "https://grafana.com/media/docs/grafana/canvas-server-element-9-4-0.png",
     "preview": "case-images/C08.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      }
+    ],
+    "standard_observation": "관계를 도식으로 보일 때와 숫자 표로 보일 때의 용도를 비교한다.",
+    "standard_change_task": "센서→보드→화면→LED 관계를 그리고 필요한 방향에 이름을 붙인다.",
+    "standard_evidence": "도식만 보고 데이터와 명령 방향을 자기 말로 설명한다."
   },
   {
     "id": "C09",
@@ -150,7 +270,22 @@
     "source_image_url": "https://web-assets.dd-static.net/42588/1776293847-datadog-executive-dashboards-executive-dashboard.png?format=auto&fit=bounds&quality=75&disable=upscale&width=1400&dpr=1",
     "preview": "case-images/C09.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "각 지표가 사용자의 어떤 질문에 답하는지 살핀다.",
+    "standard_change_task": "조명이 필요한가·값이 최신인가·명령이 적용됐나를 구역 제목으로 쓴다.",
+    "standard_evidence": "목적 없는 카드를 한 개 제거하거나 보조 구역으로 옮긴 이유를 적는다."
   },
   {
     "id": "C10",
@@ -167,7 +302,22 @@
     "source_image_url": "https://media.amazonwebservices.com/blog/2015/cd_my_dashboard_1.png",
     "preview": "case-images/C10.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S210",
+        "label": "ISO 9241-210:2019",
+        "url": "https://www.iso.org/standard/77520.html"
+      }
+    ],
+    "standard_observation": "차트 묶음과 설명이 사용자 과업을 어떻게 지원하는지 질문한다.",
+    "standard_change_task": "온습도 묶음과 밝기·LED 묶음을 나눈 스케치를 만든다.",
+    "standard_evidence": "사용자가 어느 묶음을 먼저 봐야 하는지 설명하고 순서를 수정한다."
   },
   {
     "id": "C11",
@@ -184,7 +334,22 @@
     "source_image_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/media/analyze-metrics/metrics-explorer-example.png",
     "preview": "case-images/C11.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S110",
+        "label": "ISO 9241-110:2020",
+        "url": "https://www.iso.org/standard/75258.html"
+      }
+    ],
+    "standard_observation": "대상·지표·기간 선택이 표시 의미를 어떻게 바꾸는지 살핀다.",
+    "standard_change_task": "그래프 제목에 최근60개·PC 수신 시각·raw 범위를 적는다.",
+    "standard_evidence": "새로고침/중단 뒤 현재값과 과거 그래프의 의미를 구별해 기록한다."
   },
   {
     "id": "C12",
@@ -201,7 +366,22 @@
     "source_image_url": "https://www.elastic.co/docs/explore-analyze/images/kibana-dashboard-overview.png",
     "preview": "case-images/C12.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S110",
+        "label": "ISO 9241-110:2020",
+        "url": "https://www.iso.org/standard/75258.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "필터가 바꾸는 대상과 범위를 사용자가 예상할 수 있는지 묻는다.",
+    "standard_change_task": "필터를 추가한다면 어느 카드·그래프에 적용되는지 먼저 적는다.",
+    "standard_evidence": "같은 조건의 카드/그래프를 대조하거나 미구현이면 그렇게 표시한다."
   },
   {
     "id": "C13",
@@ -218,7 +398,22 @@
     "source_image_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/media/sample-retail-analysis/retail1.png",
     "preview": "case-images/C13.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "전체 요약과 상세 비교가 각각 어떤 질문을 지원하는지 살핀다.",
+    "standard_change_task": "핵심 현재값을 먼저 두고 변화·관찰 메모를 다음 구역으로 배치한다.",
+    "standard_evidence": "첫 정보가 사용자 판단에 필요한 이유를 스케치 옆에 적는다."
   },
   {
     "id": "C14",
@@ -235,7 +430,22 @@
     "source_image_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/media/sample-human-resources/hr-1.png",
     "preview": "case-images/C14.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      }
+    ],
+    "standard_observation": "현재·누적·비율처럼 집계 의미가 다른 값을 구별한다.",
+    "standard_change_task": "버튼 현재 상태와 누적 횟수를 혼동하지 않는 문구를 쓴다.",
+    "standard_evidence": "1초 상태 읽기로 짧은 누름 횟수를 보장할 수 없는 이유를 적는다."
   },
   {
     "id": "C15",
@@ -252,7 +462,22 @@
     "source_image_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/media/sample-sales-and-marketing/sales1.png",
     "preview": "case-images/C15.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S110",
+        "label": "ISO 9241-110:2020",
+        "url": "https://www.iso.org/standard/75258.html"
+      }
+    ],
+    "standard_observation": "비교 대상·기준·기간이 수치 해석에 어떤 역할을 하는지 살핀다.",
+    "standard_change_task": "밝기 원시값과 자동 켜짐/꺼짐 두 기준을 함께 설명한다.",
+    "standard_evidence": "raw300→400→500에서 예상/실제 LED를 기록하고 두 경계의 뜻을 설명한다."
   },
   {
     "id": "C16",
@@ -269,7 +494,22 @@
     "source_image_url": "https://www.metabase.com/docs/latest/dashboards/images/interactive-dashboard.png",
     "preview": "case-images/C16.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      },
+      {
+        "id": "S210",
+        "label": "ISO 9241-210:2019",
+        "url": "https://www.iso.org/standard/77520.html"
+      }
+    ],
+    "standard_observation": "질문에 맞춰 카드·설명을 묶는 구성을 살핀다.",
+    "standard_change_task": "누가·어디서·무엇을 판단하나를 정하고 카드마다 질문을 붙인다.",
+    "standard_evidence": "질문과 관계없는 표시가 없는지 다시 보고 수정 전후를 남긴다."
   },
   {
     "id": "C17",
@@ -286,7 +526,22 @@
     "source_image_url": "https://superset.apache.org/img/hero-screenshot.jpg",
     "preview": "case-images/C17.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "S210",
+        "label": "ISO 9241-210:2019",
+        "url": "https://www.iso.org/standard/77520.html"
+      }
+    ],
+    "standard_observation": "비교하려는 내용에 따라 차트 선택이 달라지는지 생각한다.",
+    "standard_change_task": "현재는 카드·시간 변화는 선·관찰은 표 중 필요한 표현을 고른다.",
+    "standard_evidence": "파이·지도 등 쓰지 않은 표현을 제외한 이유를 사용자 목적과 연결한다."
   },
   {
     "id": "C18",
@@ -303,7 +558,22 @@
     "source_image_url": "https://user-images.githubusercontent.com/1336778/212262296-e6205815-ad62-488c-83ec-a5b0d0689f7c.jpg",
     "preview": "case-images/C18.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S110",
+        "label": "ISO 9241-110:2020",
+        "url": "https://www.iso.org/standard/75258.html"
+      },
+      {
+        "id": "W22",
+        "label": "WCAG 2.2",
+        "url": "https://www.w3.org/TR/WCAG22/"
+      }
+    ],
+    "standard_observation": "현재 상태·최근 이력·이상 안내를 어떻게 구별하는지 살핀다.",
+    "standard_change_task": "USB 중단을 색과 문구로 표시하고 현재값은 숨기되 마지막 시각은 남긴다.",
+    "standard_evidence": "중단 전후 화면과 키보드 재연결 경로를 확인해 기록한다."
   },
   {
     "id": "C19",
@@ -320,7 +590,22 @@
     "source_image_url": "https://vercel.com/vc-ap-vercel-docs/_next/image?url=https%3A%2F%2F7nyt0uhk7sse4zvn.public.blob.vercel-storage.com%2Ffront%2Fdocs%2Fobservability%2Fpanels-light-mode.png&w=3840&q=75",
     "preview": "case-images/C19.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      },
+      {
+        "id": "W22",
+        "label": "WCAG 2.2",
+        "url": "https://www.w3.org/TR/WCAG22/"
+      }
+    ],
+    "standard_observation": "분류 패널의 정렬·간격을 읽고 작은 화면에서의 변화를 생각한다.",
+    "standard_change_task": "핵심 카드와 부가 정보를 나누고 실제 화면을 좁혀 확인한다.",
+    "standard_evidence": "390px 폭에서 글자 겹침과 핵심 조작의 키보드 접근을 직접 확인한다."
   },
   {
     "id": "C20",
@@ -337,6 +622,21 @@
     "source_image_url": "https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW446Q7XMTR03TCMQ9PGJV3T.png&w=715&h=392&f=webp&fit=cover&position=center",
     "preview": "case-images/C20.png",
     "checked_on": "2026-10-28",
-    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음"
+    "preview_note": "공식 공개 자료의 축소 화면 · 현행 UI나 실제 측정값을 보장하지 않음",
+    "standards": [
+      {
+        "id": "S11",
+        "label": "ISO 9241-11:2018",
+        "url": "https://www.iso.org/standard/63500.html"
+      },
+      {
+        "id": "S112",
+        "label": "ISO 9241-112:2025",
+        "url": "https://www.iso.org/standard/87518.html"
+      }
+    ],
+    "standard_observation": "같은 숫자라도 집계 정의·기간에 따라 뜻이 달라짐을 살핀다.",
+    "standard_change_task": "현재 밝기·수신 개수·마지막 시각을 각각 다른 이름으로 쓴다.",
+    "standard_evidence": "각 값의 출처·시간 범위를 README에서 설명하고 혼합 평균을 만들지 않는다."
   }
 ]

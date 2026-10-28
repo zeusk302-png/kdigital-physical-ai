@@ -1,7 +1,7 @@
 (() => {
   'use strict';
-  const ids=['project','user','problem','inputs','outputs','priority','layout','normal','failure','scope','extra','evidence-mode','next','result'];
-  const checks=['check-meaning','check-response','check-offline'];
+  const ids=['project','user','problem','inputs','outputs','priority','layout','normal','failure','scope','extra','standard-plan','standard-result','evidence-mode','next','result'];
+  const checks=['check-meaning','check-response','check-offline','check-standards'];
   const el=id=>document.getElementById(id),key='kdigital-dashboard-workbook-v1';
   const canvas=el('sketch'),ctx=canvas.getContext('2d');let strokes=[],current=null;
   const status=text=>el('draft-status').textContent=text;
@@ -30,7 +30,7 @@
   function filename(){return (el('project').value.trim()||'나의대시보드').replace(/[<>:"/\\|?*\x00-\x1f]/g,'_').slice(0,80);}
   function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   el('download-md').addEventListener('click',()=>{
-    const labels={project:'작품명',user:'사용자',problem:'해결할 상황',inputs:'실제 입력·단위',outputs:'출력·조작',priority:'핵심 정보와 이유',layout:'스타일·배치',normal:'정상 상태',failure:'실패 상태',scope:'필수 기능',extra:'추가 도전','evidence-mode':'확인 범위',next:'다음 확인',result:'예상·실제·고친 오류'};
+    const labels={project:'작품명',user:'사용자',problem:'해결할 상황',inputs:'실제 입력·단위',outputs:'출력·조작',priority:'핵심 정보와 이유',layout:'스타일·배치',normal:'정상 상태',failure:'실패 상태',scope:'필수 기능',extra:'추가 도전','standard-plan':'관련 기준·내 적용 규칙·확인 방법','standard-result':'표준/접근성 일부 항목의 실제 결과·미확인','evidence-mode':'확인 범위',next:'다음 확인',result:'예상·실제·고친 오류'};
     const lines=['# 나의 대시보드 설계·결과','',...ids.flatMap(id=>['## '+labels[id],'',el(id).value.trim()||'미작성','']),
       '## 자기 점검','',...checks.map(id=>'- ['+(el(id).checked?'x':' ')+'] '+el(id).parentElement.textContent.trim()),'',
       '## AI 구현 시 유지할 조건','','P01 핀·115200·JSON 필드·요청번호·DOM id·data-command를 유지합니다. 원시값을 lux로 바꾸지 않습니다. 연습 데이터와 실제 USB를 구별합니다. 명령 응답이 없으면 적용 여부 미확인으로 표시합니다. 스케치 PNG는 별도 첨부합니다.',''];
