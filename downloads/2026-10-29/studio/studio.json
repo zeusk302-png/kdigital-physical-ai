@@ -5,7 +5,7 @@
     {
       "id": "D03",
       "title": "표준을 화면에 적용하기",
-      "intro": "사용성·설계 원칙·상호작용·정보 제시·웹 접근성을 단계별 해설과 적용 예로 배웁니다.",
+      "intro": "용어의 정의·표준의 구성·세부 권고 주제와 적용 예를 한 페이지에서 이어 읽습니다.",
       "group": "표준 이해",
       "source": "lessons/D03.md"
     },
@@ -176,5 +176,7 @@
     "feedback": 10
   },
   "classroom_view": true,
-  "standards_step_count": 41
+  "standards_step_count": 41,
+  "standards_layout": "continuous",
+  "standards_sections": 41
 }

@@ -2,7 +2,7 @@
 
 표준 이해→사례 관찰→AI 디자인·개인 스케치→P01 공통 연결→개인 제작→확인과 제출. Zoom 개인 실습으로 진행합니다.
 
-[표준 단계별 수업](kit/uno-dashboard/standards-lab.html) · [디자인 사례20개](kit/uno-dashboard/case-gallery.html) · [개인 작성지](kit/uno-dashboard/workbook.html) · [P01 연결 실습](kit/uno-dashboard/index.html)
+[표준 전체 해설](kit/uno-dashboard/standards-lab.html) · [디자인 사례20개](kit/uno-dashboard/case-gallery.html) · [개인 작성지](kit/uno-dashboard/workbook.html) · [P01 연결 실습](kit/uno-dashboard/index.html)
 
 ## 오늘 만들 것
 
@@ -10,7 +10,7 @@
 
 ## 순서
 
-[표준을 화면에 적용하기](lessons/D03.md) — 사용성·설계 원칙·상호작용·정보 제시·웹 접근성을 단계별 해설과 적용 예로 배웁니다.
+[표준을 화면에 적용하기](lessons/D03.md) — 용어의 정의·표준의 구성·세부 권고 주제와 적용 예를 한 페이지에서 이어 읽습니다.
 
 [정보·단위·색·피드백의 원칙](lessons/D02.md) — 현재값과 이력을 구별하고 잘못된 표시를 직접 고칩니다.
 
