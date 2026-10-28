@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" role="img" aria-labelledby="title desc">
+<title id="title">같은 센서 상황을 표시하는 두 화면 비교</title><desc id="desc">왼쪽 학습용 문제 화면은 단위와 출처가 모호하고 응답 전에 성공을 표시한다. 오른쪽 개선 예는 단위와 연결 시각을 표시하며 센서 실패와 명령 미확인을 구별한다.</desc>
+<rect width="1100" height="640" fill="#f3f5ef"/><g font-family="Malgun Gothic, sans-serif" fill="#162c27">
+<text x="32" y="43" font-size="25" font-weight="bold">같은 상황, 다른 정보 설계</text><text x="32" y="75" font-size="16">교재 제작 예 · 실제 제품 화면이나 측정 기록이 아닙니다.</text>
+<rect x="25" y="100" width="510" height="440" rx="12" fill="white" stroke="#cad6cc"/><rect x="565" y="100" width="510" height="440" rx="12" fill="white" stroke="#cad6cc"/>
+<text x="48" y="140" font-size="22" font-weight="bold">문제 화면</text><text x="588" y="140" font-size="22" font-weight="bold">개선 예 · 작업실 조명</text>
+<rect x="48" y="170" width="460" height="90" fill="#4c2178"/><text x="70" y="224" fill="white" font-size="30">320 lux / 0 / 성공!</text>
+<text x="48" y="300" font-size="19">● ● ● 알록달록한 상태</text><text x="48" y="344" font-size="19">무슨 값? 어느 시각? 누구의 응답?</text><text x="48" y="394" font-size="18">센서 실패를 숫자0으로 표시</text><text x="48" y="434" font-size="18">명령을 누르자마자 ‘성공’</text><text x="48" y="493" font-size="18" fill="#9b2e18">실패나 연결 중단을 알 수 없음</text>
+<rect x="588" y="163" width="464" height="40" fill="#e1eee5"/><text x="603" y="190" font-size="17">연습 데이터 · 마지막 수신 14:22:10</text>
+<text x="588" y="242" font-size="17">밝기 입력 · 원시값</text><text x="588" y="286" font-size="38" font-weight="bold">320 / 1023</text><text x="588" y="326" font-size="18">온도 — · 센서값 없음</text>
+<rect x="588" y="351" width="150" height="48" rx="5" fill="#087f63"/><text x="611" y="382" fill="white" font-size="18">LED 켜기</text><rect x="750" y="351" width="150" height="48" rx="5" fill="#087f63"/><text x="773" y="382" fill="white" font-size="18">LED 끄기</text>
+<text x="588" y="434" font-size="18">명령 #8 · 응답 없음 · 적용 미확인</text><text x="588" y="473" font-size="17">현재값 / 과거 변화 / 제어 결과 분리</text><text x="588" y="506" font-size="17">실제 LED는 눈으로 별도 확인</text>
+<text x="32" y="584" font-size="19">질문: 이름·단위·시간·출처·실패·응답 중 빠진 것은 무엇인가요?</text><text x="32" y="618" font-size="17">내 화면에서 사용자가 가장 먼저 알아야 할 정보를 한 가지 고르세요.</text></g></svg>
