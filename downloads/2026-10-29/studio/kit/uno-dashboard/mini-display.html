@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><title>값을 화면에 표시하기</title>
+<p>밝기 입력: <strong id="value">—</strong></p>
+<button id="missing">센서 실패로 바꾸기</button>
+<script>
+const raw = 320;
+const target = document.getElementById('value');
+function show(value) {
+  target.textContent = value === null ? '센서값 없음' : value + ' / 1023';
+}
+document.getElementById('missing').addEventListener('click', () => show(null));
+show(raw);
+</script></html>

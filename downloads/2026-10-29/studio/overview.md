@@ -4,6 +4,8 @@
 
 [P01 대시보드 열기](kit/uno-dashboard/index.html) · [처음 실행 안내](kit/uno-dashboard/README.md) · [개인 스케치 양식](kit/uno-dashboard/IDEA-SKETCH.md) · [Claude 디자인 전달 MD](kit/uno-dashboard/CLAUDE-DESIGN-HANDOFF.md)
 
+[디자인 A/B 비교실](kit/uno-dashboard/design-studio.html) · [브라우저 개인 작성지](kit/uno-dashboard/workbook.html) · [코드 줄별 설명](kit/uno-dashboard/CODE-WALKTHROUGH.md) · [제작·실행 확인표](kit/uno-dashboard/SELF-CHECK.md)
+
 ## 오늘 만들 것
 
 ‘내 책상 환경’ 화면에서 온습도·밝기·가변저항을 확인하고 LED를 켜고 끕니다. 밝기 기준 두 개로 자동 모드도 시험합니다. 같은 P01 연결을 출발점으로 각자 사용자·정보 배치·스타일·핵심 기능을 바꿔 자기 작품으로 완성합니다. 연습 데이터와 실제 USB 입력은 화면에서 구별합니다.
